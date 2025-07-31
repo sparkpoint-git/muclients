@@ -1,0 +1,7 @@
+css:
+  -
+    location: 'gantry-assets://home.css'
+    inline: ''
+    extra: {  }
+    priority: '0'
+    name: home.css

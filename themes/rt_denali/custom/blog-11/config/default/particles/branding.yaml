@@ -1,0 +1,4 @@
+enabled: '1'
+content: '<a href="http://portal.hud.gov/hudportal/HUD?src=/program_offices/fair_housing_equal_opp" target="_blank">Equal Housing Opportunity</a>'
+css:
+  class: eho

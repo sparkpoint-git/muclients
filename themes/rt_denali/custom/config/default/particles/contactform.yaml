@@ -1,0 +1,9 @@
+enabled: '1'
+class: ''
+header: ''
+email: ''
+email_from: ''
+recaptcha:
+  enabled: '0'
+  sitekey: ''
+  secretkey: ''

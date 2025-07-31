@@ -1,0 +1,10 @@
+context:
+  -
+    is_home: true
+menu:
+  main-menu:
+    6: true
+language: {  }
+post: {  }
+taxonomy: {  }
+archive: {  }

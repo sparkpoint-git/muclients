@@ -1,0 +1,38 @@
+name: jc_home
+timestamp: 1677857052
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: home
+  timestamp: 1537195582
+positions: {  }
+sections:
+  header: Header
+  navigation: Navigation
+  showcase: Showcase
+  feature: Feature
+  subfeature: Subfeature
+  main: Main
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  menu:
+    menu-1138: Menu
+  sample:
+    sample-1: 'From Our Farm to your Family'
+    sample-2: 'Who we are'
+    sample-3: 'How We Farm'
+    sample-9129: Contact
+  infolist:
+    infolist-4367: 'Info List'
+  logo:
+    logo-3242: 'Logo / Image'
+  copyright:
+    copyright-5680: Copyright
+  social:
+    social-5738: Social
+  branding:
+    branding-3739: Branding
+  mobile-menu:
+    mobile-menu-4869: 'Mobile Menu'
+inherit: {  }

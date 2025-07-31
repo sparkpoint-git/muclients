@@ -1,0 +1,25 @@
+# Ignore WordPress core files and sensitive configuration.
+wp-config.php
+.wp-config.php
+
+# Ignore user-generated content and large media files.
+/uploads/
+/upgrade/
+/upgrade-temp-backup/
+/smush-webp/
+
+# Ignore backup and cache files from various plugins.
+/backups/
+/.defender-security-quarantine/
+/cache/
+/wflogs/
+/wphb-logs/
+*.log
+*.php
+
+# Ignore system files.
+.DS_Store
+Thumbs.db
+
+# Ignore dependency folders managed by Composer.
+/vendor/

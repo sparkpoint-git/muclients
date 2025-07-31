@@ -1,0 +1,55 @@
+name: community_resource
+timestamp: 1733112180
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1522840415
+positions: {  }
+sections:
+  top: Top
+  navigation: Navigation
+  slideshow: Slideshow
+  above: Above
+  showcase: Showcase
+  utility: Utility
+  feature: Feature
+  expanded: Expanded
+  extension: Extension
+  bottom: Bottom
+  copyright: Copyright
+  header: Header
+  sidebar: Sidebar
+  aside: Aside
+  mainbar: Main
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  messages:
+    system-messages-9828: 'System Messages'
+  logo:
+    logo-5992: Logo
+  menu:
+    menu-2350: Menu
+  social:
+    social-1608: Social
+  infolist:
+    infolist-1669: 'Info List'
+  mobile-menu:
+    mobile-menu-7951: Mobile-menu
+  simplemenu:
+    simplemenu-1683: 'Bottom Menu'
+  simplecontent:
+    simplecontent-8235: 'Contact Us'
+  copyright:
+    copyright-8904: Copyright
+  branding:
+    branding-4139: Branding
+inherit:
+  default:
+    footer: footer
+    copyright: copyright
+    simplemenu-1683: simplemenu-6826
+    simplecontent-8235: simplecontent-4123
+    copyright-8904: copyright-7658
+    branding-4139: branding-2782

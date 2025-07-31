@@ -1,0 +1,15 @@
+div.main-logo a::after {content:"Loudoun Valley Sheep Producers Association"; line-height: 1.3rem; margin-top: 3px; margin-left: 1vh;}
+div.main-logo a {display:flex;}
+div.main-logo a svg {background-color: #ffffff; border-radius: 5px;}
+
+div.g-search {background:#ffffff40; border-radius: 5px;}
+div.g-search input {color:#ffffff;}
+
+div.contact-info {margin-top: 5vh;}
+
+@media only all and (max-width: 50.99rem) {
+  div.main-logo a::after {content:"Loudoun Valley Sheep Producers Association"; flex-basis:50vw; text-align: center;}
+  div.main-logo a {display:flex; justify-content: center; flex-wrap: wrap;}
+  div.main-logo a svg {background-color: #ffffff; border-radius: 5px; flex-basis: 50vw;}
+  div.contact-info {margin-top: 5vw;}
+}

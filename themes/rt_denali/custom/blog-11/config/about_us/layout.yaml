@@ -1,0 +1,228 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1522840415
+layout:
+  /top/: {  }
+  navigation: {  }
+  /slideshow/: {  }
+  /header/: {  }
+  /above/: {  }
+  /showcase/: {  }
+  /utility/: {  }
+  /feature/:
+    -
+      - infolist-4199
+  /container-main/:
+    -
+      -
+        'sidebar 20': {  }
+      -
+        'mainbar 60':
+          -
+            - system-content-1482
+      -
+        'aside 20':
+          -
+            - custom-2032
+          -
+            - custom-8707
+  /expanded/: {  }
+  /extension/: {  }
+  /bottom/: {  }
+  footer: {  }
+  copyright: {  }
+  offcanvas:
+    -
+      - mobile-menu-7951
+structure:
+  top:
+    type: section
+    attributes:
+      boxed: ''
+      class: section-horizontal-paddings
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  slideshow:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  header:
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  above:
+    type: section
+    attributes:
+      boxed: ''
+      class: section-horizontal-paddings
+  showcase:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  utility:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  feature:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  sidebar:
+    type: section
+    subtype: aside
+    attributes:
+      class: ''
+  mainbar:
+    type: section
+    subtype: main
+    title: Main
+    attributes:
+      class: section-horizontal-paddings
+  aside:
+    attributes:
+      class: ''
+  container-main:
+    attributes:
+      boxed: ''
+      class: ''
+      extra: {  }
+  expanded:
+    type: section
+    attributes:
+      boxed: ''
+      class: section-horizontal-paddings
+  extension:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  bottom:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  copyright:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  offcanvas:
+    attributes:
+      swipe: '0'
+content:
+  infolist-4199:
+    title: 'Our Staff'
+    attributes:
+      class: ''
+      title: 'Our Staff'
+      intro: ''
+      cols: g-3cols
+      infolists:
+        -
+          icon: 'fa fa-briefcase fa-2x'
+          iconloc: inline
+          image: ''
+          imageloc: center
+          textstyle: bold
+          imagestyle: compact
+          desc: "Executive Director<br/>\n<a href=\"mailto:jreid@fhcorp.org\">jreid@fhcorp.org</a>"
+          tag: ''
+          subtag: ''
+          label: ''
+          link: ''
+          buttonicon: ''
+          readmoreclass: ''
+          readmoretarget: _self
+          title: 'John Reid'
+        -
+          icon: 'fa fa-home fa-2x'
+          iconloc: inline
+          image: ''
+          imageloc: center
+          textstyle: bold
+          imagestyle: compact
+          desc: "Property Manager<br/>\n<a href=\"mailto:tsams@fhpm.org\">tsams@fhpm.org</a> "
+          tag: ''
+          subtag: ''
+          label: ''
+          link: ''
+          buttonicon: ''
+          readmoreclass: ''
+          readmoretarget: _self
+          title: 'Tish Sams'
+        -
+          icon: 'fa fa-clipboard fa-2x'
+          iconloc: inline
+          image: ''
+          imageloc: center
+          textstyle: bold
+          imagestyle: compact
+          desc: "Jackie Sills, Project Manager<br/>\n<a href=\"mailto:jsills@fhcorp.org\">jsills@fhcorp.org</a>"
+          tag: ''
+          subtag: ''
+          label: ''
+          link: ''
+          buttonicon: ''
+          readmoreclass: ''
+          readmoretarget: _self
+          title: 'Jackie Sills'
+        -
+          icon: 'fa fa-clipboard fa-2x'
+          iconloc: inline
+          image: ''
+          imageloc: center
+          textstyle: bold
+          imagestyle: compact
+          desc: "Aaron Marsh, Asst. Property Manager<br/>\n<a href=\"mailto:jsills@fhcorp.org\">jsills@fhcorp.org</a>"
+          tag: ''
+          subtag: ''
+          label: ''
+          link: ''
+          buttonicon: ''
+          readmoreclass: ''
+          readmoretarget: _self
+          title: 'Aaron Marsh'
+        -
+          icon: 'fa fa-home fa-2x'
+          iconloc: inline
+          image: ''
+          imageloc: center
+          textstyle: bold
+          imagestyle: compact
+          desc: "Maintenance Manager<br/>\n<a href=\"mailto:jgibson@fhpm.org\">jgibson@fhpm.org</a> "
+          tag: ''
+          subtag: ''
+          label: ''
+          link: ''
+          buttonicon: ''
+          readmoreclass: ''
+          readmoretarget: _self
+          title: 'Joey Gibson'
+  custom-2032:
+    title: 'Board of Directors'
+    attributes:
+      html: "<h1>Board of Directors</h1>\n<p>Max Tufts<br> <em>President</em></p>\n<p>Robert Lee<br> <em>Vice President</em></p>\n<p>Sarah Godfrey<br><em>Treasurer</em></p>\n<p>Huntley Thorpe<br><em>Secretary</em></p>\n<p>Barbara Sharp</p>\n<p>Ken Alm</p>\n<p>Laura Fox</p>\n<p>Ike Broadas</p>"
+  custom-8707:
+    title: 'Custom HTML'
+    attributes:
+      enabled: 0
+      html: "<p><img class=\"aligncenter wp-image-268\" src=\"wp-content/uploads/sites/11/2018/10/40-years-report-cover.png\" width=\"175\" height=\"218\"></p>\n<h4>“40 Years of Providing Safe, Decent, Affordable, Housing Services: A History of Fauquier Housing.”</h4>\n<p><a href=\"/wp-content/uploads/2015/05/HistoryIntro.pdf\">Part I- Introduction</a></p>\n<p><a href=\"/wp-content/uploads/2015/05/HistoryNewspaperArticles19701992.pdf\">Part II- Articles 1970-1992</a></p>\n<p><a href=\"/wp-content/uploads/2015/05/HistoryNewspaperArticles19962010.pdf\">Part III- Articles 1996-2010</a></p>\n<p><a href=\"/wp-content/uploads/2015/05/HistoryBeforeAfterImages.pdf\">Part IV- Before/After Images</a></p>\n<p><a href=\"/wp-content/uploads/2015/05/HistoryConclusion.pdf\">Part V- Conclusion</a></p>\n<p>Documents are in pdf, if they do not open <a href=\"http://get.adobe.com/reader/otherversions/\" target=\"_blank\" rel=\"noopener noreferrer\">click here to download free version of adobe pdf reader</a></p>"

@@ -1,0 +1,61 @@
+name: home
+timestamp: 1571940038
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: home_-_particles
+  timestamp: 1550676708
+positions: {  }
+sections:
+  top: Top
+  slideshow: Slideshow
+  above: Above
+  feature: Feature
+  showcase: Showcase
+  utility: Utility
+  expanded: Expanded
+  extension: Extension
+  bottom: Bottom
+  copyright: Copyright
+  header: Header
+  sidebar: Sidebar
+  aside: Aside
+  mainbar: Main
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  verticalmenu:
+    verticalmenu-8085: 'Vertical Menu'
+  carousel:
+    carousel-2510: Carousel
+  heading:
+    heading-2069: Heading
+  promo:
+    promo-5881: Promo
+  blockcontent:
+    blockcontent-8007: 'Block Content'
+    blockcontent-5952: 'Block Content'
+  logo:
+    logo-1795: 'Logo / Image'
+    logo-1131: 'Logo / Image'
+  contentarray:
+    contentarray-2083: 'Platform Content'
+  slideshow:
+    slideshow-2132: Slideshow
+  casestudies:
+    casestudies-7116: 'Case Studies'
+  springboard:
+    springboard-6855: Springboard
+  simplemenu:
+    simplemenu-6826: 'Bottom Menu'
+  newsletter:
+    newsletter-1493: Newsletter
+  branding:
+    branding-2782: Branding
+  mobile-menu:
+    mobile-menu-3795: Mobile-menu
+inherit:
+  default:
+    top: top
+    offcanvas: offcanvas
+    mobile-menu-3795: mobile-menu-7951

@@ -1,0 +1,69 @@
+// Pagination
+.pagination, .page-links {
+    ul.pagination-list {
+        //font-size: 0;
+
+        @include breakpoint(mobile-only) {
+            box-shadow: none;
+        }
+
+        > li {
+            font-weight: $font-weight-medium;
+
+            @include breakpoint(mobile-only) {
+                &:not(.pagination-prev):not(.pagination-next) {
+                    display: none;
+                }
+            }
+
+            > a {
+                padding: 10px 15px;
+                color: $main-text-color;
+                background: $main-background;
+                border: 1px solid transparentize($base-background, 90%);
+                border-radius: 0;
+
+                &:hover {
+                    background: transparent;
+                    border-color: $border-color-light;
+
+                    @if (lightness($accent-color-1) > 90%) {
+                        color: darken($accent-color-1, 30%);
+                    } @else {
+                        color: $accent-color-1;
+                    }
+                }
+            }
+
+            > span {
+                padding: 10px 15px;
+                border: 1px solid transparentize($base-background, 90%);
+                color: $main-background;
+                border-radius: 0 !important;
+
+                @if (lightness($accent-color-1) > 90%) {
+                    background: darken($accent-color-1, 30%);
+                } @else {
+                    background: $accent-color-1;
+                }
+
+                &.dots {
+                    background: $main-background;
+                    color: $main-text-color;
+                }
+            }
+        }
+
+        &.pagination-next, &.pagination-prev {
+            span {
+                opacity: 0.3;
+                background: transparentize($base-background, 80%);
+                color: $base-text-color;
+            }
+        }
+    }
+
+    p.counter {
+        margin: 0;
+    }
+}

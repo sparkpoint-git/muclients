@@ -1,0 +1,6 @@
+preset: preset3
+accent:
+  color-1: '#c5a188'
+  color-2: '#688233'
+above:
+  text-color: '#ffffff'

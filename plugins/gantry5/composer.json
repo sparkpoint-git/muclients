@@ -1,0 +1,46 @@
+{
+    "name": "gantry/wordpress",
+    "description": "Gantry Framework Library",
+    "license": "MIT",
+
+    "require": {
+        "php": ">=5.6.20",
+        "symfony/event-dispatcher": "~3.4",
+        "symfony/yaml": "5.4.0",
+        "pimple/pimple": "~3.2",
+        "filp/whoops": "~2.5",
+        "rockettheme/toolbox": "~1.5",
+        "erusev/parsedown-extra": "~0.7",
+        "timber/timber": "1.23",
+
+        "twig/twig": "1.44.7",
+        "scssphp/scssphp": "1.10",
+        "leafo/scssphp": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/rockettheme/toolbox"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/rockettheme/scssphp"
+          }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Gantry\\": "src/classes/Gantry"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        },
+        "platform": {
+            "php": "7.2.5"
+        }
+    }
+}

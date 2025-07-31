@@ -1,0 +1,64 @@
+name: home
+timestamp: 1604780161
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: home_-_particles
+  timestamp: 1584382114
+positions: {  }
+sections:
+  navigation: Navigation
+  intro: Intro
+  features: Features
+  utility: Utility
+  above: Above
+  testimonials: Testimonials
+  expanded: Expanded
+  header: Header
+  mainbar: Mainbar
+  sidebar: Sidebar
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  custom:
+    custom-5807: Intro
+  blockcontent:
+    blockcontent-1712: 'Nutrient Dense Kitchen'
+  contentarray:
+    contentarray-2279: 'WordPress Posts'
+  pricingtable:
+    pricingtable-5535: ChickenTable
+    pricingtable-7800: PotatosTable
+    pricingtable-5780: 'Veg Table'
+  contenttabs:
+    contenttabs-3854: 'Content Tabs'
+  messages:
+    system-messages-1157: 'System Messages'
+  logo:
+    logo-5973: 'Logo / Image'
+    logo-2915: 'Logo / Image'
+  menu:
+    menu-6690: Menu
+  social:
+    social-5236: Social
+  copyright:
+    copyright-6134: Copyright
+  horizontalmenu:
+    horizontalmenu-2980: 'Horizontal Menu'
+  totop:
+    totop-3191: 'To Top'
+  mobile-menu:
+    mobile-menu-7770: Mobile-menu
+inherit:
+  default:
+    navigation: navigation
+    footer: footer
+    offcanvas: offcanvas
+    system-messages-1157: system-messages-7972
+    logo-5973: logo-9608
+    menu-6690: menu-6409
+    social-5236: social-3171
+    logo-2915: logo-9571
+    copyright-6134: copyright-1736
+    horizontalmenu-2980: horizontalmenu-9034
+    mobile-menu-7770: mobile-menu-5697

@@ -1,0 +1,19 @@
+css:
+  -
+    location: 'gantry-assets://members.css'
+    inline: ''
+    extra: {  }
+    priority: '0'
+    name: members.css
+  -
+    location: ''
+    inline: '#g-navigation .g-content {padding:0;}'
+    extra: {  }
+    priority: '0'
+    name: 'navigation padding'
+  -
+    location: 'gantry-assets://specialties.css'
+    inline: ''
+    extra: {  }
+    priority: '0'
+    name: specialties.css

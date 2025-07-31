@@ -1,0 +1,175 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1522840415
+layout:
+  /top/: {  }
+  navigation: {  }
+  /slideshow/: {  }
+  /header/: {  }
+  /above/: {  }
+  /showcase/: {  }
+  /utility/:
+    -
+      - 'logo-4157 50'
+      - 'gridstatistic-9212 50'
+  /feature/: {  }
+  /container-main/:
+    -
+      -
+        'sidebar 20':
+          -
+            - position-position-9414
+      -
+        'mainbar 60': {  }
+      -
+        'aside 20':
+          -
+            - position-position-8807
+  /expanded/: {  }
+  /extension/: {  }
+  /bottom/: {  }
+  footer: {  }
+  copyright: {  }
+  offcanvas:
+    -
+      - mobile-menu-7951
+structure:
+  top:
+    type: section
+    attributes:
+      boxed: ''
+      class: section-horizontal-paddings
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  slideshow:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  header:
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  above:
+    type: section
+    attributes:
+      boxed: ''
+      class: section-horizontal-paddings
+  showcase:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  utility:
+    type: section
+    attributes:
+      boxed: ''
+      class: section-horizontal-paddings
+  feature:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  sidebar:
+    type: section
+    subtype: aside
+    attributes:
+      class: ''
+  mainbar:
+    type: section
+    subtype: main
+    title: Main
+    attributes:
+      class: section-horizontal-paddings
+  aside:
+    attributes:
+      class: ''
+  container-main:
+    attributes:
+      boxed: ''
+      class: ''
+      extra: {  }
+  expanded:
+    type: section
+    attributes:
+      boxed: ''
+      class: section-horizontal-paddings
+  extension:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  bottom:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  copyright:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  offcanvas:
+    attributes:
+      swipe: '0'
+content:
+  logo-4157:
+    title: Fletcherville
+    attributes:
+      image: 'gantry-media://fletcherville-2.jpg'
+      link: '0'
+      text: ''
+      title: ''
+      class: ''
+  gridstatistic-9212:
+    title: 'Fletcherville Statistic'
+    attributes:
+      class: body-right-stats
+      title: 'Fletcherville Estates'
+      desc: "<h4>Foothills Housing Corporation (FHC) is proud to announce it's newest affordable housing property Fletcherville, acquired in December, 2018.</h4>\n\n<p>This property consists of 39 rentable units located 1 mile from the Town of Warrenton on Route 17. The development consists predominately of single family 2 and 3 bedrooms homes, with 6 duplex units offered and a commercial building also.</p>\n\n<p>To keep with our mission of providing affordable housing all rents have remained below 60% area median income for Fauquier County, with many currently renting at or below 40% AMI. There are 54 tenants utilizing the affordable accommodation throughout the property.</p>\n\n<p>This property provides much needed work force housing for the people and families that live in the local community and FHC is an advocate of preserving and maintaining shelter opportunities for those that could otherwise be forced out of housing.</p>"
+      readmore: ''
+      readmorelink: ''
+      readmoreclass: button-2
+      footerdesc: '<p>The property is ageing with homes built between the 1950''s and 1970''s, although structurally sound they don''t come without their challenges. FHC is excited to rehabilitate and improve with plans for grant funding applications in 2020.</p>'
+      cols: g-gridstatistic-3cols
+      gridstatisticitems:
+        -
+          text1: '39'
+          icon: 'fa fa-home'
+          text2: 'Rentable Units'
+          title: Units
+        -
+          text1: '60'
+          icon: 'fa fa-percent'
+          text2: 'Below AMI'
+          title: Rents
+        -
+          text1: '54'
+          icon: 'fa fa-group'
+          text2: Tenants
+          title: Tenants
+  position-position-9414:
+    title: Sidebar
+    attributes:
+      enabled: 0
+      key: sidebar
+  position-position-8807:
+    title: Aside
+    attributes:
+      enabled: 0
+      key: aside

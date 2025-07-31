@@ -1,0 +1,471 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1581187522
+layout:
+  /top/:
+    -
+      - system-messages-9828
+  navigation: {  }
+  /slideshow/:
+    -
+      - slideshow-2031
+  /header/:
+    -
+      - 'contentarray-8813 75'
+      - 'contentarray-4628 25'
+  /above/: {  }
+  /feature/:
+    -
+      - custom-1909
+  /showcase/:
+    -
+      - team-5648
+  /utility/: {  }
+  /container-main/:
+    -
+      -
+        'sidebar 20': {  }
+      -
+        'mainbar 60': {  }
+      -
+        'aside 20': {  }
+  /expanded/: {  }
+  /extension/: {  }
+  /bottom/: {  }
+  footer: {  }
+  copyright: {  }
+  offcanvas:
+    -
+      - mobile-menu-2576
+structure:
+  top:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+      variations: section-horizontal-paddings
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  slideshow:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+      variations: 'nomarginall nopaddingall'
+  header:
+    attributes:
+      boxed: '0'
+      class: ''
+      variations: ''
+  above:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+      variations: ''
+  feature:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+      variations: 'section-vertical-paddings section-horizontal-paddings'
+  showcase:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+      variations: 'section-vertical-paddings section-horizontal-paddings'
+  utility:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+      variations: 'section-vertical-paddings section-horizontal-paddings'
+  sidebar:
+    type: section
+    subtype: aside
+    attributes:
+      class: ''
+  mainbar:
+    type: section
+    subtype: main
+    title: Main
+    attributes:
+      class: ''
+      variations: section-horizontal-paddings
+  aside:
+    attributes:
+      class: ''
+  container-main:
+    attributes:
+      boxed: ''
+      class: ''
+      extra: {  }
+  expanded:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+      variations: section-horizontal-paddings
+  extension:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+      variations: 'section-vertical-paddings section-horizontal-paddings'
+  bottom:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+      variations: 'section-vertical-paddings section-horizontal-paddings'
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  copyright:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  offcanvas:
+    attributes:
+      swipe: '0'
+content:
+  slideshow-2031:
+    attributes:
+      source: wordpress
+      height: ''
+      nav: disabled
+      autoplay: enabled
+      autoplayTimeout: '20000'
+      speed: '1000'
+      items: {  }
+      post:
+        filter:
+          categories: '55'
+          posts: ''
+          sticky: ''
+        limit:
+          total: '5'
+          start: '0'
+        sort:
+          orderby: rand
+          ordering: DESC
+        display:
+          image:
+            enabled: ''
+          title:
+            enabled: show
+            limit: ''
+          link:
+            enabled: ''
+            label: ''
+            target: _self
+  contentarray-8813:
+    title: 'Messages from President'
+    attributes:
+      post:
+        filter:
+          categories: ''
+          posts: '600'
+          sticky: ''
+        limit:
+          total: '1'
+          columns: '1'
+          start: '0'
+        display:
+          pagination_buttons: ''
+          image:
+            enabled: ''
+          title:
+            enabled: ''
+          date:
+            enabled: ''
+          read_more:
+            enabled: ''
+          author:
+            enabled: ''
+          category:
+            enabled: ''
+          comments:
+            enabled: ''
+          text:
+            type: content
+        sort:
+          orderby: none
+          ordering: DESC
+      css:
+        class: events
+    block:
+      class: message-from-pres
+  contentarray-4628:
+    title: News
+    attributes:
+      post:
+        filter:
+          categories: '53'
+          posts: ''
+          sticky: ''
+        limit:
+          total: '3'
+          columns: '1'
+          start: '0'
+        display:
+          pagination_buttons: ''
+          image:
+            enabled: ''
+          date:
+            enabled: ''
+          read_more:
+            enabled: show
+          author:
+            enabled: ''
+          category:
+            enabled: ''
+          comments:
+            enabled: ''
+          text:
+            type: excerpt
+            formatting: html
+        sort:
+          orderby: date
+          ordering: DESC
+    block:
+      class: news-home
+  custom-1909:
+    title: 'Meet Our Members'
+    attributes:
+      html: '<h3><a href="/members/">meet our members</a><span>...their sheep and their products</span></h3>'
+    block:
+      class: home-members
+  team-5648:
+    title: Breeds
+    attributes:
+      class: ''
+      title: 'explore breeds'
+      subtitle: ''
+      members:
+        -
+          image: 'gantry-media://home/barbados-black-belly.jpg'
+          role: Meat
+          link: /breed/barbados-black-belly/
+          target: _self
+          name: 'Barbados Black Belly'
+        -
+          image: 'gantry-media://home/blueface-leicester.jpg'
+          role: 'Meat and Wool'
+          link: /breed/bluefaced-leicester/
+          target: _self
+          name: 'Bluefaced Leicester'
+        -
+          image: 'gantry-media://home/border-leicester.jpg'
+          role: 'Meat and Wool'
+          link: /breed/border-leicester/
+          target: _self
+          name: 'Border Leicester'
+        -
+          image: 'gantry-media://home/california-reds.jpg'
+          role: 'Meat and Wool'
+          link: /breed/california-red/
+          target: _self
+          name: 'California Reds'
+        -
+          image: 'gantry-media://home/cheviot.jpg'
+          role: 'Meat and Wool'
+          link: /breed/cheviot/
+          target: _self
+          name: Cheviot
+        -
+          image: 'gantry-media://home/cormo.jpg'
+          role: Meat
+          link: /breed/cormo/
+          target: _self
+          name: Cormo
+        -
+          image: 'gantry-media://home/corriedale.jpg'
+          role: 'Meat and Wool'
+          link: /breed/corriedale/
+          target: _self
+          name: Corriedale
+        -
+          image: 'gantry-media://home/cotswolds.jpg'
+          role: 'Meat and Wool'
+          link: /breed/cotswolds/
+          target: _self
+          name: Cotswolds
+        -
+          image: 'gantry-media://home/dorper.jpg'
+          role: Meat
+          link: /breed/dorper/
+          target: _self
+          name: Dorper
+        -
+          image: 'gantry-media://home/dorsets.jpg'
+          role: 'Meat and Wool'
+          link: /breed/dorsets/
+          target: _self
+          name: Dorsets
+        -
+          image: 'gantry-media://home/finnsheep.jpg'
+          role: 'Meat and Wool'
+          link: /breed/finnsheep/
+          target: _self
+          name: Finnsheep
+        -
+          image: 'gantry-media://home/gotland.jpg'
+          role: 'Meat and Wool'
+          link: /breed/gotland/
+          target: _self
+          name: Gotland
+        -
+          image: 'gantry-media://home/hampshire.jpg'
+          role: 'Meat and Wool'
+          link: /breed/hampshire/
+          target: _self
+          name: Hampshire
+        -
+          image: 'gantry-media://home/hog-island.jpg'
+          role: Wool
+          link: /breed/hog-island/
+          target: _self
+          name: 'Hog Island'
+        -
+          image: 'gantry-media://home/icelandic.jpg'
+          role: Wool
+          link: /breed/icelandic/
+          target: _self
+          name: Icelandic
+        -
+          image: 'gantry-media://home/jacob.jpg'
+          role: 'Meat and Wool'
+          link: /breed/jacob/
+          target: _self
+          name: Jacob
+        -
+          image: 'gantry-media://home/karakul.jpg'
+          role: Wool
+          link: /breed/karakul/
+          target: _self
+          name: Karakul
+        -
+          image: 'gantry-media://home/katahdin.jpg'
+          role: Meat
+          link: /breed/katahdin/
+          target: _self
+          name: Katahdin
+        -
+          image: 'gantry-media://home/leicester-longwool.jpg'
+          role: Wool
+          link: /breed/leicester-longwool/
+          target: _self
+          name: 'Leicester Longwool'
+        -
+          image: 'gantry-media://home/lincoln.jpg'
+          role: Wool
+          link: /breed/lincoln/
+          target: _self
+          name: Lincoln
+        -
+          image: 'gantry-media://home/merino.jpg'
+          role: 'Meat and Wool'
+          link: /breed/merino/
+          target: _self
+          name: Merino
+        -
+          image: 'gantry-media://home/north-country-cheviot.jpg'
+          role: Wool
+          link: /breed/north-country-cheviot/
+          target: _self
+          name: 'North Country Cheviot'
+        -
+          image: 'gantry-media://home/polypay.jpg'
+          role: 'Meat and Wool'
+          link: /breed/polypay/
+          target: _self
+          name: Polypay
+        -
+          image: 'gantry-media://home/rambouillet.jpg'
+          role: 'Meat and Wool'
+          link: /breed/rambouillet/
+          target: _self
+          name: Rambouillet
+        -
+          image: 'gantry-media://home/romney.jpg'
+          role: Wool
+          link: /breed/romney/
+          target: _self
+          name: Romney
+        -
+          image: 'gantry-media://home/shetland.jpg'
+          role: 'Meat and Wool'
+          link: /breed/shetland/
+          target: _self
+          name: Shetland
+        -
+          image: 'gantry-media://home/shropshire.jpg'
+          role: 'Meat and Wool'
+          link: /breed/shropshire/
+          target: _self
+          name: Shropshire
+        -
+          image: 'gantry-media://home/soay.jpg'
+          role: Wool
+          link: /breed/soay/
+          target: _self
+          name: Soay
+        -
+          image: 'gantry-media://home/southdown.jpg'
+          role: Meat
+          link: /breed/southdown/
+          target: _self
+          name: Southdown
+        -
+          image: 'gantry-media://home/st-croix.jpg'
+          role: Meat
+          link: /breed/st-croix/
+          target: _self
+          name: 'St Croix'
+        -
+          image: 'gantry-media://home/suffolk.jpg'
+          role: 'Meat and Wool'
+          link: /breed/suffolk/
+          target: _self
+          name: Suffolk
+        -
+          image: 'gantry-media://home/teeswater.jpg'
+          role: 'Meat and Wool'
+          link: /breed/teeswater/
+          target: _self
+          name: Teeswater
+        -
+          image: 'gantry-media://home/texal.jpg'
+          role: 'Meat and Wool'
+          link: /breed/texal/
+          target: _self
+          name: Texal
+        -
+          image: 'gantry-media://home/tunis.jpg'
+          role: 'Meat and Wool'
+          link: /breed/tunis/
+          target: _self
+          name: Tunis
+        -
+          image: 'gantry-media://home/zwartble.jpg'
+          role: 'Meat and Wool'
+          link: /breed/zwartble/
+          target: _self
+          name: Zwartble
+  mobile-menu-2576:
+    title: 'Mobile Menu'

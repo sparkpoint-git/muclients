@@ -1,0 +1,67 @@
+name: healthcare-item
+timestamp: 1678990741
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1581187522
+positions: {  }
+sections:
+  top: Top
+  navigation: Navigation
+  slideshow: Slideshow
+  above: Above
+  feature: Feature
+  showcase: Showcase
+  utility: Utility
+  expanded: Expanded
+  extension: Extension
+  bottom: Bottom
+  copyright: Copyright
+  header: Header
+  sidebar: Sidebar
+  aside: Aside
+  mainbar: Main
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  messages:
+    system-messages-9828: 'System Messages'
+  content:
+    system-content-9361: 'Page Content'
+  mobile-menu:
+    mobile-menu-2576: 'Mobile Menu'
+  logo:
+    logo-2089: 'Logo / Image'
+  menu:
+    menu-2848: Menu
+  widget:
+    position-widget-3003: Search
+  social:
+    social-7777: Social
+  copyright:
+    copyright-8881: Copyright
+  heading:
+    heading-3536: Heading
+  custom:
+    custom-8145: 'Custom HTML'
+  contentarray:
+    contentarray-1108: 'WordPress Posts'
+    contentarray-6768: 'WordPress Posts'
+inherit:
+  default:
+    navigation: navigation
+    copyright: copyright
+    logo-2089: logo-9680
+    menu-2848: menu-5875
+    position-widget-3003: position-widget-6279
+    social-7777: social-3695
+    copyright-8881: copyright-6444
+  healthcare:
+    header: header
+    sidebar: sidebar
+    aside: aside
+    heading-3536: heading-6603
+    custom-8145: custom-3419
+    contentarray-1108: contentarray-5128
+    contentarray-6768: contentarray-9244

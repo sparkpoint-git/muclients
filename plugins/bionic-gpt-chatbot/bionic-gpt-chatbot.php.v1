@@ -1,0 +1,90 @@
+<?php
+/*
+ * Plugin Name: Bionic GPT Chatbot
+ * Description: A chatbot powered by Bionic GPT API for WordPress sites.
+ * Version: 1.0.0
+ * Author: Your Name
+ * Author URI: https://yourwebsite.com
+ * License: GPL-2.0+
+ */
+
+function bionic_chatbot_enqueue_assets() {
+    wp_enqueue_script('bionic-chatbot-js', plugin_dir_url(__FILE__) . 'assets/chatbot.js', array(), '1.0.2', true); // Changed to 1.0.1
+    /*wp_enqueue_style('bionic-chatbot-css', plugin_dir_url(__FILE__) . 'assets/chatbot.css', array(), '1.0.0'); */
+    wp_localize_script('bionic-chatbot-js', 'bionicChatbot', array(
+        'ajaxUrl' => admin_url('admin-ajax.php')
+    ));
+}
+add_action('wp_enqueue_scripts', 'bionic_chatbot_enqueue_assets');
+
+function bionic_chatbot_add_html() {
+    echo '<div id="chat-container" style="position: fixed; bottom: 20px; right: 20px; width: 300px; background: #fff; border: 1px solid #ccc; padding: 10px; z-index: 9999; display: flex; flex-direction: column; height: auto; min-height: 100px; max-height: 1000px;">
+            <div id="chat-output" style="overflow-y: auto; margin-bottom: 10px;"></div>
+            <div style="display: flex;">
+                <input type="text" id="chat-input" placeholder="Type your message..." style="width: 70%; padding: 5px;">
+                <button id="send-button" style="width: 30%; padding: 5px;">Send</button>
+            </div>
+          </div>';
+}
+add_action('wp_footer', 'bionic_chatbot_add_html');
+
+function bionic_gpt_proxy() {
+    $raw_post_data = file_get_contents('php://input');
+    error_log('Bionic GPT: Raw POST input - ' . $raw_post_data);
+    $post_data = json_decode($raw_post_data, true);
+    $message = isset($post_data['message']) ? sanitize_text_field($post_data['message']) : '';
+    error_log('Bionic GPT: Parsed message - ' . $message);
+    if (empty($message)) {
+        error_log('Bionic GPT: No message provided in POST request');
+        wp_send_json_error('No message provided.');
+        wp_die();
+    }
+    $api_key = defined('BIONIC_GPT_API_KEY') ? BIONIC_GPT_API_KEY : '';
+    if (!$api_key) {
+        error_log('Bionic GPT: No API key configured');
+        wp_send_json_error('API key not configured.');
+        wp_die();
+    }
+    // Simplified payload relying on console settings
+    $body = json_encode(array(
+        'model' => 'llama-3.3-70b-versatile', // Required by API
+        'messages' => array(
+            array('role' => 'user', 'content' => $message)
+        )
+    ));
+    error_log('Bionic GPT Request Body: ' . $body);
+
+    $attempts = 0;
+    do {
+        $response = wp_remote_post('https://sparkpoint-ai.app/v1/chat/completions', array(
+            'headers' => array(
+                'Content-Type' => 'application/json',
+                'Authorization' => 'Bearer ' . $api_key
+            ),
+            'body' => $body,
+            'timeout' => 30
+        ));
+        $response_code = wp_remote_retrieve_response_code($response);
+        error_log('Bionic GPT Attempt ' . ($attempts + 1) . ' Response Code: ' . $response_code);
+        $attempts++;
+        if ($response_code >= 500 && $attempts < 3) {
+            sleep(1);
+        }
+    } while ($response_code >= 500 && $attempts < 3);
+
+    if (is_wp_error($response) || $response_code !== 200) {
+        $error_message = is_wp_error($response) ? $response->get_error_message() : 'API returned status ' . $response_code;
+        $response_body = wp_remote_retrieve_body($response);
+        error_log('Bionic GPT Error: ' . $error_message);
+        error_log('Bionic GPT Response Body: ' . $response_body);
+        wp_send_json_error('API unavailable, please try again later.');
+        wp_die();
+    }
+
+    $response_body = wp_remote_retrieve_body($response);
+    error_log('Bionic GPT Response Body: ' . $response_body);
+    wp_send_json(json_decode($response_body));
+    wp_die();
+}
+add_action('wp_ajax_bionic_gpt', 'bionic_gpt_proxy');
+add_action('wp_ajax_nopriv_bionic_gpt', 'bionic_gpt_proxy');

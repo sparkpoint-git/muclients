@@ -1,0 +1,87 @@
+{# Load Content From WordPress #}
+{% set attr_extra = particle.extra|attribute_array %}
+{% set post_settings = particle.post %}
+{% set filter = post_settings.filter %}
+{% set sort = post_settings.sort %}
+{% set limit = post_settings.limit %}
+{% set start = limit.start %}
+{% set display = post_settings.display %}
+
+{# Sticky Posts #}
+{% set sticky_posts = filter.sticky ? false : true %}
+
+{# Query Posts #}
+{% set query_parameters = {
+    'posts_per_page': limit.total|default('-1'),
+    'offset': start,
+    'orderby': sort.orderby,
+    'order': sort.ordering,
+    'ignore_sticky_posts': sticky_posts
+} %}
+
+{% set categories = filter.categories|replace({' ': ',', ', ': ','}) %}
+
+{% if filter.posts %}
+    {% set query_parameters = query_parameters|merge({'post__in': filter.posts|replace({' ': ',', ', ': ','})|split(',')}) %}
+{% else %}
+    {% set query_parameters = query_parameters|merge({'cat': categories}) %}
+{% endif %}
+
+{% set posts = wordpress.query_posts(query_parameters) %}
+{% set total = posts.get_pagination([]).total|abs %}
+{% set total = max(posts|length, (total * max(0, limit.total)) - 1) %}
+
+<div class="g-slideshow-slider swiper-wrapper" style="height: {{ particle.height|default('600px') }};">
+    {% for post in posts %}
+        {% if display.image.enabled and post.thumbnail.src %}
+            {% set post_image = post.thumbnail.src %}
+        {% endif %}
+
+        {% if display.author_image.enabled and post.author.avatar %}
+            {% set author_image = post.author.avatar %}
+        {% endif %}
+        <div class="swiper-slide {% if particle.overlay == 'enabled' %}overlay{% endif %}" style="background-image: url({{ url(post_image)|e }}); background-position: center center;">
+            <div class="slide">
+                <div class="slide-content">
+                    {% if display.category.enabled  %}
+                        <h3 class="g-slideshow-top-title ">
+                            {{ post.terms('category')|join(', ') }}
+                        </h3>
+                    {% endif %}
+
+                    {% if display.title.enabled and post.title %}
+                        <h1 class="g-slideshow-main-title">
+                            {% if display.link.enabled == "enabled" %}
+                                <a href="{{ url(post.link)|e }}" target="{{ display.link.target|default('_self') }}">
+                                    {{ (display.title.limit ? post.title|truncate_text(display.title.limit) : post.title)|raw }}
+                                </a>
+                            {% else %}
+                                {{ (display.title.limit ? post.title|truncate_text(display.title.limit) : post.title)|raw }}
+                            {% endif %}
+                        </h1>
+                    {% endif %}
+
+                    <h3 class="g-slideshow-top-title">
+                        {% set post_text = display.text.type == 'excerpt' ? post.post_excerpt : post.content %}
+                        {{ post_text|truncate_text(display.text.limit)|raw }}
+                    </h3>
+
+                    {% if display.author_image.enabled %}
+                        <span class="g-slideshow-avatar">
+                            <img src="{{ url(author_image)|e }}" alt="{{ post.author.name|e }}" title="{{ post.author.name|e }}">
+                        </span>
+                    {% endif %}
+
+                    {% if display.author.enabled %}
+                        {% if post.author.name %}
+                            <span class="g-slideshow-author">
+                                {{ post.author.name|e }}
+                            </span>
+                        {% endif %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+    {% endfor %}
+</div>

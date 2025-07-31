@@ -1,0 +1,81 @@
+name: home
+timestamp: 1601931537
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: home_-_particles
+  timestamp: 1601929914
+positions: {  }
+sections:
+  top: Top
+  navigation: Navigation
+  slideshow: Slideshow
+  above: Above
+  feature: Feature
+  showcase: Showcase
+  utility: Utility
+  expanded: Expanded
+  extension: Extension
+  bottom: Bottom
+  copyright: Copyright
+  header: Header
+  sidebar: Sidebar
+  aside: Aside
+  mainbar: Main
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  messages:
+    system-messages-9828: 'System Messages'
+  logo:
+    logo-3734: 'Logo / Image'
+  menu:
+    menu-1617: Menu
+  button:
+    button-4715: Button
+  slideshow:
+    slideshow-2052: Slideshow
+  simplecontent:
+    simplecontent-4643: 'Simple Content'
+  infolist:
+    infolist-7933: 'Info List'
+  testimonials:
+    testimonials-8981: Testimonials
+  categorylist:
+    categorylist-3880: 'Category List'
+  topiclist:
+    topiclist-3937: 'Topic List'
+  pricingtable:
+    pricingtable-2666: 'Pricing Table'
+  content:
+    system-content-1120: 'Page Content'
+  team:
+    team-3195: Team
+  latestnews:
+    latestnews-4049: 'Latest News'
+  blockcontent:
+    blockcontent-4770: 'Block Content'
+  simplemenu:
+    simplemenu-3059: 'Simple Menu'
+  newsletter:
+    newsletter-7558: Newsletter
+  copyright:
+    copyright-7800: Copyright
+  particlesjs:
+    particlesjs-4754: Particles
+  mobile-menu:
+    mobile-menu-2139: 'Mobile Menu'
+inherit:
+  default:
+    navigation: navigation
+    logo-3734: logo-2704
+    menu-1617: menu-2872
+    button-4715: button-6662
+    footer: footer
+    simplemenu-3059: simplemenu-2324
+    newsletter-7558: newsletter-4035
+    copyright: copyright
+    copyright-7800: copyright-6444
+    particlesjs-4754: particlesjs-5901
+    offcanvas: offcanvas
+    mobile-menu-2139: mobile-menu-2576

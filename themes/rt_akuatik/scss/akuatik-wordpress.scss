@@ -1,0 +1,49 @@
+// REQUIRED DEPENDENCIES - DO NOT CHANGE
+@import "dependencies";
+
+// Load Third Party Libraries
+@import "vendor/bourbon/bourbon";
+
+// Load Nucleus Configuration
+@import "configuration/nucleus/base";
+
+// Load Nucleus Mixins and Functions
+@import "nucleus/functions/base";
+@import "nucleus/mixins/base";
+
+// Load Optional Nucleus Assets
+@import "nucleus/theme/alerts";
+
+// Load Theme Variable Driven Nucleus Elements
+@import "wordpress/theme/base";
+
+// Load Theme Configuration
+@import "configuration/base";
+
+//-------------------------------------------
+
+// Platform Specific Configuration
+@import "configuration-wordpress/base";
+
+// WORDPRESS THEME SPECIFIC
+@import "akuatik-wordpress/core";
+@import "akuatik-wordpress/typography";
+@import "akuatik-wordpress/forms";
+@import "akuatik-wordpress/pagination";
+@import "akuatik-wordpress/meta";
+@import "akuatik-wordpress/comments";
+@import "akuatik-wordpress/particles";
+@import "akuatik-wordpress/widgets";
+
+// THEME COMPONENTS
+@import "akuatik-wordpress/contactform";
+
+// SECTIONS
+@import "akuatik-wordpress/sections/main";
+
+//-------------------------------------------
+
+// ROCKETTHEME PLUGINS
+@import "akuatik-wordpress/rokajaxsearch";
+
+//-------------------------------------------

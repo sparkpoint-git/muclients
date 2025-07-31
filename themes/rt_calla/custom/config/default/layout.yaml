@@ -1,0 +1,272 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1550676708
+layout:
+  /top/:
+    -
+      - system-messages-9828
+  /slideshow/:
+    -
+      - 'verticalmenu-1694 20'
+      - 'simplecontent-2455 80'
+  /header/: {  }
+  /above/: {  }
+  /feature/: {  }
+  /showcase/: {  }
+  /utility/: {  }
+  /container-main/:
+    -
+      -
+        'sidebar 20':
+          -
+            - position-position-9414
+      -
+        'mainbar 60':
+          -
+            - position-position-8547
+          -
+            - system-content-1120
+      -
+        'aside 20':
+          -
+            - position-position-8807
+  /expanded/: {  }
+  /extension/: {  }
+  /bottom/: {  }
+  /footer/:
+    -
+      - 'simplemenu-6826 50'
+      - 'newsletter-1493 50'
+    -
+      - branding-2782
+  /copyright/: {  }
+  offcanvas:
+    -
+      - mobile-menu-7951
+structure:
+  top:
+    type: section
+    attributes:
+      boxed: ''
+      class: section-horizontal-paddings
+  slideshow:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+  header:
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  above:
+    type: section
+    attributes:
+      boxed: ''
+      class: section-horizontal-paddings
+  feature:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  showcase:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  utility:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  sidebar:
+    type: section
+    subtype: aside
+    attributes:
+      class: ''
+  mainbar:
+    type: section
+    subtype: main
+    title: Main
+    attributes:
+      class: section-horizontal-paddings
+  aside:
+    attributes:
+      class: ''
+  container-main:
+    attributes:
+      boxed: ''
+      class: ''
+      extra: {  }
+  expanded:
+    type: section
+    attributes:
+      boxed: ''
+      class: section-horizontal-paddings
+  extension:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  bottom:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  footer:
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  copyright:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  offcanvas:
+    attributes:
+      swipe: '0'
+content:
+  verticalmenu-1694:
+    title: 'Vertical Menu'
+    block:
+      class: 'box-black g-vnavigation-container'
+      variations: 'nomarginall nopaddingall'
+  simplecontent-2455:
+    title: 'Simple Content'
+    attributes:
+      class: ''
+      title: ''
+      items:
+        -
+          layout: header
+          created_date: ''
+          content_title: Calla
+          author: ''
+          leading_content: 'A standard assortment of features are available with Calla. The Gantry 5 Framework provides the foundation for the template''s feature set.'
+          main_content: ''
+          readmore_label: ''
+          readmore_link: ''
+          readmore_class: ''
+          readmore_target: _self
+          title: Calla
+  position-position-9414:
+    title: Sidebar
+    attributes:
+      key: sidebar
+  position-position-8547:
+    title: MainBar
+    attributes:
+      key: mainbar
+  position-position-8807:
+    title: Aside
+    attributes:
+      key: aside
+  simplemenu-6826:
+    title: 'Bottom Menu'
+    attributes:
+      title: ''
+      menus:
+        -
+          items:
+            -
+              icon: ''
+              link: '#'
+              target: _self
+              title: Overview
+            -
+              icon: ''
+              link: '#'
+              target: _self
+              title: Particles
+            -
+              icon: ''
+              link: '#'
+              target: _self
+              title: Typography
+            -
+              icon: ''
+              link: '#'
+              target: _self
+              title: 'Block Variations'
+            -
+              icon: ''
+              link: '#'
+              target: _self
+              title: Documentation
+          title: Features
+        -
+          items:
+            -
+              icon: ''
+              link: '#'
+              target: _self
+              title: 'About Us'
+            -
+              icon: ''
+              link: '#'
+              target: _self
+              title: Pricing
+            -
+              icon: ''
+              link: '#'
+              target: _self
+              title: Blog
+            -
+              icon: ''
+              link: '#'
+              target: _self
+              title: Portfolio
+            -
+              icon: ''
+              link: '#'
+              target: _self
+              title: Contact
+          title: Pages
+        -
+          items:
+            -
+              icon: ''
+              link: '#'
+              target: _self
+              title: Fullwidth
+            -
+              icon: ''
+              link: '#'
+              target: _self
+              title: 'Left Sidebar'
+            -
+              icon: ''
+              link: '#'
+              target: _self
+              title: 'Right Sidebar'
+            -
+              icon: ''
+              link: '#'
+              target: _self
+              title: 'Two Sidebars'
+            -
+              icon: ''
+              link: '#'
+              target: _self
+              title: 'Rows & Columns'
+          title: Layouts
+    block:
+      class: g-bottom-simplemenu
+  newsletter-1493:
+    attributes:
+      action: 'https://rockettheme.us18.list-manage.com/subscribe/post?u=b35dd217b76653582e6741a63&amp;id=80179a67c0'
+      layout: g-newsletter-stack-fullwidth
+      style: g-newsletter-square
+      title: Newsletter
+      headtext: 'Stay up to date. Sign up today.'
+      inputboxtext: 'Your email...'
+      buttontext: ''
+    block:
+      class: 'wiggle wiggle-static'
+      variations: box6
+  branding-2782:
+    attributes:
+      content: '&copy; 2018 by <a href="http://www.rockettheme.com/" title="RocketTheme" class="g-powered-by">RocketTheme</a>. All rights reserved.'
+    block:
+      variations: center

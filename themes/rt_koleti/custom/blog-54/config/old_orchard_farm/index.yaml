@@ -1,0 +1,73 @@
+name: old_orchard_farm
+timestamp: 1678990742
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1581187522
+positions: {  }
+sections:
+  top: Top
+  navigation: Navigation
+  slideshow: Slideshow
+  above: Above
+  feature: Feature
+  showcase: Showcase
+  utility: Utility
+  expanded: Expanded
+  extension: Extension
+  bottom: Bottom
+  copyright: Copyright
+  header: Header
+  sidebar: Sidebar
+  aside: Aside
+  mainbar: Main
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  infolist:
+    infolist-2061: 'Info List'
+  heading:
+    heading-4091: Heading
+  simplecontent:
+    simplecontent-1800: 'Simple Content'
+  messages:
+    system-messages-6685: 'System Messages'
+  logo:
+    logo-2625: 'Logo / Image'
+  menu:
+    menu-5087: Menu
+  widget:
+    position-widget-3401: Search
+  social:
+    social-5556: Social
+  blockcontent:
+    blockcontent-5731: 'Block Content'
+  copyright:
+    copyright-6185: Copyright
+  mobile-menu:
+    mobile-menu-9364: 'Mobile Menu'
+inherit:
+  default:
+    top: top
+    navigation: navigation
+    feature: feature
+    showcase: showcase
+    utility: utility
+    sidebar: sidebar
+    mainbar: mainbar
+    aside: aside
+    expanded: expanded
+    extension: extension
+    bottom: bottom
+    footer: footer
+    copyright: copyright
+    offcanvas: offcanvas
+    system-messages-6685: system-messages-9828
+    logo-2625: logo-9680
+    menu-5087: menu-5875
+    position-widget-3401: position-widget-6279
+    social-5556: social-3695
+    blockcontent-5731: blockcontent-5767
+    copyright-6185: copyright-6444
+    mobile-menu-9364: mobile-menu-2576

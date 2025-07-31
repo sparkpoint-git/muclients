@@ -1,0 +1,23 @@
+// Entry Meta
+#g-page-surround {
+    .entry-meta {
+        margin-top: 0;
+
+        > div[class^="meta-"] {
+            display: inline-block;
+            margin: 0;
+            padding-right: $content-padding;
+            color: $base_text_color;
+            font-size: $core-font-size + 0.2;
+            line-height: $core-line-height + 0.5;
+
+            @include breakpoint(tablet-range) {
+                font-size: $core-font-size + 0.1;
+            }
+
+            @include breakpoint(mobile-only) {
+                font-size: $core-font-size;
+            }
+        }
+    }
+}

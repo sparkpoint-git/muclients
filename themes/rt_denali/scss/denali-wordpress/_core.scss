@@ -1,0 +1,231 @@
+%g-button {
+    display: inline-block;
+    font-family: get-font-family($font-family-default);
+    font-weight: $font-weight-semibold;
+    color: darken($accent-color-1, 30%);
+    @include responsive-font($responsive-font-size, $core-font-size - 0.1, false, false);
+    background: $accent-color-1;
+    margin: 0 0 0.5rem 0;
+    border: 2px solid transparent;
+    padding: 0.4rem 2rem;
+    padding-bottom: 0.45rem;
+    border-radius: 2rem;
+    vertical-align: middle;
+    text-shadow: none;
+    @include transition(all 0.2s);
+
+    &:hover, &:active, &:focus {
+        background: transparent;
+        border-color: $accent-color-1;
+        color: $accent-color-1;
+    }
+}
+
+#g-page-surround {
+    // Global
+    .nav {
+        li {
+            margin-bottom: $content-margin;
+        }
+
+        .nav-header {
+            margin: $content-margin 0;
+            padding: ($content-padding / 2) $content-padding;
+            font-size: $core-font-size - 0.3;
+            font-weight: $font-weight-regular;
+            border-radius: $border-radius;
+            color: $base-text-color;
+            background: darken($white, 12%);
+        }
+
+        .nav-child {
+            margin-top: $content-margin;
+        }
+    }
+
+    // Page Header
+    .page-header {
+        margin: ($content-margin / 2) 0;
+        font-size: $core-font-size + 0.5;
+        font-weight: $font-weight-light;
+
+        h1 {
+            font-size: $core-font-size + 0.3;
+            text-transform: uppercase;
+            font-weight: $font-weight-regular;
+        }
+
+        h2 {
+            font-size: $core-font-size + 1.3;
+            font-weight: $font-weight-regular;
+            line-height: $core-font-size + 3.5;
+            margin-top: 2rem;
+            margin-bottom: $content-margin;
+            padding-bottom: $content-padding;
+
+            a {
+                color: $base-text-color;
+
+                &:hover {
+                    color: $accent-color-1;
+                }
+            }
+
+            @include breakpoint(desktop-range) {
+                font-size: $core-font-size + 1.25;
+            }
+
+            @include breakpoint(tablet-range) {
+                font-size: $core-font-size + 1;
+                line-height: $core-line-height + 0.1;
+            }
+
+            @include breakpoint(mobile-only) {
+                font-size: $core-font-size + 0.8;
+                line-height: $core-line-height + 0.2;
+            }
+        }
+    }
+
+    // Platform Content
+    .platform-content {
+        // Post Thumbnails
+        .post-thumbnail {
+            .float-left {
+                margin: 0 1.5rem 1.5rem 0;
+            }
+
+            .float-right {
+                margin: 0 0 1.5rem 1.5rem;
+            }
+        }
+
+        // Entries
+        .entries {
+            margin: 0 -$content-padding;
+
+            .g-block {
+                padding: 0 $content-padding;
+
+                // Sticky Posts
+                .tease {
+                    &.sticky {
+                        background-color: #f1f2f6;
+
+                        h2 {
+                            margin-top: 0;
+                        }
+                    }
+
+                    p {
+                        font-size: $core-font-size + 0.15;
+
+                        @include breakpoint(tablet-range) {
+                            font-size: $core-font-size + 0.1;
+                        }
+
+                        @include breakpoint(mobile-only) {
+                            font-size: $core-font-size;
+                        }
+                    }
+
+                    .g-lead {
+                        color: $base-text-color;
+                        font-size: $core-font-size + 0.5;
+                        padding-bottom: $content-padding * 2;
+
+                        @include breakpoint(tablet-range) {
+                            font-size: $core-font-size + 0.25;
+                        }
+
+                        @include breakpoint(mobile-only) {
+                            font-size: $core-font-size;
+                        }
+                    }
+                }
+
+                .button {
+                    @extend %g-button;
+                }
+            }
+        }
+
+        // Password Form
+        form.password-form {
+            .password-box {
+                margin: 10px 0;
+            }
+
+            .password-btn {
+                &.button {
+                    @extend %g-button;
+                }
+            }
+        }
+    }
+
+    // Search Form
+    .search-form {
+        .button {
+            @extend %g-button;
+
+            span {
+                margin-right: $content-margin;
+            }
+        }
+    }
+
+    // Pull Left & Pull Right
+    .pull-left, .pull-right {
+        max-width: 100%;
+    }
+
+    .item-image {
+        &.pull-left {
+            margin: 0 1.5rem 1.5rem 0;
+        }
+
+        &.pull-right {
+            margin: 0 0 1.5rem 1.5rem;
+        }
+    }
+
+    .dir-rtl {
+        .pull-left {
+            float: right;
+        }
+        .pull-right {
+            float: left;
+        }
+    }
+
+    // Unstyled
+    .unstyled {
+        margin: 0;
+        display: inline-block;
+        border: 1px solid $rule-color;
+        padding: $content-padding ($content-padding * 2);
+        border-radius: $border-radius + 2;
+        li {
+            list-style-type: none;
+            margin-left: 0;
+            padding-bottom: $content-padding;
+            margin-bottom: $content-margin;
+            border-bottom: 1px solid $rule-color;
+            &:last-child {
+                border-bottom: 0;
+                padding-bottom: 0;
+                margin-bottom: 0;
+            }
+            a {
+                display: inline-block;
+                &:before {
+                    color: $accent-color-1;
+                    font-family: FontAwesome;
+                    content: "\f178";
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+    }
+}

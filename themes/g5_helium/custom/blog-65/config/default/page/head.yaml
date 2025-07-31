@@ -1,0 +1,24 @@
+meta: {  }
+head_bottom: '<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant Garamond">'
+atoms:
+  -
+    id: analytics-7972
+    type: analytics
+    title: 'Google Analytics'
+    attributes:
+      enabled: '1'
+      ua:
+        code: UA-166260787-3
+        anonym: '0'
+        ssl: '0'
+        debug: '0'
+  -
+    id: assets-6122
+    type: assets
+    title: 'Custom CSS / JS'
+    attributes:
+      enabled: '1'
+      css:
+        - { location: 'gantry-assets://base.css', inline: '', extra: {  }, priority: '0', name: base }
+      javascript:
+        - { location: '', inline: "<script>\nwindow.onscroll = function() {myFunction()};\n\nvar header = document.getElementById(\"mobile-head\");\nvar sticky = header.offsetTop;\n\nfunction myFunction() {\n  if (window.pageYOffset > sticky) {\n    header.classList.add(\"sticky\");\n  } else {\n    header.classList.remove(\"sticky\");\n  }\n}\n</script>\n", in_footer: '0', extra: {  }, priority: '0', name: sitcky-header }

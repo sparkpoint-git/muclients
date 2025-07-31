@@ -1,0 +1,339 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1531417158
+layout:
+  /top/:
+    -
+      - system-messages-9828
+  /slideshow/: {  }
+  /header/:
+    -
+      - 'promo-7463 65'
+      - 'logo-4216 35'
+  /above/:
+    -
+      - blockcontent-8457
+  /feature/:
+    -
+      - slideshow-9932
+    -
+      - blockcontent-2275
+  /showcase/:
+    -
+      - casestudies-3127
+  /utility/: {  }
+  /container-main/:
+    -
+      -
+        'sidebar 20': {  }
+      -
+        'mainbar 60':
+          -
+            - system-content-1120
+      -
+        'aside 20': {  }
+  /expanded/: {  }
+  /extension/: {  }
+  /bottom/:
+    -
+      - promo-3037
+  /footer/:
+    -
+      - copyright-2327
+  /copyright/: {  }
+  offcanvas:
+    -
+      - mobile-menu-7951
+structure:
+  top:
+    type: section
+    attributes:
+      boxed: ''
+      class: section-horizontal-paddings
+  slideshow:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+  header:
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  above:
+    type: section
+    attributes:
+      boxed: ''
+      class: section-horizontal-paddings
+  feature:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  showcase:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  utility:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  sidebar:
+    type: section
+    subtype: aside
+    attributes:
+      class: ''
+  mainbar:
+    type: section
+    subtype: main
+    title: Main
+    attributes:
+      class: section-horizontal-paddings
+  aside:
+    attributes:
+      class: ''
+  container-main:
+    attributes:
+      boxed: ''
+      class: ''
+      extra: {  }
+  expanded:
+    type: section
+    attributes:
+      boxed: ''
+      class: section-horizontal-paddings
+  extension:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  bottom:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  footer:
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  copyright:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  offcanvas:
+    attributes:
+      swipe: '0'
+content:
+  promo-7463:
+    attributes:
+      title: 'Like a breath of fresh air in senior 55+ living. It’s convenient, beautiful, active, and affordable'
+      bgtitle: 'The Oaks'
+    block:
+      class: hidden-phone
+  logo-4216:
+    title: 'Logo / Image'
+    attributes:
+      image: 'gantry-media://2018/09/oaks-logo-a.png'
+  blockcontent-8457:
+    title: 'Block Content'
+    attributes:
+      class: ''
+      title: ''
+      icon: ''
+      image: ''
+      headline: ''
+      description: ''
+      linktext: ''
+      link: ''
+      linkclass: ''
+      linktarget: _self
+      subcontents:
+        -
+          accent: accent2
+          icon: ''
+          img: 'gantry-media://2018/10/oldtown.jpg'
+          rokboximage: ''
+          rokboxcaption: ''
+          subtitle: ''
+          description: 'Just about a mile away is Historic Old Town Warrenton, where you can explore local heritage at one of the many antique shops, relax at one of the many fine restaurants, or take a tour of one of the town''s many historic landmarks.'
+          class: ''
+          button: ''
+          buttonlink: ''
+          buttonclass: ''
+          buttontarget: _self
+          name: Active
+        -
+          accent: accent3
+          icon: ''
+          img: 'gantry-media://2018/10/htbt.jpg'
+          rokboximage: ''
+          rokboxcaption: ''
+          subtitle: ''
+          description: 'Harris Teeter is just across the street, along with a Giant Food Store, Safeway, and many other shops. A variety of fine restaurants and services are conveniently close by on Route 29.'
+          class: ''
+          button: ''
+          buttonlink: ''
+          buttonclass: ''
+          buttontarget: _self
+          name: Convenient
+        -
+          accent: accent2
+          icon: ''
+          img: 'gantry-media://2018/10/oaks1.jpg'
+          rokboximage: ''
+          rokboxcaption: ''
+          subtitle: ''
+          description: 'Just off Route 29 in beautiful Warrenton, Virginia, The Oaks puts you in the heart of one of the area''s smallest towns, and within walking distance of three large shopping centers.'
+          class: ''
+          button: ''
+          buttonlink: ''
+          buttonclass: ''
+          buttontarget: _self
+          name: Affordable
+  slideshow-9932:
+    attributes:
+      enabled: 0
+      source: particle
+      demo: disabled
+      autoplay: disabled
+      autoplayTimeout: '5000'
+      speed: '250'
+      dots: disabled
+      thumbs: enabled
+      items:
+        -
+          image: 'gantry-media://oakswinter-here-lg.jpg'
+          image_small: 'gantry-media://oakswinter-here.jpg'
+          title_small: ''
+          alt: ''
+          link: ''
+          linktarget: _self
+          title: 'Welcome Winter from The Oaks'
+      post:
+        filter:
+          categories: ''
+          posts: ''
+          sticky: ''
+        limit:
+          total: '5'
+          start: '0'
+        sort:
+          orderby: date
+          ordering: DESC
+        display:
+          title:
+            enabled: show
+            limit: ''
+          link:
+            enabled: show
+            target: _self
+  blockcontent-2275:
+    title: 'Floor Plans'
+    attributes:
+      class: floorplan
+      title: ''
+      icon: ''
+      image: ''
+      headline: 'Floor Plans'
+      description: 'We have activities, and social events planned for the residents. However, we do not provide any medical assistance.'
+      linktext: ''
+      link: ''
+      linkclass: ''
+      linktarget: _self
+      subcontents:
+        -
+          accent: none
+          icon: ''
+          img: 'gantry-media://2018/10/single.jpg'
+          rokboximage: ''
+          rokboxcaption: ''
+          subtitle: '$899.00 per month'
+          description: 'A single applicant’s gross annual income must fall between $20,000 and  $51,000.00 to qualify.'
+          class: ''
+          button: ''
+          buttonlink: ''
+          buttonclass: ''
+          buttontarget: _self
+          name: 'One Bedroom'
+        -
+          accent: none
+          icon: ''
+          img: 'gantry-media://2018/10/double.jpg'
+          rokboximage: ''
+          rokboxcaption: ''
+          subtitle: '$1,149.00 per month'
+          description: 'A two person household’s income must fall between $23,000 and $58,260.00 to qualify.'
+          class: ''
+          button: ''
+          buttonlink: ''
+          buttonclass: ''
+          buttontarget: _self
+          name: 'Two Bedroom'
+  casestudies-3127:
+    title: 'Amenities and Activities'
+    attributes:
+      source: wordpress
+      demo: disabled
+      class: ''
+      title: 'Welcome to the Oaks'
+      uppertitle: 'Warrneton''s Finest 55+ Community'
+      allitems: 'Life at The Oaks'
+      cols: cols-3
+      cases:
+        -
+          items:
+            -
+              layout: alt-top
+              accent: accent-color-2
+              image: 'gantry-media://2018/09/library.jpg'
+              subtitle: ''
+              description: '<ul><li>Remote Entry Access<br></li><li>Planned Activities<br></li><li>Large Community Centers<br></li><li>24-hour Emergency Maintenance<br></li><li>Elevators<br></li><li>On-site Beauty Salon<br></li><li>Library with computer access<br></li><li>On-site Management</li></ul>'
+              url: ''
+              title: 'Properties Amenities'
+          title: Amenities
+      post:
+        filter:
+          categories: '6 4 7'
+          posts: ''
+          sticky: show
+        limit:
+          total: '12'
+          start: '0'
+        sort:
+          orderby: modified
+          ordering: DESC
+        display:
+          image:
+            enabled: show
+          text:
+            type: content
+            limit: ''
+            formatting: html
+          title:
+            enabled: show
+            limit: ''
+          date:
+            enabled: ''
+            format: l
+          read_more:
+            enabled: ''
+            label: ''
+            target: _self
+            css: ''
+  system-content-1120:
+    block:
+      variations: 'center box6'
+  promo-3037:
+    attributes:
+      title: 'The Oaks is pleased to accept HUD section 8 and other housing rental vouchers'
+    block:
+      variations: center
+  copyright-2327:
+    attributes:
+      date:
+        end: now
+      owner: 'The Oaks of Warrenton'

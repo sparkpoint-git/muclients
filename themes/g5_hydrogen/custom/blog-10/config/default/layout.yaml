@@ -1,0 +1,55 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1537195582
+layout:
+  /header/:
+    -
+      - 'logo-9636 30'
+      - 'custom-2856 70'
+  /navigation/:
+    -
+      - menu-8432
+  /main/:
+    -
+      - position-breadcrumbs
+    -
+      - system-messages-6151
+    -
+      - system-content-9138
+  /footer/:
+    -
+      - position-footer
+    -
+      - 'copyright-2309 40'
+      - 'spacer-5832 30'
+      - 'branding-8853 30'
+  offcanvas:
+    -
+      - mobile-menu-7316
+structure:
+  header:
+    attributes:
+      boxed: ''
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+  main:
+    attributes:
+      boxed: ''
+  footer:
+    attributes:
+      boxed: ''
+content:
+  custom-2856:
+    title: 'Custom HTML'
+    attributes:
+      html: "<h1>Warrenton Ruritan Club</h1>\n<h3>Fauquier, County</h3>"
+  position-breadcrumbs:
+    attributes:
+      key: breadcrumbs
+  position-footer:
+    attributes:
+      key: footer

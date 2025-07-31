@@ -1,0 +1,24 @@
+#g-header {margin-top: 0!important;}
+.g-owlcarousel-item-title {margin-top: 25vw!important; width: 110vw; padding: 3vh; background:#0e72b2;}
+
+#g-intro .g-blockcontent-header {background-color: #0e72b2; color: #ffffff;}
+#g-intro .g-title {font-size: 2.25rem; margin: 0px; padding: 0 2vw;}
+#g-intro .g-blockcontent-headline {margin-left: 2vw;}
+#g-intro .g-blockcontent-description {padding: 0 6vw; line-height: 1.5rem;}
+#g-intro .g-blockcontent-description h4 {padding: 3vw;}
+
+#g-intro div.g-blockcontent-subcontent-block-content {display: flex; flex-direction: column;}
+#g-intro div.g-blockcontent-subcontent-block-content img {width: 77%; order:3; padding: 2vw;}
+#g-intro div.g-blockcontent-subcontent-desc {order: 2; line-height: 1.5; padding: 0 1vw;}
+#g-intro h4.g-blockcontent-subcontent-title {order: 1; font-size: 2vw;}
+
+@media only all and (max-width: 48rem) {
+	.g-owlcarousel-item-title {width: 65vh; padding: 1vw 2vw; font-size: 1.25rem;}
+	#g-intro .g-title {font-size: 1.25rem; margin: 0px; padding:2vw; text-align:center;}
+	#g-intro .g-blockcontent-headline {text-align:left; font-weight:bold; padding:3vw 10vw; line-height:1.6rem;}
+	#g-intro .g-blockcontent-description h4 {padding: 4vw; font-weight:bold;}
+	#g-intro h4.g-blockcontent-subcontent-title {font-size: 1.5rem; text-align:center; margin-top:4vh; margin-bottom:0px;}
+	#g-intro div.g-blockcontent-subcontent-block-content img {width: 100%;}
+	div#services h2.g-title {font-size:1.5rem; text-align:center; margin-top:4vw; margin-bottom:0;}
+	div#services .g-simplecontent-item-leading-content {line-height:1.5rem; padding:4vw;}
+}

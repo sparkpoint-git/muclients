@@ -1,0 +1,66 @@
+name: home
+timestamp: 1660692563
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: home_-_particles
+  timestamp: 1584382114
+positions: {  }
+sections:
+  navigation: Navigation
+  intro: Intro
+  features: Features
+  utility: Utility
+  above: Above
+  testimonials: Testimonials
+  expanded: Expanded
+  header: Header
+  mainbar: Mainbar
+  sidebar: Sidebar
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  owlcarousel:
+    owlcarousel-2455: 'Owl Carousel'
+  blockcontent:
+    blockcontent-7519: 'Main Introduction'
+  simplecontent:
+    simplecontent-4967: Services
+    simplecontent-3103: 'Meeting the Needs'
+    simplecontent-1286: 'Durable Medical Equipment'
+    simplecontent-3252: Donations
+    simplecontent-1829: Eligibility
+  logo:
+    logo-1064: 'Logo / Image'
+    logo-6464: 'Logo / Image'
+    logo-4473: 'Logo / Image'
+  pricingtable:
+    pricingtable-4606: 'Medical Equipment Loan Closet'
+  custom:
+    custom-3048: 'Custom HTML'
+    custom-9094: 'Contact Info'
+    custom-7435: 'Custom HTML'
+  social:
+    social-6083: Social
+    social-1830: Social
+  menu:
+    menu-6115: Menu
+  copyright:
+    copyright-6541: Copyright
+  mobile-menu:
+    mobile-menu-3430: Mobile-menu
+inherit:
+  default:
+    navigation: navigation
+    footer: footer
+    offcanvas: offcanvas
+    logo-6464: logo-5617
+    custom-3048: custom-6396
+    social-6083: social-3598
+    logo-4473: logo-9608
+    custom-9094: custom-9132
+    social-1830: social-9905
+    menu-6115: menu-6409
+    copyright-6541: copyright-1736
+    custom-7435: custom-6453
+    mobile-menu-3430: mobile-menu-5697

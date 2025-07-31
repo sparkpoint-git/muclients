@@ -1,0 +1,331 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: home_-_particles
+  timestamp: 1584382114
+layout:
+  navigation: {  }
+  /header/:
+    -
+      - custom-5807
+  /intro/:
+    -
+      - blockcontent-1712
+    -
+      - contentarray-2279
+  /features/:
+    -
+      - 'pricingtable-5535 33.3'
+      - 'pricingtable-7800 33.3'
+      - 'pricingtable-5780 33.3'
+  /utility/:
+    -
+      - contenttabs-3854
+  /above/: {  }
+  /testimonials/: {  }
+  /expanded/: {  }
+  /container-main/:
+    -
+      -
+        'mainbar 75': {  }
+      -
+        'sidebar 25': {  }
+  footer: {  }
+  offcanvas: {  }
+structure:
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  header:
+    attributes:
+      boxed: ''
+      class: g-flushed
+  intro:
+    type: section
+    attributes:
+      boxed: ''
+  features:
+    type: section
+    attributes:
+      boxed: ''
+  utility:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+  above:
+    type: section
+    attributes:
+      boxed: ''
+  testimonials:
+    type: section
+    attributes:
+      boxed: ''
+  expanded:
+    type: section
+    attributes:
+      boxed: ''
+  mainbar:
+    type: section
+    subtype: main
+  sidebar:
+    type: section
+    subtype: aside
+  container-main:
+    attributes:
+      boxed: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  offcanvas:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+content:
+  custom-5807:
+    title: Intro
+    attributes:
+      html: "<h1>Nutrient Dense Kitchen 101</h1>\n<h2>Sourcing <span class=\"fas fa-lemon\"></span><i class=\"fas fa-leaf\"></i> Cooking Techniques <span class=\"fas fa-lemon\"></span><i class=\"fas fa-leaf\"></i> Cookware</h2>"
+    block:
+      id: intro
+      variations: center
+  blockcontent-1712:
+    title: 'Nutrient Dense Kitchen'
+    attributes:
+      enabled: 0
+      class: ''
+      title: 'The Nutrient Dense Kitchen 101'
+      icon: ''
+      image: ''
+      headline: 'Hey there food family!  I’m thrilled to debut a new feature on my website'
+      description: "<p>Here I will share recipes that are staples for my family and that I’m sure you will love too.  We will use these recipes to dive into three major elements of healthful eating: <br>1) quality food and where to source it <br>2) basic cooking techniques<br>3) cookware choices.</p>\n<p>To kick off this new feature we are going to make a classic chicken dinner featuring a recipe from the <a href=\"https://www.tasteloveandnourish.com/rotisserie-inspired-roasted-chicken/\" target=\"_blank\">Rotisserie chicken from Taste, Love, and Nourish</a> blog. This post will cover sourcing quality chicken, veggies, roasting, steaming, and some benefits of cast iron cookware.</p>"
+      linktext: ''
+      link: ''
+      linkclass: ''
+      linktarget: _self
+      subcontents:
+        -
+          accent: none
+          icon: ''
+          img: 'gantry-media://honeybrook-chicken.jpg'
+          rokboximage: ''
+          rokboxcaption: ''
+          subtitle: ''
+          description: 'Let’s start by diving into food quality and sourcing.  For us (a family of 5 with two parents who work full time plus side gigs) not every component of every meal can be picture perfect - but we try to build meals around protein that we know we can source locally and affordably.  After protein, we prioritize the sourcing of our vegetables.'
+          class: ''
+          button: ''
+          buttonlink: ''
+          buttonclass: ''
+          buttontarget: _self
+          name: 'Food Quality and Sourcing'
+        -
+          accent: none
+          icon: ''
+          img: 'gantry-media://roast-chicken.png'
+          rokboximage: ''
+          rokboxcaption: ''
+          subtitle: ''
+          description: ''
+          class: ''
+          button: ''
+          buttonlink: ''
+          buttonclass: ''
+          buttontarget: _self
+          name: Cookware
+  contentarray-2279:
+    title: 'WordPress Posts'
+    attributes:
+      post:
+        filter:
+          categories: ''
+          posts: '83'
+          sticky: ''
+        limit:
+          total: '1'
+          columns: '1'
+          start: '0'
+        display:
+          pagination_buttons: ''
+          date:
+            enabled: ''
+          read_more:
+            enabled: ''
+          author:
+            enabled: ''
+          category:
+            enabled: ''
+          comments:
+            enabled: ''
+          text:
+            type: content
+            formatting: html
+        sort:
+          orderby: date
+          ordering: DESC
+  pricingtable-5535:
+    title: ChickenTable
+    attributes:
+      enabled: 0
+      class: ''
+      title: Chicken
+      headertext: ''
+      footertext: ''
+      columns: g-pricingtable-3-col
+      tables:
+        -
+          class: ''
+          highlight: disabled
+          ribbon: ''
+          icon: ''
+          price: $4
+          period: ''
+          desc: Industrial
+          buttontext: ''
+          buttonlink: ''
+          buttontarget: _self
+          buttonclass: ''
+          plan: Good
+        -
+          class: ''
+          highlight: disabled
+          ribbon: ''
+          icon: ''
+          price: $13
+          period: ''
+          desc: 'Wegmans Organic'
+          buttontext: ''
+          buttonlink: ''
+          buttontarget: _self
+          buttonclass: ''
+          plan: Better
+        -
+          class: ''
+          highlight: enabled
+          ribbon: ''
+          icon: ''
+          price: $22
+          period: ''
+          desc: 'Honeybrook Farms'
+          buttontext: ''
+          buttonlink: ''
+          buttontarget: _self
+          buttonclass: ''
+          plan: Best
+  pricingtable-7800:
+    title: PotatosTable
+    attributes:
+      enabled: 0
+      class: ''
+      title: Potatoes
+      headertext: ''
+      footertext: ''
+      columns: g-pricingtable-3-col
+      tables:
+        -
+          class: ''
+          highlight: disabled
+          ribbon: ''
+          icon: ''
+          price: $3.99
+          period: ''
+          desc: 'Baby Gold Potatoes, more expensive per oz. than organic.'
+          buttontext: ''
+          buttonlink: ''
+          buttontarget: _self
+          buttonclass: ''
+          plan: Good
+        -
+          class: ''
+          highlight: disabled
+          ribbon: ''
+          icon: ''
+          price: $3.99
+          period: ''
+          desc: 'Wegmans Organic Sweet Potatoes'
+          buttontext: ''
+          buttonlink: ''
+          buttontarget: _self
+          buttonclass: ''
+          plan: Better
+        -
+          class: ''
+          highlight: enabled
+          ribbon: ''
+          icon: ''
+          price: '$0.99 per lb.'
+          period: ''
+          desc: 'Local, Farm Organic Potatoes.'
+          buttontext: ''
+          buttonlink: ''
+          buttontarget: _self
+          buttonclass: ''
+          plan: Best
+  pricingtable-5780:
+    title: 'Veg Table'
+    attributes:
+      enabled: 0
+      class: ''
+      title: 'Veggie Side Dish'
+      headertext: ''
+      footertext: ''
+      columns: g-pricingtable-1-col
+      tables:
+        -
+          class: ''
+          highlight: disabled
+          ribbon: ''
+          icon: ''
+          price: $1.69
+          period: ''
+          desc: 'Frozen Broccoli'
+          buttontext: ''
+          buttonlink: ''
+          buttontarget: _self
+          buttonclass: ''
+          plan: Good
+        -
+          class: ''
+          highlight: disabled
+          ribbon: ''
+          icon: ''
+          price: $2.29
+          period: ''
+          desc: 'Organic Frozen Broccoli '
+          buttontext: ''
+          buttonlink: ''
+          buttontarget: _self
+          buttonclass: ''
+          plan: Better
+        -
+          class: ''
+          highlight: enabled
+          ribbon: ''
+          icon: ''
+          price: '$0.99 per lb'
+          period: ''
+          desc: 'Local grown, organic and seasonal. Price varies, but seasonal often cheaper than anything at the store'
+          buttontext: ''
+          buttonlink: ''
+          buttontarget: _self
+          buttonclass: ''
+          plan: Best
+  contenttabs-3854:
+    title: 'Content Tabs'
+    attributes:
+      enabled: 0
+      items:
+        -
+          content: "<p>Hamburger venison bresaola, prosciutto porchetta sirloin shankle jowl. Pig pork loin pork chuck short ribs. Pig tenderloin beef ribs, ribeye turkey bacon venison spare ribs. Drumstick fatback sausage meatball, shankle pork tongue brisket shoulder.</p>\n<div class=\"g-grid size-100\">\n    <div class=\"g-block size-50\">\n        <ul>\n            <li>\n                Short loin pastrami chuck\n            </li>\n            <li>\n                Ham hock turkey tongue ham cupim\n            </li>\n            <li>\n                T-bone shank beef ribs\n            </li>\n            <li>\n                Ribeye meatball leberkas beef\n            </li>\n            <li>\n                Sausage cow pork belly venison\n            </li>\n            <li>\n                Brisket ribeye kielbasa\n            </li>\n        </ul>\n    </div>\n    <div class=\"g-block size-50\">\n        <ul>\n            <li>\n                Short loin pastrami chuck\n            </li>\n            <li>\n                Ham hock turkey tongue ham cupim\n            </li>\n            <li>\n                T-bone shank beef ribs\n            </li>\n            <li>\n                Ribeye meatball leberkas beef\n            </li>\n            <li>\n                Sausage cow pork belly venison\n            </li>\n            <li>\n                Brisket ribeye kielbasa\n            </li>\n        </ul>\n    </div>\n</div>\n<div class=\"g-grid\">\n    <div class=\"g-block size-100\">\n        Ham rump sausage pork chop jerky tenderloin <a href=\"#\">documentation</a>.\n    </div>\n</div>"
+          title: 'Menu Planning'
+        -
+          content: "<p>Hamburger venison bresaola, prosciutto porchetta sirloin shankle jowl. Pig pork loin pork chuck short ribs. Pig tenderloin beef ribs, ribeye turkey bacon venison spare ribs. Drumstick fatback sausage meatball, shankle pork tongue brisket shoulder.</p>\n<div class=\"g-grid size-100\">\n    <div class=\"g-block size-50\">\n        <ul>\n            <li>\n                Short loin pastrami chuck\n            </li>\n            <li>\n                Ham hock turkey tongue ham cupim\n            </li>\n            <li>\n                T-bone shank beef ribs\n            </li>\n            <li>\n                Ribeye meatball leberkas beef\n            </li>\n            <li>\n                Sausage cow pork belly venison\n            </li>\n            <li>\n                Brisket ribeye kielbasa\n            </li>\n        </ul>\n    </div>\n    <div class=\"g-block size-50\">\n        <ul>\n            <li>\n                Short loin pastrami chuck\n            </li>\n            <li>\n                Ham hock turkey tongue ham cupim\n            </li>\n            <li>\n                T-bone shank beef ribs\n            </li>\n            <li>\n                Ribeye meatball leberkas beef\n            </li>\n            <li>\n                Sausage cow pork belly venison\n            </li>\n            <li>\n                Brisket ribeye kielbasa\n            </li>\n        </ul>\n    </div>\n</div>\n<div class=\"g-grid\">\n    <div class=\"g-block size-100\">\n        Ham rump sausage pork chop jerky tenderloin <a href=\"#\">documentation</a>.\n    </div>\n</div>"
+          title: 'Nutrient Dense Kitchen'

@@ -1,0 +1,59 @@
+name: about_us
+timestamp: 1733112180
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1522840415
+positions: {  }
+sections:
+  top: Top
+  navigation: Navigation
+  slideshow: Slideshow
+  above: Above
+  showcase: Showcase
+  utility: Utility
+  feature: Feature
+  expanded: Expanded
+  extension: Extension
+  bottom: Bottom
+  copyright: Copyright
+  header: Header
+  sidebar: Sidebar
+  aside: Aside
+  mainbar: Main
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  infolist:
+    infolist-4199: 'Our Staff'
+  content:
+    system-content-1482: 'Page Content'
+  custom:
+    custom-2032: 'Board of Directors'
+    custom-8707: 'Custom HTML'
+  mobile-menu:
+    mobile-menu-7951: Mobile-menu
+  logo:
+    logo-7435: Logo
+  menu:
+    menu-7320: Menu
+  simplemenu:
+    simplemenu-2387: 'Bottom Menu'
+  simplecontent:
+    simplecontent-3407: 'Contact Us'
+  copyright:
+    copyright-8146: Copyright
+  branding:
+    branding-5966: Branding
+inherit:
+  default:
+    navigation: navigation
+    footer: footer
+    copyright: copyright
+    logo-7435: logo-5992
+    menu-7320: menu-2350
+    simplemenu-2387: simplemenu-6826
+    simplecontent-3407: simplecontent-4123
+    copyright-8146: copyright-7658
+    branding-5966: branding-2782

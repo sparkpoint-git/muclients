@@ -1,0 +1,10 @@
+enabled: '1'
+post:
+  filter:
+    sticky: ''
+  limit:
+    total: '5'
+    start: '0'
+  sort:
+    orderby: date
+    ordering: DESC

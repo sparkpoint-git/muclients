@@ -1,0 +1,4 @@
+preset: preset1
+testimonials:
+  background-image: 'gantry-media://utility-bk.jpg'
+  background-overlay: disabled

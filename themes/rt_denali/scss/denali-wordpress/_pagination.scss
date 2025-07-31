@@ -1,0 +1,60 @@
+// Pagination
+.pagination, .page-links {
+    ul.pagination-list {
+        //font-size: 0;
+
+        @include breakpoint(mobile-only) {
+            box-shadow: none;
+        }
+
+        > li {
+            font-weight: $font-weight-medium;
+
+            @include breakpoint(mobile-only) {
+                &:not(.pagination-prev):not(.pagination-next) {
+                    display: none;
+                }
+            }
+
+            > a {
+                padding: 10px 15px;
+                color: $main-text-color;
+                background: $main-background;
+                border: 1px solid transparentize($base-background, 90%);
+
+                &:hover {
+                    background: transparent;
+                    color: $accent-color-1 !important;
+                    border-color: $border-color-light;
+                }
+
+                border-radius: 0 !important;
+            }
+
+            > span {
+                padding: 10px 15px;
+                background: $accent-color-1;
+                border: 1px solid transparentize($base-background, 90%);
+                color: $main-background;
+                border-radius: 0 !important;
+
+                &.dots {
+                    background: $main-background;
+                    color: $main-text-color;
+                }
+            }
+        }
+
+        &.pagination-next, &.pagination-prev {
+            span {
+                opacity: 0.3;
+                background: transparentize($base-background, 80%);
+                color: $base-text-color;
+            }
+        }
+    }
+
+    p.counter {
+        margin: 0;
+    }
+}

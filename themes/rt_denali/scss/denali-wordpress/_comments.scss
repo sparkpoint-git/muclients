@@ -1,0 +1,232 @@
+#comments {
+    margin-top: $content-margin;
+    padding-top: $content-padding;
+
+    // Comments List
+    ol.commentlist {
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+
+        // Single Comment
+        li.comment {
+            margin-top: 1.5vw;
+
+            .comment-body {
+                position: relative;
+                padding-right: 20px;
+                @include responsive-font($comments-font-size - 0.1, $core-font-size, false, false);
+                font-weight: $font-weight-regular;
+
+                .comment-reply {
+                    margin-left: $avatar-size + 20;
+                    font-weight: $font-weight-medium;
+                    @include responsive-font($comments-font-size - 0.3, $core-font-size - 0.125, false, false);
+
+                    a {
+                        color: $accent-color-1;
+
+                        &:hover {
+                            color: $base-text-color;
+                        }
+                    }
+                }
+            }
+
+            .comment-author {
+                padding: 15px 0 0;
+                height: auto;
+                line-height: normal;
+
+                .author-avatar {
+                    @include flex(0 $avatar-size);
+                    width: $avatar-size;
+                    height: $avatar-size;
+                    margin-right: 20px;
+
+                    .avatar {
+                        border-radius: 50%;
+                    }
+                }
+
+                .author-meta {
+                    .author-name {
+                        display: block;
+                        @include responsive-font($responsive-font-size - 0.1, $core-font-size + 0.15, false, false);
+                        font-weight: $font-weight-bold;
+                        color: $black;
+
+                        a {
+                            color: $black;
+
+                            &:hover {
+                                color: $accent-color-1;
+                            }
+                        }
+                    }
+
+                    time {
+                        @include responsive-font($responsive-font-size - 0.25, $core-font-size - 0.125, false, false);
+
+                        a {
+                            color: $grey;
+
+                            &:hover {
+                                color: $accent-color-1;
+                            }
+                        }
+
+                        @include breakpoint(mobile-only) {
+                            display: inline;
+                        }
+                    }
+                }
+            }
+
+            &.bypostauthor {
+                > .comment-body {
+                    > .comment-author {
+                        .author-name {
+                            color: $accent-color-1;
+
+                            a {
+                                color: $accent-color-1;
+
+                                &:hover {
+                                    color: $base-text-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .comment-content {
+                overflow: hidden;
+                margin-left: $avatar-size + 20;
+                padding: 15px 15px 15px 0;
+                @include responsive-font($comments-font-size - 0.15, $core-font-size, false, false);
+
+                p {
+                    @include responsive-font($comments-font-size - 0.15, $core-font-size, false, false);
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    // Responses
+    #responses {
+        .responses-header {
+            h3 {
+                padding: 0;
+            }
+        }
+
+        > ol.commentlist {
+            > li.comment:first-child {
+                margin-top: 0;
+            }
+        }
+
+        // Respond for child comment
+        #respond {
+            margin-left: 15px;
+        }
+    }
+
+    // Comments Pagination
+    #comments-nav {
+        margin-left: 5px;
+
+        @include breakpoint(mobile-only) {
+            margin-top: 2rem;
+        }
+
+        .comments-previous, .comments-next {
+            .button {
+                @extend %g-button;
+
+                span {
+                    vertical-align: middle;
+                    @include responsive-font($responsive-font-size, $core-font-size + 0.15, false, false);
+                }
+
+                .fa {
+                    vertical-align: middle;
+                    @include responsive-font($responsive-font-size - 0.1, $core-font-size - 0.1, false, false);
+                }
+
+                @include breakpoint(mobile-only) {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+
+        .comments-previous {
+            @include breakpoint(mobile-only) {
+                margin-right: 5px;
+
+                .dir-rtl & {
+                    margin-left: 5px;
+                }
+            }
+
+            .button {
+                padding-left: 0.75rem;
+            }
+        }
+
+        .comments-next {
+            .button {
+                padding-right: 0.75rem;
+            }
+        }
+    }
+
+    // Comments Reply Form
+    #respond {
+        .respond-header {
+            margin-top: $content-margin;
+            padding-top: $content-padding;
+
+            h3 {
+                padding: 0;
+            }
+        }
+
+        input {
+            padding-left: 15px;
+            border: 0 none;
+            border: 2px solid $base-border-color;
+            background: $white;
+            border-radius: 4px;
+
+            &:focus {
+                box-shadow: none;
+                border-color: $accent-color-1;
+            }
+        }
+
+        textarea {
+            padding: 15px;
+            border: 0 none;
+            border: 2px solid $base-border-color;
+            background: $white;
+            border-radius: 4px;
+
+            &:focus {
+                box-shadow: none;
+                border-color: $accent-color-1;
+            }
+        }
+
+        .button {
+            @extend %g-button;
+            @include responsive-font($responsive-font-size, $core-font-size + 0.15, false, false);
+            border: none;
+        }
+    }
+}

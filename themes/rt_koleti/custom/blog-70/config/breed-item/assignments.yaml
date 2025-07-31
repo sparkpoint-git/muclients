@@ -1,0 +1,9 @@
+context: {  }
+menu: {  }
+language: {  }
+post:
+  breed:
+    is_singular: true
+    is_archive: true
+taxonomy: {  }
+archive: {  }

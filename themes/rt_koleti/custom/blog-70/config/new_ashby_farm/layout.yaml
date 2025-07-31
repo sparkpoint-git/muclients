@@ -1,0 +1,223 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1581187522
+layout:
+  top: {  }
+  navigation: {  }
+  /slideshow/: {  }
+  /header/:
+    -
+      - 'infolist-2061 35'
+      - 'heading-4091 65'
+  /above/:
+    -
+      - 'simplecontent-1800 50'
+      - 'logo-1285 50'
+  feature: {  }
+  showcase: {  }
+  utility: {  }
+  /container-main/:
+    -
+      -
+        'sidebar 20': {  }
+      -
+        'mainbar 60': {  }
+      -
+        'aside 20': {  }
+  expanded: {  }
+  extension: {  }
+  bottom: {  }
+  /footer/: {  }
+  copyright: {  }
+  offcanvas: {  }
+structure:
+  top:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  slideshow:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+      variations: section-horizontal-paddings
+  header:
+    attributes:
+      boxed: ''
+      class: ''
+      variations: 'section-vertical-paddings section-horizontal-paddings'
+  above:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+      variations: section-horizontal-paddings
+  feature:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  showcase:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  utility:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  sidebar:
+    type: section
+    subtype: aside
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  mainbar:
+    type: section
+    subtype: main
+    title: Main
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  aside:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  container-main:
+    attributes:
+      boxed: ''
+      class: ''
+      extra: {  }
+  expanded:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  extension:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  bottom:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  footer:
+    attributes:
+      boxed: ''
+      class: ''
+      variations: 'section-vertical-paddings section-horizontal-paddings'
+  copyright:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  offcanvas:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+content:
+  infolist-2061:
+    title: 'Info List'
+    attributes:
+      class: ''
+      title: ''
+      intro: ''
+      cols: g-1cols
+      infolists:
+        -
+          icon: ''
+          iconloc: inline
+          image: ''
+          imageloc: center
+          textstyle: header
+          imagestyle: large
+          desc: "41469 Springvalley Lane\nLeesburg, VA  20175<br/>\nText to Order 703-542-6226"
+          tag: ''
+          subtag: ''
+          label: newasburyfarm.com
+          link: 'http://www.newasburyfarm.com/'
+          buttonicon: 'fa fa-globe'
+          readmoreclass: ''
+          readmoretarget: _blank
+          title: 'New item'
+  heading-4091:
+    attributes:
+      class: ''
+      title: 'New Ashby Farm'
+      subtitle: ''
+  simplecontent-1800:
+    title: 'Simple Content'
+    attributes:
+      class: ''
+      title: ''
+      items:
+        -
+          layout: header
+          created_date: ''
+          content_title: 'EASY SAFE PICKUP'
+          author: 'on the Farm near Brambleton'
+          leading_content: "We will be fully Re-Stocked in early October! Order a Whole or Half Lamb Package at $12/lb including Processing<br>\n(Individual Cuts available at $12 to $20 per lb)"
+          main_content: ''
+          readmore_label: 'Email info@newasburyfarm.com'
+          readmore_link: 'mailto:info@newasburyfarm.com'
+          readmore_class: ''
+          readmore_target: _blank
+          title: 'New Ashby Farm'
+    block:
+      id: shepards-thoughts
+  logo-1285:
+    title: 'Logo / Image'
+    attributes:
+      image: 'gantry-media://dorper1.jpg'
+    block:
+      variations: 'nomarginall nopaddingall'

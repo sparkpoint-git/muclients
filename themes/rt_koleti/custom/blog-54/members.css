@@ -1,0 +1,31 @@
+html body {background-image: url('/assets/lvspa/home-bk.jpg'); background-position: center; background-attachment: fixed; background-repeat: no-repeat; background-size: cover;}
+#g-header {background: #00000070;}
+#g-copyright {background: #000000bf;}
+
+
+
+div.member-list {display:flex; flex-direction:row; flex-wrap:wrap;}
+
+article#member {margin:2vh; flex-basis: 30%; padding: 1vw; background-color: #ffffff; border: 3px solid #000000;}
+article#member h2 {margin:0.75rem 0; line-height:2rem;}
+article#member ul {list-style: none; margin-top: 0;}
+
+
+#specialties-key {margin:0 5vh;}
+#specialties-key .g-content {padding:0; margin:0; background:#ffffff; border:1px solid;}
+div.specialties-key {background:#ffffff; padding:10px; display:flex; flex-direction:row; flex-wrap:wrap;}
+div#specialties-key h4 {display:block; width:100%; margin:0px 2vh; border-bottom:1px solid;}
+div.specialties-key i {flex-basis:18%; margin-left:15px; margin-top:10px; font-size:0.9rem; line-height:1.2rem;}
+div.specialties-key i::before {vertical-align:middle; padding-left:5px; display:block; float:left; margin-right:5px;}
+div.icons {padding-top:5px;}
+
+@media (min-width: 770px)
+{
+    article#breed {width:45%;}
+}
+
+@media (max-width: 51rem) {
+	article#member {flex-basis: 100%; padding: 1vh;}
+	article#member h2 {margin:0 0.75rem;}
+	div.farm-detail {margin-left: 1vh;}
+}

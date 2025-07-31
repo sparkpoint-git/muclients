@@ -1,0 +1,63 @@
+name: join_the_team
+timestamp: 1593793105
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: home_-_particles
+  timestamp: 1584382114
+positions: {  }
+sections:
+  navigation: Navigation
+  intro: Intro
+  features: Features
+  utility: Utility
+  above: Above
+  testimonials: Testimonials
+  expanded: Expanded
+  header: Header
+  mainbar: Mainbar
+  sidebar: Sidebar
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  messages:
+    system-messages-5355: 'System Messages'
+  logo:
+    logo-4641: 'Logo / Image'
+    logo-2478: 'Logo / Image'
+  menu:
+    menu-2263: Menu
+  social:
+    social-9143: Social
+  content:
+    system-content-9185: 'Page Content'
+  custom:
+    custom-3119: Features
+    custom-7658: 'Customer Testimonials'
+    custom-6355: 'Develop CMS themes quickly'
+  contenttabs:
+    contenttabs-3854: 'Content Tabs'
+  contentcubes:
+    contentcubes-7850: 'Content Cubes'
+  copyright:
+    copyright-1701: Copyright
+  horizontalmenu:
+    horizontalmenu-2267: 'Horizontal Menu'
+  totop:
+    totop-9038: 'To Top'
+  mobile-menu:
+    mobile-menu-3279: Mobile-menu
+inherit:
+  default:
+    navigation: navigation
+    system-messages-5355: system-messages-7972
+    logo-4641: logo-9608
+    menu-2263: menu-6409
+    social-9143: social-3171
+    footer: footer
+    logo-2478: logo-9571
+    copyright-1701: copyright-1736
+    horizontalmenu-2267: horizontalmenu-9034
+    totop-9038: totop-8670
+    offcanvas: offcanvas
+    mobile-menu-3279: mobile-menu-5697

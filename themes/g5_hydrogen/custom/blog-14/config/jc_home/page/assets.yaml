@@ -1,0 +1,7 @@
+css:
+  -
+    location: ''
+    inline: '#g-showcase {background-size: cover;}'
+    extra: {  }
+    priority: '0'
+    name: showcase

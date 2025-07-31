@@ -1,0 +1,19 @@
+css:
+  -
+    location: 'gantry-assets://post-items.css'
+    inline: ''
+    extra: {  }
+    priority: '0'
+    name: post-items.css
+  -
+    location: ''
+    inline: '#g-navigation .g-content {padding:0;}'
+    extra: {  }
+    priority: '0'
+    name: 'navigation padding'
+  -
+    location: 'gantry-assets://news.css'
+    inline: ''
+    extra: {  }
+    priority: '0'
+    name: news.css

@@ -1,0 +1,57 @@
+name: members-list
+timestamp: 1678990741
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1581187522
+positions: {  }
+sections:
+  top: Top
+  navigation: Navigation
+  slideshow: Slideshow
+  above: Above
+  feature: Feature
+  showcase: Showcase
+  utility: Utility
+  expanded: Expanded
+  extension: Extension
+  bottom: Bottom
+  copyright: Copyright
+  header: Header
+  sidebar: Sidebar
+  aside: Aside
+  mainbar: Main
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  messages:
+    system-messages-9828: 'System Messages'
+  custom:
+    custom-1004: specialties-key
+  widget:
+    position-widget-5965: members-list
+    position-widget-8417: Search
+  mobile-menu:
+    mobile-menu-2576: 'Mobile Menu'
+  logo:
+    logo-1995: 'Logo / Image'
+  menu:
+    menu-4495: Menu
+  social:
+    social-5027: Social
+  blockcontent:
+    blockcontent-8451: 'Block Content'
+  copyright:
+    copyright-9852: Copyright
+inherit:
+  default:
+    navigation: navigation
+    footer: footer
+    copyright: copyright
+    logo-1995: logo-9680
+    menu-4495: menu-5875
+    position-widget-8417: position-widget-6279
+    social-5027: social-3695
+    blockcontent-8451: blockcontent-5767
+    copyright-9852: copyright-6444

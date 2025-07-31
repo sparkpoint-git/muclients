@@ -1,0 +1,4 @@
+curl -v https://sparkpoint-ai.app/v1/chat/completions \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer bG6Te549yqjMkPd5g3KRLYYCIt20J5" \
+  -d '{"model": "llama-3.3-70b-versatile", "messages": [{"role": "user", "content": "Can you tell me what makes the grass grow?"}]}'

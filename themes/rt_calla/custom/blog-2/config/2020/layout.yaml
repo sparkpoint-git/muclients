@@ -1,0 +1,415 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1531417158
+layout:
+  /top/:
+    -
+      - system-messages-9828
+  /slideshow/: {  }
+  /header/:
+    -
+      - 'promo-7463 65'
+      - 'logo-4216 35'
+  /above/:
+    -
+      - blockcontent-8457
+    -
+      - imagegrid-4301
+  /feature/:
+    -
+      - 'custom-1442 50'
+      - 'blockcontent-8921 50'
+    -
+      - 'custom-3932 50'
+      - 'custom-2449 50'
+    -
+      - 'custom-8382 50'
+      - 'custom-1607 50'
+  /showcase/:
+    -
+      - casestudies-3127
+  /utility/:
+    -
+      - blockcontent-2275
+  /container-main/:
+    -
+      -
+        'sidebar 20': {  }
+      -
+        'mainbar 60': {  }
+      -
+        'aside 20': {  }
+  /expanded/: {  }
+  /extension/: {  }
+  /bottom/:
+    -
+      - promo-3037
+  /footer/:
+    -
+      - copyright-2327
+  /copyright/: {  }
+  offcanvas:
+    -
+      - mobile-menu-7951
+structure:
+  top:
+    type: section
+    attributes:
+      boxed: ''
+      class: section-horizontal-paddings
+  slideshow:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+  header:
+    attributes:
+      boxed: ''
+      class: ''
+      variations: ''
+  above:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+      variations: ''
+  feature:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+      variations: ''
+  showcase:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  utility:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  sidebar:
+    type: section
+    subtype: aside
+    attributes:
+      class: ''
+  mainbar:
+    type: section
+    subtype: main
+    title: Main
+    attributes:
+      class: section-horizontal-paddings
+  aside:
+    attributes:
+      class: ''
+  container-main:
+    attributes:
+      boxed: ''
+      class: ''
+      extra: {  }
+  expanded:
+    type: section
+    attributes:
+      boxed: ''
+      class: section-horizontal-paddings
+  extension:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  bottom:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  footer:
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  copyright:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  offcanvas:
+    attributes:
+      swipe: '0'
+content:
+  promo-7463:
+    attributes:
+      title: 'Like a breath of fresh air in senior 55+ living. It’s convenient, beautiful, active, and affordable'
+      bgtitle: 'The Oaks'
+    block:
+      class: hidden-phone
+  logo-4216:
+    title: 'Logo / Image'
+    attributes:
+      image: 'gantry-media://2018/09/oaks-logo-a.png'
+  blockcontent-8457:
+    title: 'Block Content'
+    attributes:
+      class: ''
+      title: ''
+      icon: ''
+      image: ''
+      headline: ''
+      description: ''
+      linktext: ''
+      link: ''
+      linkclass: ''
+      linktarget: _self
+      subcontents:
+        -
+          accent: accent2
+          icon: ''
+          img: 'gantry-media://2018/10/oldtown.jpg'
+          rokboximage: ''
+          rokboxcaption: ''
+          subtitle: ''
+          description: 'Just about a mile away is Historic Old Town Warrenton, where you can explore local heritage at one of the many antique shops, relax at one of the many fine restaurants, or take a tour of one of the town''s many historic landmarks.'
+          class: ''
+          button: ''
+          buttonlink: ''
+          buttonclass: ''
+          buttontarget: _self
+          name: Active
+        -
+          accent: accent3
+          icon: ''
+          img: 'gantry-media://2018/10/htbt.jpg'
+          rokboximage: ''
+          rokboxcaption: ''
+          subtitle: ''
+          description: 'Harris Teeter is just across the street, along with a Giant Food Store, Safeway, and many other shops. A variety of fine restaurants and services are conveniently close by on Route 29.'
+          class: ''
+          button: ''
+          buttonlink: ''
+          buttonclass: ''
+          buttontarget: _self
+          name: Convenient
+        -
+          accent: accent2
+          icon: ''
+          img: 'gantry-media://2018/10/oaks1.jpg'
+          rokboximage: ''
+          rokboxcaption: ''
+          subtitle: ''
+          description: 'Just off Route 29 in beautiful Warrenton, Virginia, The Oaks puts you in the heart of one of the area''s smallest towns, and within walking distance of three large shopping centers.'
+          class: ''
+          button: ''
+          buttonlink: ''
+          buttonclass: ''
+          buttontarget: _self
+          name: Affordable
+  imagegrid-4301:
+    title: 'Welcome to 2022'
+    attributes:
+      enabled: 0
+      class: ''
+      title: 'Welcome to 2022'
+      desc: ''
+      cols: g-imagegrid-3cols
+      layout: g-imagegrid-standard
+      album: ''
+      imagegriditems:
+        -
+          image: 'gantry-media://2022/01/1.png'
+          caption: '1'
+        -
+          image: 'gantry-media://2022/01/2.png'
+          caption: '2'
+        -
+          image: 'gantry-media://2022/01/3.png'
+          caption: '3'
+        -
+          image: 'gantry-media://2022/01/4.png'
+          caption: '4'
+        -
+          image: 'gantry-media://2022/01/5.png'
+          caption: '5'
+        -
+          image: 'gantry-media://2022/01/6.png'
+          caption: '6'
+  custom-1442:
+    title: 'Oaks Review'
+    attributes:
+      html: "<h2>For those of you that are missing <strong>Monica’s</strong> exercise class, please <span class=\"bloglink\"><a href=\"http://monicafernandi.com/balance-improvement-101/\" target=\"_blank\">click here</a></span> to visit her blog </h2>\n<h3><strong>VOLTRAN</strong>, is a nonprofit local organization which provides rides for any individual in need of transportation for any reason. Please call 540-829-5300 or online at <a href=\"https://www.voltran.org\" target=\"_blank\">www.voltran.org</a></h3>"
+    block:
+      class: oaks-review
+      variations: center
+  blockcontent-8921:
+    title: 'Our Dedicated Staff'
+    attributes:
+      class: ''
+      title: 'Please reach out to our dedicated team if you have any questions'
+      icon: 'fa fa-phone-square'
+      image: ''
+      headline: '(540) 349-9725'
+      description: ''
+      linktext: ''
+      link: ''
+      linkclass: ''
+      linktarget: _self
+      subcontents:
+        -
+          accent: none
+          icon: 'fa fa-user-circle'
+          img: ''
+          rokboximage: ''
+          rokboxcaption: ''
+          subtitle: 'Property Manager'
+          description: '<a href="tsams@fhpm.org" target="_blank" rel="noopener">tsams@fhpm.org</a>'
+          class: ''
+          button: ''
+          buttonlink: ''
+          buttonclass: ''
+          buttontarget: _self
+          name: 'Tish Sams'
+        -
+          accent: none
+          icon: 'fa fa-user-circle'
+          img: ''
+          rokboximage: ''
+          rokboxcaption: ''
+          subtitle: 'Assistant Manager'
+          description: '<a href="amarsh@fhpm.org" target="_blank" rel="noopener">amarsh@fhpm.org</a>'
+          class: ''
+          button: ''
+          buttonlink: ''
+          buttonclass: ''
+          buttontarget: _self
+          name: 'Aaron Marsh'
+    block:
+      class: staff
+  custom-3932:
+    title: 'Monica Desktop'
+    attributes:
+      html: "<h4><strong>Dr. Sherry Scott, PH.D</strong> will be offering a program for Seniors, called the SHAPE\nproject. SHAPE will offer individual onsite and online training, for adults living in senior facilities, using the Matter of Balance programs and falls prevention.</h4>\n<h4>Strategies towards aging well in place with continued movement and independence with daily living. Additionally, through a grant project, participants will have access to healthy nutrition tips, education for hands-on meal prep planning and access to low technology smart home resources for aging in place. If you are interested please contact the office.</h4>\n\n"
+    block:
+      class: 'visible-desktop monica'
+      variations: center
+  custom-2449:
+    title: 'Delivery Desktop'
+    attributes:
+      html: "<h2>Restaurants that will deliver to The Oaks</h2>\n<ul>\n<li>China Jade <strong>540-349-1382</strong> - $1.00 Delivery fee</li>\n<li>El Agave <strong>540-351-0011</strong> - Free delivery</li>\n<li>Jersey Mikes <strong>540-340-3575</strong></li>\n</ul>\n<h3>Free delivery w/24hour notice & placing several orders at once</h3>\n<ul>\n<li>Manhattan Pizza <strong>540-680-2412</strong> - $2.50 delivery fee</li>\n<li>Outback <strong>540-349-0457</strong> - Free delivery</li>\n<li>Shawns BBQ <strong>540-317-5692</strong> - Free delivery w/24 hour notice & placing several orders at once</li>\n</ul>"
+    block:
+      class: 'delivery visible-desktop'
+      variations: center
+  custom-8382:
+    title: 'Monica Mobile'
+    attributes:
+      html: "<h4><strong>Dr. Sherry Scott, PH.D</strong> will be offering a program for Seniors, called the SHAPE\nproject. SHAPE will offer individual onsite and online training, for adults living in senior facilities, using the Matter of Balance programs and falls prevention.</h4>\n<h4>Strategies towards aging well in place with continued movement and independence with daily living. Additionally, through a grant project, participants will have access to healthy nutrition tips, education for hands-on meal prep planning and access to low technology smart home resources for aging in place. If you are interested please contact the office.</h4>\n"
+    block:
+      class: 'visible-phone monica'
+  custom-1607:
+    title: 'Delivery Mobile'
+    attributes:
+      html: "<h2>Restaurants that will deliver to The Oaks</h2>\n<ul>\n<li>China Jade <a href=\"tel:+15403491382\">540-349-1382</a> - $1.00 Delivery fee</li>\n<li>El Agave <a href=\"tel:+15403510011\">540-351-0011</a> - Free delivery</li>\n<li>Jersey Mikes <a href=\"tel:+15403403575\">540-340-3575</a></li>\n</ul>\n<h3>Free delivery w/24hour notice & placing several orders at once</h3>\n<ul>\n<li>Manhattan Pizza <a href=\"tel:+15406802412\">540-680-2412</a> - $2.50 delivery fee</li>\n<li>Outback <a href=\"tel+15403490457\">540-349-0457</a> - Free delivery</li>\n<li>Shawns BBQ <a href=\"tel:+15403175692\">540-317-5692</a> - Free delivery w/24 hour notice & placing several orders at once</li>\n</ul>"
+    block:
+      class: 'visible-phone delivery'
+  casestudies-3127:
+    title: 'Amenities and Activities'
+    attributes:
+      source: wordpress
+      demo: disabled
+      class: ''
+      title: 'Welcome to the Oaks'
+      uppertitle: 'Warrneton''s Finest 55+ Community'
+      allitems: 'Life at The Oaks'
+      cols: cols-3
+      cases:
+        -
+          items:
+            -
+              layout: alt-top
+              accent: accent-color-2
+              image: 'gantry-media://2018/09/library.jpg'
+              subtitle: ''
+              description: '<ul><li>Remote Entry Access<br></li><li>Planned Activities<br></li><li>Large Community Centers<br></li><li>24-hour Emergency Maintenance<br></li><li>Elevators<br></li><li>On-site Beauty Salon<br></li><li>Library with computer access<br></li><li>On-site Management</li></ul>'
+              url: ''
+              title: 'Properties Amenities'
+          title: Amenities
+      post:
+        filter:
+          categories: '7 4 6'
+          posts: ''
+          sticky: show
+        limit:
+          total: '12'
+          start: '0'
+        sort:
+          orderby: modified
+          ordering: DESC
+        display:
+          image:
+            enabled: show
+          text:
+            type: content
+            limit: ''
+            formatting: html
+          title:
+            enabled: show
+            limit: ''
+          date:
+            enabled: ''
+            format: l
+          read_more:
+            enabled: ''
+            label: ''
+            target: _self
+            css: ''
+  blockcontent-2275:
+    title: 'Floor Plans'
+    attributes:
+      class: floorplan
+      title: ''
+      icon: ''
+      image: ''
+      headline: 'Floor Plans'
+      description: 'We have activities, and social events planned for the residents. However, we do not provide any medical assistance.'
+      linktext: ''
+      link: ''
+      linkclass: ''
+      linktarget: _self
+      subcontents:
+        -
+          accent: none
+          icon: ''
+          img: 'gantry-media://2018/10/single.jpg'
+          rokboximage: ''
+          rokboxcaption: ''
+          subtitle: '$1,150.00 per month'
+          description: 'A single applicant’s gross annual income must not be more than $63,300 to qualify.'
+          class: ''
+          button: ''
+          buttonlink: ''
+          buttonclass: ''
+          buttontarget: _self
+          name: 'One Bedroom'
+        -
+          accent: none
+          icon: ''
+          img: 'gantry-media://2018/10/double.jpg'
+          rokboximage: ''
+          rokboxcaption: ''
+          subtitle: '$1,400.00 per month'
+          description: 'A two person household’s income must not be greater than $72,360 to qualify.'
+          class: ''
+          button: ''
+          buttonlink: ''
+          buttonclass: ''
+          buttontarget: _self
+          name: 'Two Bedroom'
+  promo-3037:
+    attributes:
+      title: 'The Oaks is pleased to accept HUD section 8 and other housing rental vouchers'
+    block:
+      variations: center
+  copyright-2327:
+    attributes:
+      date:
+        end: now
+      owner: 'The Oaks of Warrenton'

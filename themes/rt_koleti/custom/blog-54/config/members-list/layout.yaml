@@ -1,0 +1,153 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1581187522
+layout:
+  /top/:
+    -
+      - system-messages-9828
+  navigation: {  }
+  /slideshow/: {  }
+  /header/:
+    -
+      - custom-1004
+    -
+      - position-widget-5965
+  /above/: {  }
+  /feature/: {  }
+  /showcase/: {  }
+  /utility/: {  }
+  /container-main/:
+    -
+      -
+        'sidebar 20': {  }
+      -
+        'mainbar 60': {  }
+      -
+        'aside 20': {  }
+  /expanded/: {  }
+  /extension/: {  }
+  /bottom/: {  }
+  footer: {  }
+  copyright: {  }
+  offcanvas:
+    -
+      - mobile-menu-2576
+structure:
+  top:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+      variations: section-horizontal-paddings
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  slideshow:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+      variations: section-horizontal-paddings
+  header:
+    attributes:
+      boxed: ''
+      class: ''
+      variations: 'section-vertical-paddings section-horizontal-paddings'
+  above:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+      variations: section-horizontal-paddings
+  feature:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+      variations: 'section-vertical-paddings section-horizontal-paddings'
+  showcase:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+      variations: 'section-vertical-paddings section-horizontal-paddings'
+  utility:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+      variations: 'section-vertical-paddings section-horizontal-paddings'
+  sidebar:
+    type: section
+    subtype: aside
+    attributes:
+      class: ''
+  mainbar:
+    type: section
+    subtype: main
+    title: Main
+    attributes:
+      class: ''
+      variations: section-horizontal-paddings
+  aside:
+    attributes:
+      class: ''
+  container-main:
+    attributes:
+      boxed: ''
+      class: ''
+      extra: {  }
+  expanded:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+      variations: section-horizontal-paddings
+  extension:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+      variations: 'section-vertical-paddings section-horizontal-paddings'
+  bottom:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+      variations: 'section-vertical-paddings section-horizontal-paddings'
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  copyright:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  offcanvas:
+    attributes:
+      swipe: '0'
+content:
+  custom-1004:
+    title: specialties-key
+    attributes:
+      html: "<h4>Specialties Key</h4>\n<div class=\"specialties-key\">\n<i class=\"breeding\">Breeding Stock</i>\n<i class=\"ram-leasing\">Ram Leasing</i>\n<i class=\"project-market-lambs\">Project or Market Lambs</i>\n<i class=\"meat\">Meat</i>\n<i class=\"raw-wool\">Raw Wool</i>\n<i class=\"pelts\">Pelts</i>\n<i class=\"shearing\">Shearing</i>\n<i class=\"tours\">Tours</i>\n<i class=\"wearables-fiber\">Wearables and Fiber Products</i>\n<i class=\"yarn-roving\">Yarn and Roving</i>\n</div>"
+    block:
+      id: specialties-key
+  position-widget-5965:
+    title: members-list
+    attributes:
+      widget: '{"type":"widget","widget":"pods_widget_list","title":"Members List","options":{"widget":{"title":"","pod_type":"member","template":"Members","template_custom":"","limit":100,"orderby":"","where":"","expires":300,"cache_mode":"none","before_content":"<div class=\"member-list\">","after_content":"</div>"}}}'
+      key: members-list
+  mobile-menu-2576:
+    title: 'Mobile Menu'

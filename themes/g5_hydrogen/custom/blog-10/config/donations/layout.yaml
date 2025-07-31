@@ -1,0 +1,84 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: home
+  timestamp: 1537195582
+layout:
+  header: {  }
+  navigation: {  }
+  /showcase/:
+    -
+      - sample-5174
+  /feature/:
+    -
+      - 'spacer-4080 20'
+      - 'system-content-6449 60'
+      - 'spacer-6432 20'
+  main: {  }
+  subfeature: {  }
+  footer: {  }
+  offcanvas: {  }
+structure:
+  header:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  navigation:
+    type: section
+    inherit:
+      outline: home
+      include:
+        - attributes
+        - block
+        - children
+  showcase:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+  feature:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+  main:
+    inherit:
+      outline: home
+      include:
+        - attributes
+        - block
+        - children
+  subfeature:
+    type: section
+    inherit:
+      outline: home
+      include:
+        - attributes
+        - block
+        - children
+  footer:
+    inherit:
+      outline: home
+      include:
+        - attributes
+        - block
+        - children
+  offcanvas:
+    inherit:
+      outline: home
+      include:
+        - attributes
+        - block
+        - children
+content:
+  sample-5174:
+    title: 'Donations Message'
+    attributes:
+      image: ''
+      headline: 'Warrenton Ruritan Clubs Bi-annual benefit performances'
+      description: 'The Warrenton Ruritan Club would like to thank all of the community members that sponsored tickets for our recent show.  These events are always a success and because of your generous donations we are able to support many deserving organizations that rely solely on support from organizations such as ours.  All proceeds that we generate throughout the year go back into the community and without your support we would not be able to help those that we help.  Once again THANK YOU for your continued support. These performances are usually mentioned on our Facebook page.'
+      link: ''
+      linktext: ''
+      samples: {  }

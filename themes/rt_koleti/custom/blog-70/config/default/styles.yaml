@@ -1,0 +1,83 @@
+preset: preset1
+base:
+  background: 'rgba(255, 255, 255, 0)'
+  text-color: '#030303'
+  text-active-color: '#eff2e0'
+accent:
+  color-1: '#20701d'
+font:
+  family-default: 'NotoSans, Helvetica, Tahoma, Geneva, Arial, sans-serif'
+button:
+  text-color: '#030303'
+  background-color: '#eff2e0'
+menustyle:
+  background: '#ffffff'
+  text-color: '#030303'
+  text-color-alt: '#ffffff'
+  text-color-active: '#91986e'
+  background-active: '#717947'
+  sublevel-text-color: '#030303'
+  sublevel-text-color-active: '#ffffff'
+  sublevel-background: '#ffffff'
+  sublevel-background-active: '#5c5acf'
+top:
+  background: 'rgba(255, 255, 255, 0)'
+  text-color: '#030303'
+navigation:
+  background: '#121212'
+  text-color: '#ffffff'
+header:
+  background: '#f3f5f7'
+  text-color: '#030303'
+above:
+  background: 'rgba(255, 255, 255, 0)'
+  background-image: 'gantry-media://backgrounds/above/background-01.jpg'
+  text-color: '#ffffff'
+main:
+  background: 'rgba(255, 255, 255, 0)'
+  text-color: '#030303'
+showcase:
+  background: '#f3f5f7'
+  text-color: '#030303'
+slideshow:
+  background: '#000000'
+  background-image: 'gantry-media://backgrounds/slideshow/background-01.jpg'
+  text-color: '#ffffff'
+utility:
+  background: '#030303'
+  background-image: 'gantry-media://backgrounds/utility/background-01.jpg'
+  text-color: '#ffffff'
+feature:
+  background: 'rgba(255, 255, 255, 0)'
+  background-image: 'gantry-media://backgrounds/feature/background-01.jpg'
+  text-color: '#030303'
+expanded:
+  background: 'rgba(255, 255, 255, 0)'
+  background-image: ''
+  text-color: '#030303'
+extension:
+  background: 'rgba(255, 255, 255, 0)'
+  text-color: '#030303'
+bottom:
+  background: '#000000'
+  text-color: '#999999'
+footer:
+  background: '#000000'
+  text-color: '#888888'
+copyright:
+  background: '#000000'
+  text-color: '#666666'
+offcanvas:
+  background: '#5c5acf'
+  text-color: '#ffffff'
+  toggle-color: '#ffffff'
+  width: 13rem
+  toggle-visibility: '1'
+breakpoints:
+  large-desktop-container: 88rem
+  desktop-container: 76rem
+  tablet-container: 51rem
+  large-mobile-container: 30rem
+  mobile-menu-breakpoint: 51rem
+menu:
+  animation: g-fade

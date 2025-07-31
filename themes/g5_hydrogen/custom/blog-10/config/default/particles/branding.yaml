@@ -1,0 +1,4 @@
+enabled: '1'
+content: 'Powered by <a href="http://sparkpoint.media" title="Sparkpoint Media" target="_black" class="g-powered-by">Sparkpoint Media</a>'
+css:
+  class: branding

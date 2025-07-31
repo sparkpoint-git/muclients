@@ -1,0 +1,10 @@
+context:
+  -
+    is_404: true
+    is_front_page: true
+    is_home: true
+menu: {  }
+language: {  }
+post: {  }
+taxonomy: {  }
+archive: {  }

@@ -1,0 +1,20 @@
+{# Load Content From WordPress #}
+{% set attr_extra = particle.extra|attribute_array %}
+{% set post_settings = particle.post %}
+{% set filter = post_settings.filter %}
+{% set sort = post_settings.sort %}
+{% set limit = post_settings.limit %}
+{% set start = limit.start %}
+{% set display = post_settings.display %}
+
+{% set categories = filter.categories|replace({' ': ',', ', ': ','})|split(',') %}
+
+{% for id in categories %}
+    {% set cat = wordpress.call('get_category', id) %}
+    {% if cat.parent == 0 %}
+        <a href="{{ wordpress.call('get_category_link', id|number_format)|e }}" target="{{ display.category.target|default('_self')|e }}">
+            {{ cat.name|e }}
+        </a>
+    {% endif %}
+{% endfor %}
+

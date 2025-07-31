@@ -1,0 +1,230 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1581187522
+layout:
+  top: {  }
+  navigation: {  }
+  /slideshow/: {  }
+  /header/:
+    -
+      - 'infolist-2061 30'
+      - 'heading-4091 70'
+  /above/:
+    -
+      - simplecontent-1800
+  feature: {  }
+  showcase: {  }
+  utility: {  }
+  /container-main/:
+    -
+      -
+        'sidebar 20': {  }
+      -
+        'mainbar 60': {  }
+      -
+        'aside 20': {  }
+  expanded: {  }
+  extension: {  }
+  bottom: {  }
+  footer: {  }
+  copyright: {  }
+  offcanvas: {  }
+structure:
+  top:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  slideshow:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+      variations: section-horizontal-paddings
+  header:
+    attributes:
+      boxed: ''
+      class: ''
+      variations: 'section-vertical-paddings section-horizontal-paddings'
+  above:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+      variations: section-horizontal-paddings
+  feature:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  showcase:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  utility:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  sidebar:
+    type: section
+    subtype: aside
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  mainbar:
+    type: section
+    subtype: main
+    title: Main
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  aside:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  container-main:
+    attributes:
+      boxed: ''
+      class: ''
+      extra: {  }
+  expanded:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  extension:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  bottom:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  copyright:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  offcanvas:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+content:
+  infolist-2061:
+    title: 'Info List'
+    attributes:
+      class: ''
+      title: ''
+      intro: ''
+      cols: g-1cols
+      infolists:
+        -
+          icon: ''
+          iconloc: left
+          image: 'gantry-media://she.farm-logo-black-2.png'
+          imageloc: center
+          textstyle: compact
+          imagestyle: large
+          desc: "38145 Howlands Lane, Purcellville, VA<br/>\n540-454-2400"
+          tag: ''
+          subtag: ''
+          label: 'https://www.she.farm '
+          link: 'https://www.she.farm '
+          buttonicon: ''
+          readmoreclass: ''
+          readmoretarget: _blank
+          title: 'New item'
+  heading-4091:
+    attributes:
+      class: ''
+      title: 'Shepherds Corner Farm'
+      subtitle: ''
+  simplecontent-1800:
+    title: 'Simple Content'
+    attributes:
+      class: ''
+      title: ''
+      items:
+        -
+          layout: standard
+          created_date: ''
+          content_title: 'What do you like about raising sheep?'
+          author: ''
+          leading_content: 'I like working with animals and find sheep to be easy to  manage. They are grazers so they rotate through my pastures and eat grass most of the summer which helps cut down on the amount of labor it takes to manage our property. I enjoy working with the fiber I get from my sheep and make a variety of products from their wool as well as sell fleece and processed fibers.'
+          main_content: ''
+          readmore_label: ''
+          readmore_link: ''
+          readmore_class: ''
+          readmore_target: _self
+          title: 'Raising Sheep'
+        -
+          layout: standard
+          created_date: ''
+          content_title: 'What advice would you give to someone new starting out with sheep?  '
+          author: ''
+          leading_content: 'Plan out shelter, pens and pastures. Make sure to include an area where you can easily catch sheep for eye checks, hoof trimming and treatments.'
+          main_content: ''
+          readmore_label: ''
+          readmore_link: ''
+          readmore_class: ''
+          readmore_target: _self
+          title: Advice
+    block:
+      id: shepards-thoughts

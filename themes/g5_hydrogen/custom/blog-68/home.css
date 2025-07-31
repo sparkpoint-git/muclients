@@ -1,0 +1,16 @@
+#g-navigation .g-social a {background: none;}
+
+div#auto-logo {background-color: #000000; display: flex;}
+div#auto-logo div.g-content {align-self: center;}
+#g-showcase {background-image: url('/assets/autova/service.jpg'); padding: 0; background-position: bottom;}
+#welcome {min-height: 30vw; padding-top: 2vw; margin: 0; background-color: #2522268c;}
+ul.serviceList {list-style: none; margin: 0px;}
+div.tire {background-color: #b11623; color: #ffffff; font-weight: bold;}
+div.tire i {background-color: #000000;border-radius: 50%; margin-top: -16px;}
+div.tire h4 {color: #ffffff; font-weight: bolder;}
+#g-feature i::before {padding: 1rem;}
+.fa-life-ring::before {font-size: 9rem;display: block; color: #ffffff;}
+#g-main {background-image: url('/assets/autova/detailing.jpg'); padding: 0; background-position: bottom;}
+#detailing {min-height: 30vw; padding-top: 2vw; margin: 0; background-color: #252226db;}
+#detailing h1, h2, h3, h4, h5 {color: #ffffff; font-weight: bolder;}
+#detailing ul{text-align: left; margin-left: 20%;}

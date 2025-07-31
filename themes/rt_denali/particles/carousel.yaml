@@ -1,0 +1,247 @@
+name: Carousel
+description: Display images in a carousel form.
+type: particle
+icon: fa-window-close
+
+form:
+  overrideable: false
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable particle.
+      default: true
+
+    _tabs:
+      type: container.tabs
+      fields:
+        _tab_settings:
+          label: Settings
+          overridable: false
+          fields:
+            source:
+              type: select.select
+              label: Content Source
+              description: Choose if the content should be loaded from the Joomla articles or particle itself.
+              default: particle
+              options:
+                particle: Particle
+                wordpress: WordPress
+
+            demo:
+              type: select.select
+              label: Demo Mode
+              description: Enable or disable demo mode. If enabled preset number will be synced with set number.
+              default: disabled
+              options:
+                enabled: Enable
+                disabled: Disable
+
+            class:
+              type: input.selectize
+              label: CSS Classes
+              description: CSS class name for the particle.
+
+            title:
+              type: input.text
+              label: Title
+              description: Customize the title text.
+              placeholder: Enter title
+
+            nav:
+              type: select.select
+              label: Prev / Next
+              description: Enable or disable the Prev / Next navigation.
+              default: enabled
+              options:
+                enabled: Enable
+                disabled: Disable
+
+            loop:
+              type: select.select
+              label: Loop
+              description: Enable or disable the Inifnity loop. Duplicate last and first items to get loop illusion. This option <strong>won't work</strong> in Showcase mode.
+              default: enabled
+              options:
+                enabled: Enable
+                disabled: Disable
+
+            autoplay:
+              type: select.select
+              label: Autoplay
+              description: Enable or disable the Autoplay.
+              default: disabled
+              options:
+                enabled: Enable
+                disabled: Disable
+
+            autoplaySpeed:
+              type: input.text
+              label: Autoplay Speed
+              description: Set the speed of the Autoplay, in milliseconds.
+              placeholder: 5000
+
+            pauseOnHover:
+              type: select.select
+              label: Pause on Hover
+              description: Pause the slideshow when hovering over slider, then resume when no longer hovering.
+              default: enabled
+              options:
+                enabled: Enable
+                disabled: Disable
+
+            center:
+              type: select.select
+              label: Center
+              description: Center the main item.
+              default: enabled
+              options:
+                enabled: Enable
+                disabled: Disable
+
+        _tab_collection:
+          label: Particle Items
+          overridable: false
+          fields:
+            items:
+              type: collection.list
+              array: true
+              label: Items
+              description: Carousel items.
+              value: name
+              ajax: true
+
+              fields:
+                .image:
+                  type: input.imagepicker
+                  label: Image
+                  description: Select desired image.
+                .alt:
+                  type: input.text
+                  label: Image Alt
+                  description: Customize the alt attribute.
+                  placeholder: Enter alt attribute
+                .title:
+                  type: input.text
+                  label: Title
+                  description: Customize the image title.
+                  placeholder: Enter title
+                .caption:
+                  type: textarea.textarea
+                  label: Caption
+                  description: Customize the image caption.
+                  placeholder: Enter caption text.
+                .linkto:
+                  type: select.select
+                  label: Link To
+                  description: Choose to display image or open a custom link.
+                  default: image
+                  options:
+                    image: Lightcase Image
+                    link: Link
+                .link:
+                  type: input.text
+                  label: Link
+        _tab_posts:
+          label: Posts
+          fields:
+            post.filter.categories:
+              type: wordpress.categories
+              label: Categories
+              description: Select the categories the posts should be taken from.
+              overridable: false
+
+            post.filter.posts:
+              type: input.text
+              label: Posts
+              description: Enter the WordPress posts that should be shown. It should be a list of post IDs separated with a comma (i.e. 1,2,3,4,5).
+              overridable: false
+
+            post.filter.sticky:
+              type: select.select
+              label: Sticky Posts
+              description: Shows sticky posts at the top of other posts.
+              default: ''
+              options:
+                show: Show
+                '': Hide
+              overridable: false
+
+            post.limit.total:
+              type: input.text
+              label: Number of Posts
+              description: Enter the maximum number of posts to display.
+              default: 5
+              pattern: '-?\d{1,2}'
+              overridable: false
+
+            post.limit.start:
+              type: input.text
+              label: Start From
+              description: Enter offset specifying the first post to return. The default is '0' (the first post).
+              default: 0
+              pattern: '\d{1,2}'
+              overridable: false
+
+            post.sort.orderby:
+              type: select.select
+              label: Order By
+              description: Select how the posts should be ordered by.
+              default: date
+              options:
+                date: Published Date
+                modified: Last Modified Date
+                name: Post Name (Slug)
+                title: Title
+                author: Author
+                comment_count: Comment Count
+                type: Post Type
+                ID: ID
+                parent: Parent ID
+                rand: Random
+                none: None
+              overridable: false
+
+            post.sort.ordering:
+              type: select.select
+              label: Ordering Direction
+              description: Select the direction the posts should be ordered by.
+              default: DESC
+              options:
+                ASC: Ascending
+                DESC: Descending
+              overridable: false
+
+            post.linkto:
+              type: select.select
+              label: Link To
+              description: Choose to display image or open a custom link.
+              default: image
+              options:
+                image: Lightcase Image
+                link: Link
+        _tab_display:
+          label: Posts Display
+          overridable: false
+          fields:
+            post.display.image.enabled:
+              type: select.select
+              label: Image
+              description: Select if the featured image of the post should be shown.
+              options:
+                show: Show
+                '': Hide
+
+            post.display.title.enabled:
+              type: select.select
+              label: Title
+              description: Select if the post title should be shown.
+              options:
+                show: Show
+                '': Hide
+
+            post.display.title.limit:
+              type: input.text
+              label: Title Limit
+              description: Enter the maximum number of characters the post title should be limited to.
+              pattern: '\d+(\.\d+){0,1}'

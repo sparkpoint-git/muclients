@@ -1,0 +1,408 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: home
+  timestamp: 1537195582
+layout:
+  header: {  }
+  /navigation/:
+    -
+      - menu-5555
+  /showcase/:
+    -
+      - sample-8242
+    -
+      - infolist-6088
+  /feature/: {  }
+  /main/: {  }
+  /subfeature/:
+    -
+      - 'custom-6236 50'
+      - 'custom-7402 50'
+  /footer/:
+    -
+      - 'copyright-2256 33.3'
+      - 'social-2985 33.3'
+      - 'branding-1850 33.3'
+  offcanvas:
+    -
+      - mobile-menu-2938
+structure:
+  header:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+  showcase:
+    type: section
+    attributes:
+      boxed: ''
+  feature:
+    type: section
+    attributes:
+      boxed: ''
+  main:
+    attributes:
+      boxed: ''
+  subfeature:
+    type: section
+    attributes:
+      class: flush
+      boxed: ''
+  footer:
+    attributes:
+      boxed: ''
+content:
+  sample-8242:
+    title: 'Meet the Warrenton Ruritan Club'
+    attributes:
+      image: 'gantry-media://2018/ruritanclub.jpg'
+      headline: 'Meet the Warrenton Ruritan Club'
+      description: ''
+      link: ''
+      linktext: ''
+      samples: {  }
+  infolist-6088:
+    title: 'News in Pictures'
+    attributes:
+      class: ''
+      title: 'Ruritan News'
+      intro: ''
+      cols: g-2cols
+      infolists:
+        -
+          icon: ''
+          iconloc: left
+          image: 'gantry-media://2023/11/2023-Ruritan-News-Outstanding-Officers.jpg'
+          imageloc: center
+          textstyle: large
+          imagestyle: browser
+          desc: 'On November 16th, officers from the Warrenton Police Dept, ( Corporal Jeffrey Shaver ) Fauquier Co Sheriffs Dept. ( Corporal Justin Welch ) and the Virginia State Police ( Sr. Trooper Jeff Palmer ) were honored at the Warrenton Ruritan Club as outstanding officers in their respective departments for exceptional performance and dedication to duty ! A banquet was held in their honor along with their friends and families'
+          tag: ''
+          subtag: ''
+          label: ''
+          link: ''
+          buttonicon: ''
+          readmoreclass: ''
+          readmoretarget: _self
+          title: '2023 Outstanding Officer Award Recipients'
+        -
+          icon: ''
+          iconloc: left
+          image: 'gantry-media://2023/11/scholarship-recipients-1024x768.jpg'
+          imageloc: center
+          textstyle: large
+          imagestyle: browser
+          desc: "On June 15th, the Warrenton Ruritan Club hosted its annual Scholarship Banquet, After the Dinner, 7 scholarship recipients from Fauquier High School and one Legacy Scholarship recipient were each awarded checks for $1,000.00 to aid them in their individual endeavors into higher education whether that is a traditional college or a vocational college/trade school.\n\nThese recipients were selected in conjunction with the Fauquier's High Schools staff and guidance dept, seen below is a photo of each recipient receiving their check, presenting the checks on behalf of the club is Ruritan member Roger Sites (former Fauquier High School Principal) and head of the scholarship awards committee, The Warrenton Ruritan club wishes these scholarship winners the very best in their future endeavors and hopefully return one day as a Ruritan club member."
+          tag: ''
+          subtag: ''
+          label: ''
+          link: ''
+          buttonicon: ''
+          readmoreclass: ''
+          readmoretarget: _self
+          title: '2023 Annual Scholarship Banquet'
+        -
+          icon: ''
+          iconloc: left
+          image: 'gantry-media://2023/11/Brendon-OHara-1024x768.jpg'
+          imageloc: center
+          textstyle: large
+          imagestyle: browser
+          desc: 'Recipient Brendon O''Hara'
+          tag: ''
+          subtag: ''
+          label: ''
+          link: ''
+          buttonicon: ''
+          readmoreclass: ''
+          readmoretarget: _self
+          title: '2023 Annual Scholarship Recipient'
+        -
+          icon: ''
+          iconloc: left
+          image: 'gantry-media://2023/11/Naveah-Yates-1024x768.jpg'
+          imageloc: center
+          textstyle: large
+          imagestyle: browser
+          desc: 'Recipient Neveah Yates'
+          tag: ''
+          subtag: ''
+          label: ''
+          link: ''
+          buttonicon: ''
+          readmoreclass: ''
+          readmoretarget: _self
+          title: '2023 Annual Scholarship Recipient'
+        -
+          icon: ''
+          iconloc: left
+          image: 'gantry-media://2023/11/Hayley-Ponn-1024x768.jpg'
+          imageloc: center
+          textstyle: large
+          imagestyle: browser
+          desc: 'Recipient Hayley Ponn'
+          tag: ''
+          subtag: ''
+          label: ''
+          link: ''
+          buttonicon: ''
+          readmoreclass: ''
+          readmoretarget: _self
+          title: '2023 Annual Scholarship Recipient'
+        -
+          icon: ''
+          iconloc: left
+          image: 'gantry-media://2023/11/Katelyn-McCleary-1024x768.jpg'
+          imageloc: center
+          textstyle: large
+          imagestyle: browser
+          desc: 'Recipient Katelyn McCleary'
+          tag: ''
+          subtag: ''
+          label: ''
+          link: ''
+          buttonicon: ''
+          readmoreclass: ''
+          readmoretarget: _self
+          title: '2023 Annual Scholarship Recipient'
+        -
+          icon: ''
+          iconloc: left
+          image: 'gantry-media://2023/11/Emily-Goff-1024x768.jpg'
+          imageloc: center
+          textstyle: large
+          imagestyle: browser
+          desc: 'Recipient Emily Goff'
+          tag: ''
+          subtag: ''
+          label: ''
+          link: ''
+          buttonicon: ''
+          readmoreclass: ''
+          readmoretarget: _self
+          title: '2023 Annual Scholarship Recipient'
+        -
+          icon: ''
+          iconloc: left
+          image: 'gantry-media://2023/11/Jack-Carter-1024x768.jpg'
+          imageloc: center
+          textstyle: large
+          imagestyle: browser
+          desc: 'Recipient Jack Carter'
+          tag: ''
+          subtag: ''
+          label: ''
+          link: ''
+          buttonicon: ''
+          readmoreclass: ''
+          readmoretarget: _self
+          title: '2023 Annual Scholarship Recipient'
+        -
+          icon: ''
+          iconloc: left
+          image: 'gantry-media://2023/11/Caden-Mills-1024x768.jpg'
+          imageloc: center
+          textstyle: large
+          imagestyle: browser
+          desc: 'Recipient Caden Mills'
+          tag: ''
+          subtag: ''
+          label: ''
+          link: ''
+          buttonicon: ''
+          readmoreclass: ''
+          readmoretarget: _self
+          title: '2023 Annual Scholarship Recipient'
+        -
+          icon: ''
+          iconloc: left
+          image: 'gantry-media://2023/11/Keely-Jones-1024x768.jpg'
+          imageloc: center
+          textstyle: large
+          imagestyle: browser
+          desc: 'Recipient Keely Jones'
+          tag: ''
+          subtag: ''
+          label: ''
+          link: ''
+          buttonicon: ''
+          readmoreclass: ''
+          readmoretarget: _self
+          title: '2023 Annual Scholarship Recipient'
+        -
+          icon: ''
+          iconloc: left
+          image: 'gantry-media://2018/cpt-lavoie-cpl-nicholas.jpg'
+          imageloc: center
+          textstyle: large
+          imagestyle: browser
+          desc: 'Cpl. Kristen Nicholas for the Fauquier County Sheriff. Capt. Mark Lavoie accepted on her behalf '
+          tag: ''
+          subtag: ''
+          label: ''
+          link: ''
+          buttonicon: ''
+          readmoreclass: ''
+          readmoretarget: _self
+          title: '2018 Law Enforcement Officer of the Year'
+        -
+          icon: ''
+          iconloc: left
+          image: 'gantry-media://2018/tpr-robert-marshall.jpg'
+          imageloc: center
+          textstyle: large
+          imagestyle: browser
+          desc: 'Trooper Robert Marshall of the Virginia State Police'
+          tag: ''
+          subtag: ''
+          label: ''
+          link: ''
+          buttonicon: ''
+          readmoreclass: ''
+          readmoretarget: _self
+          title: '2018 Law Enforcement Officer of the Year'
+        -
+          icon: ''
+          iconloc: left
+          image: 'gantry-media://2018/sgt-christopher-ford.jpg'
+          imageloc: center
+          textstyle: large
+          imagestyle: browser
+          desc: 'Sgt Christopher Ford from the Town of Warrenton Police'
+          tag: ''
+          subtag: ''
+          label: ''
+          link: ''
+          buttonicon: ''
+          readmoreclass: ''
+          readmoretarget: _self
+          title: '2018 Law Enforcement Officer of the Year'
+        -
+          icon: ''
+          iconloc: left
+          image: 'gantry-media://2018/2017PerfectAttendance.JPG'
+          imageloc: center
+          textstyle: bold
+          imagestyle: browser
+          desc: "Front Row, L to R:\nJohn Wayland 29 years, Gilmer Lee 36 years, Rudolph Shiflett 41 years, John Shiflett 24 years, Bill Miller 47 years\n\nBack Row, L to R:\nRoger Sites 12 years, Randy Ream 12 years, Earl Browning 26 years"
+          tag: ''
+          subtag: ''
+          label: ''
+          link: ''
+          buttonicon: ''
+          readmoreclass: ''
+          readmoretarget: _self
+          title: '2017 Ruritan Perfect Attendance Recipients'
+        -
+          icon: ''
+          iconloc: left
+          image: 'gantry-media://2018/FHS-FFA-Ruritan_14.jpeg'
+          imageloc: center
+          textstyle: large
+          imagestyle: browser
+          desc: 'L-R Dennis Pearson FFA Advisor, Roger Sites, Katie Barb FHS FFA President, Susan Hilleary FFA Advisor   Roger Sites accepting the Blue and Gold Award on behalf of the Warrenton Ruritan Club from the Fauquier High School FFA Chapter'
+          tag: ''
+          subtag: ''
+          label: ''
+          link: ''
+          buttonicon: ''
+          readmoreclass: ''
+          readmoretarget: _self
+          title: 'Fauquier High School FFA Chapter'
+        -
+          icon: ''
+          iconloc: left
+          image: 'gantry-media://2018/Senior Scholarship Night-5808.jpeg'
+          imageloc: center
+          textstyle: large
+          imagestyle: browser
+          desc: 'Abigail Lynch receiving her scholarship from John Shiflett'
+          tag: ''
+          subtag: ''
+          label: ''
+          link: ''
+          buttonicon: ''
+          readmoreclass: ''
+          readmoretarget: _self
+          title: 'FHS Scholarship Night'
+        -
+          icon: ''
+          iconloc: left
+          image: 'gantry-media://2018/DSCN1272.JPG'
+          imageloc: center
+          textstyle: large
+          imagestyle: browser
+          desc: 'L-R  Matthew Krauss, Darian Poles, Savana Rota, Roger Sites'
+          tag: ''
+          subtag: ''
+          label: ''
+          link: ''
+          buttonicon: ''
+          readmoreclass: ''
+          readmoretarget: _self
+          title: '2017 FHS Scholarship Award Winners'
+        -
+          icon: ''
+          iconloc: left
+          image: 'gantry-media://2018/Ruritan1.jpg'
+          imageloc: center
+          textstyle: large
+          imagestyle: browser
+          desc: 'Fauquier Community Theater Presents Wizard of Oz - May 27th'
+          tag: ''
+          subtag: ''
+          label: ''
+          link: ''
+          buttonicon: ''
+          readmoreclass: ''
+          readmoretarget: _self
+          title: '2017 Benefit Show'
+        -
+          icon: ''
+          iconloc: left
+          image: 'gantry-media://2018/RuritanSpringFest.JPG'
+          imageloc: center
+          textstyle: large
+          imagestyle: browser
+          desc: 'John Shiflett with Darren Stephens, 50/50 winner at Spring Festival'
+          tag: ''
+          subtag: ''
+          label: ''
+          link: ''
+          buttonicon: ''
+          readmoreclass: ''
+          readmoretarget: _self
+          title: 'Warrenton Spring Festival'
+  custom-6236:
+    title: Mission
+    attributes:
+      enabled: 0
+      html: "<h3>The Ruritan Mission</h3>\n<p>\nRuritan is a national organization dedicated to improving communities and building a better America through Fellowship, Goodwill and Community Service.</p>"
+  custom-7402:
+    title: Membership
+    attributes:
+      enabled: 0
+      html: "<h3>Membership</h3>\n<p>The club seeks to attract members from the community who value the benefits to be derived from Fellowship, Goodwill and Community Service and who are willing to devote time and effort each year to support club programs and activities.  Membership dues are nominal with the major portion going to cover the cost of the monthly dinner meetings.</p>"
+  social-2985:
+    attributes:
+      css:
+        class: social-items
+      items:
+        -
+          icon: 'fa fa-facebook'
+          text: Facebook
+          link: 'https://www.facebook.com/groups/1578786372427951/'
+          name: Facebook
+    block:
+      variations: center
+  branding-1850:
+    block:
+      variations: align-right
+  mobile-menu-2938:
+    title: 'Mobile Menu'

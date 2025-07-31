@@ -1,0 +1,12 @@
+meta: {  }
+head_bottom: ''
+atoms:
+  -
+    id: assets-1211
+    type: assets
+    title: 'Custom CSS / JS'
+    attributes:
+      enabled: '1'
+      css:
+        - { location: 'gantry-assets://home.css', inline: '', extra: {  }, priority: '0', name: home.css }
+      javascript: {  }

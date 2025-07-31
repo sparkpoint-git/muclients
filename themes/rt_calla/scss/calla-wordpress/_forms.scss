@@ -1,0 +1,78 @@
+legend {
+    line-height: $core-line-height;
+    margin: 1rem 0;
+}
+
+.form-actions {
+    background: none;
+    border: 0;
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+    color: $base-text-color;
+    background-color: $white;
+    border: 2px solid $border-color-light;
+    box-shadow: none;
+    box-sizing: border-box !important;
+    @include transition(border 0.2s linear, box-shadow 0.2s linear);
+    .input-prepend &, .input-append & {
+        padding: 0.35rem;
+        max-width: 95%;
+        .dir-rtl & {
+            border-radius: 6px 0 0 6px;
+        }
+    }
+}
+
+textarea {
+    width: 100%;
+}
+
+.dir-rtl {
+    .form-horizontal {
+        .control-label {
+            float: right;
+            text-align: left;
+        }
+        .controls {
+            margin-left: 0;
+            margin-right: 180px;
+        }
+    }
+}
+
+select {
+    color: $base-text-color;
+    background: $white;
+    border: 1px solid $border-color-light;
+}
+
+// Button
+.btn {
+    @extend %g-button;
+
+    span {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.btn-mini {
+    margin: 0.5rem 0;
+}
+

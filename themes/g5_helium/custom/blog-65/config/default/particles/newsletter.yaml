@@ -1,0 +1,13 @@
+enabled: '1'
+class: ''
+width: g-newsletter-fullwidth
+layout: g-newsletter-aside-wrap
+style: g-newsletter-rounded
+title: ''
+headtext: ''
+sidetext: ''
+inputboxtext: 'Your email address...'
+buttonicon: ''
+buttontext: Subscribe
+uri: ''
+buttonclass: button-xlarge

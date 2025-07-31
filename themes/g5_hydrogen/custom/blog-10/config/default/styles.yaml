@@ -1,0 +1,47 @@
+preset: preset1
+header:
+  background: '#cc770e'
+  text-color: '#ffffff'
+showcase:
+  background: '#354d59'
+  image: ''
+  text-color: '#ffffff'
+subfeature:
+  background: '#354d59'
+  text-color: '#ffffff'
+feature:
+  background: '#ffffff'
+  text-color: '#666666'
+footer:
+  background: '#ffffff'
+  text-color: '#666666'
+main:
+  background: '#ffbc69'
+  text-color: '#666666'
+navigation:
+  background: '#ffbc69'
+  text-color: '#ffffff'
+  overlay: 'rgba(0, 0, 0, 0.4)'
+offcanvas:
+  background: '#354d59'
+  text-color: '#ffffff'
+  width: 17rem
+  toggle-color: '#ffffff'
+  toggle-visibility: '1'
+base:
+  background: '#ffffff'
+  text-color: '#666666'
+  body-font: 'roboto, sans-serif'
+  heading-font: 'roboto, sans-serif'
+accent:
+  color-1: '#00519c'
+  color-2: '#ffd75a'
+breakpoints:
+  large-desktop-container: 75rem
+  desktop-container: 60rem
+  tablet-container: 48rem
+  large-mobile-container: 30rem
+  mobile-menu-breakpoint: 48rem
+menu:
+  col-width: 180px
+  animation: g-fade

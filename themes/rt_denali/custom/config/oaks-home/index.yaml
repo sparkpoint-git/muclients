@@ -1,0 +1,91 @@
+name: oaks-home
+timestamp: 1550676706
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: home_-_particles
+  timestamp: 1522840415
+positions: {  }
+sections:
+  top: Top
+  navigation: Navigation
+  slideshow: Slideshow
+  above: Above
+  feature: Feature
+  showcase: Showcase
+  extension: Extension
+  bottom: Bottom
+  copyright: Copyright
+  header: Header
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  messages:
+    system-messages-1675: 'System Messages'
+  logo:
+    logo-8389: Logo
+  menu:
+    menu-8834: Menu
+  social:
+    social-6430: Social
+  simplemenu:
+    simplemenu-4410: 'Bottom Menu'
+  simplecontent:
+    simplecontent-7415: 'Simple Content'
+    simplecontent-2456: 'Who We Are'
+    simplecontent-5468: 'Sparkpoint Communities'
+    simplecontent-9709: 'Sparkpoint Micro'
+    simplecontent-7886: 'Sparkpoint Extended'
+    simplecontent-7124: 'Tiny Living'
+    simplecontent-1719: 'Feature Sparkpoint Message'
+  copyright:
+    copyright-3833: Copyright
+  branding:
+    branding-1131: Branding
+  mobile-menu:
+    mobile-menu-5740: Mobile-menu
+  slider:
+    slider-1874: Slider
+  showcase:
+    showcase-8879: 'Showcase Slider'
+  eventlist:
+    eventlist-9010: 'Upcoming Exhibitions'
+  casestudies:
+    casestudies-2864: 'Our Blog'
+  carousel:
+    carousel-9297: 'Carousel - Image Gallery'
+inherit:
+  default:
+    top: top
+    system-messages-1675: system-messages-9828
+    navigation: navigation
+    footer: footer
+    copyright: copyright
+    offcanvas: offcanvas
+    logo-8389: logo-5992
+    menu-8834: menu-2350
+    social-6430: social-1608
+    simplemenu-4410: simplemenu-6826
+    simplecontent-7415: simplecontent-4123
+    copyright-3833: copyright-2950
+    branding-1131: branding-2782
+    mobile-menu-5740: mobile-menu-7951
+  home:
+    slideshow: slideshow
+    header: header
+    above: above
+    feature: feature
+    showcase: showcase
+    extension: extension
+    bottom: bottom
+    slider-1874: slider-7244
+    simplecontent-2456: simplecontent-1913
+    simplecontent-5468: simplecontent-8186
+    simplecontent-9709: simplecontent-3665
+    simplecontent-7886: simplecontent-1800
+    showcase-8879: showcase-8833
+    simplecontent-7124: simplecontent-3527
+    simplecontent-1719: simplecontent-9699
+    eventlist-9010: eventlist-3132
+    casestudies-2864: casestudies-9807
+    carousel-9297: carousel-5826

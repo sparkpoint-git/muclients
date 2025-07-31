@@ -1,0 +1,197 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1522840415
+layout:
+  /top/:
+    -
+      - system-messages-9828
+  /navigation/:
+    -
+      - 'logo-5992 50'
+      - 'menu-2350 35'
+      - 'social-1608 15'
+  /slideshow/: {  }
+  /header/:
+    -
+      - infolist-1669
+  /above/: {  }
+  /showcase/: {  }
+  /utility/: {  }
+  /feature/: {  }
+  /container-main/:
+    -
+      -
+        'sidebar 20': {  }
+      -
+        'mainbar 60': {  }
+      -
+        'aside 20': {  }
+  /expanded/: {  }
+  /extension/: {  }
+  /bottom/: {  }
+  footer: {  }
+  copyright: {  }
+  offcanvas:
+    -
+      - mobile-menu-7951
+structure:
+  top:
+    type: section
+    attributes:
+      boxed: ''
+      class: section-horizontal-paddings
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+      class: section-horizontal-paddings
+  slideshow:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  header:
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  above:
+    type: section
+    attributes:
+      boxed: ''
+      class: section-horizontal-paddings
+  showcase:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  utility:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  feature:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  sidebar:
+    type: section
+    subtype: aside
+    attributes:
+      class: ''
+  mainbar:
+    type: section
+    subtype: main
+    title: Main
+    attributes:
+      class: section-horizontal-paddings
+  aside:
+    attributes:
+      class: ''
+  container-main:
+    attributes:
+      boxed: ''
+      class: ''
+      extra: {  }
+  expanded:
+    type: section
+    attributes:
+      boxed: ''
+      class: section-horizontal-paddings
+  extension:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  bottom:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  copyright:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  offcanvas:
+    attributes:
+      swipe: '0'
+content:
+  logo-5992:
+    block:
+      class: denali-logo
+  menu-2350:
+    block:
+      variations: center
+  social-1608:
+    attributes:
+      enabled: 0
+    block:
+      class: flush
+      variations: align-right
+  infolist-1669:
+    title: 'Info List'
+    attributes:
+      class: ''
+      title: ''
+      intro: ''
+      cols: g-3cols
+      infolists:
+        -
+          icon: ''
+          iconloc: left
+          image: ''
+          imageloc: left
+          textstyle: compact
+          imagestyle: compact
+          desc: "<a href=\"http://headstartva.org/programs/fauquier-community-action-committee-inc/\" target=\"_blank\">Fauquier Community Action Committee Inc</a><br>\nEmergency assistance, early childhood education &amp; development<br>\n430 East Shirley Avenue, Bldg C<br>\nWarrenton, VA 20186<br>\n(540) 347-7000"
+          tag: 'Fauquier County'
+          subtag: 'Social Services'
+          label: ''
+          link: ''
+          buttonicon: ''
+          readmoreclass: ''
+          readmoretarget: _self
+          title: Fauquier
+        -
+          icon: ''
+          iconloc: left
+          image: ''
+          imageloc: left
+          textstyle: compact
+          imagestyle: compact
+          desc: "<a href=\"http://headstartva.org/programs/fauquier-community-action-committee-inc/\" target=\"_blank\">Fauquier Community Action Committee Inc</a><br>\nEmergency assistance, early childhood education &amp; development<br>\n430 East Shirley Avenue, Bldg C<br>\nWarrenton, VA 20186<br>\n(540) 347-7000"
+          tag: ''
+          subtag: ''
+          label: ''
+          link: ''
+          buttonicon: ''
+          readmoreclass: ''
+          readmoretarget: _self
+          title: Fauquier
+        -
+          icon: ''
+          iconloc: left
+          image: ''
+          imageloc: left
+          textstyle: compact
+          imagestyle: compact
+          desc: "<a href=\"http://headstartva.org/programs/fauquier-community-action-committee-inc/\" target=\"_blank\">Fauquier Community Action Committee Inc</a><br>\nEmergency assistance, early childhood education &amp; development<br>\n430 East Shirley Avenue, Bldg C<br>\nWarrenton, VA 20186<br>\n(540) 347-7000"
+          tag: ''
+          subtag: ''
+          label: ''
+          link: ''
+          buttonicon: ''
+          readmoreclass: ''
+          readmoretarget: _self
+          title: Fauquier

@@ -1,0 +1,43 @@
+name: ruritan_news
+timestamp: 1701054292
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: home
+  timestamp: 1537195582
+positions: {  }
+sections:
+  header: Header
+  navigation: Navigation
+  showcase: Showcase
+  feature: Feature
+  subfeature: Subfeature
+  main: Main
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  logo:
+    logo-1923: Logo
+  custom:
+    custom-8634: 'Custom HTML'
+    custom-6236: Mission
+    custom-7402: Membership
+  menu:
+    menu-5555: Menu
+  sample:
+    sample-8242: 'Meet the Warrenton Ruritan Club'
+  infolist:
+    infolist-6088: 'News in Pictures'
+  copyright:
+    copyright-2256: Copyright
+  social:
+    social-2985: Social
+  branding:
+    branding-1850: Branding
+  mobile-menu:
+    mobile-menu-2938: 'Mobile Menu'
+inherit:
+  default:
+    header: header
+    logo-1923: logo-9636
+    custom-8634: custom-2856

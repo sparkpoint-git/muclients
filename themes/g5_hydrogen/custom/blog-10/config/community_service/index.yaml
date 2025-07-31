@@ -1,0 +1,54 @@
+name: community_service
+timestamp: 1705418621
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: home
+  timestamp: 1537195582
+positions: {  }
+sections:
+  header: Header
+  navigation: Navigation
+  showcase: Showcase
+  feature: Feature
+  subfeature: Subfeature
+  main: Main
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  content:
+    system-content-6449: 'Page Content'
+  logo:
+    logo-4906: Logo
+  custom:
+    custom-9845: 'Custom HTML'
+    custom-9448: Mission
+    custom-8836: Membership
+  menu:
+    menu-4882: Menu
+  copyright:
+    copyright-4287: Copyright
+  social:
+    social-2329: Social
+  branding:
+    branding-6173: Branding
+  mobile-menu:
+    mobile-menu-6807: 'Mobile Menu'
+inherit:
+  default:
+    header: header
+    logo-4906: logo-9636
+    custom-9845: custom-2856
+  home:
+    navigation: navigation
+    main: main
+    subfeature: subfeature
+    footer: footer
+    offcanvas: offcanvas
+    menu-4882: menu-5555
+    custom-9448: custom-6236
+    custom-8836: custom-7402
+    copyright-4287: copyright-2256
+    social-2329: social-2985
+    branding-6173: branding-1850
+    mobile-menu-6807: mobile-menu-2938

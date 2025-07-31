@@ -1,0 +1,56 @@
+name: breeds
+timestamp: 1603223577
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1581187522
+positions: {  }
+sections:
+  top: Top
+  navigation: Navigation
+  slideshow: Slideshow
+  above: Above
+  feature: Feature
+  showcase: Showcase
+  utility: Utility
+  expanded: Expanded
+  extension: Extension
+  bottom: Bottom
+  copyright: Copyright
+  header: Header
+  sidebar: Sidebar
+  aside: Aside
+  mainbar: Main
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  messages:
+    system-messages-9828: 'System Messages'
+  content:
+    system-content-6560: 'Page Content'
+  mobile-menu:
+    mobile-menu-2576: 'Mobile Menu'
+  logo:
+    logo-8160: 'Logo / Image'
+  menu:
+    menu-6926: Menu
+  widget:
+    position-widget-8689: Search
+  social:
+    social-5952: Social
+  blockcontent:
+    blockcontent-8142: 'Block Content'
+  copyright:
+    copyright-2854: Copyright
+inherit:
+  default:
+    navigation: navigation
+    footer: footer
+    copyright: copyright
+    logo-8160: logo-9680
+    menu-6926: menu-5875
+    position-widget-8689: position-widget-6279
+    social-5952: social-3695
+    blockcontent-8142: blockcontent-5767
+    copyright-2854: copyright-6444

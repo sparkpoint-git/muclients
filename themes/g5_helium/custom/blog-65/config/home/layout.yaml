@@ -1,0 +1,335 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: home_-_particles
+  timestamp: 1584382114
+layout:
+  navigation: {  }
+  /header/:
+    -
+      - owlcarousel-2455
+  /intro/:
+    -
+      - blockcontent-7519
+  /features/:
+    -
+      - 'simplecontent-4967 50'
+      - 'logo-1064 50'
+  /utility/:
+    -
+      - simplecontent-3103
+  /above/:
+    -
+      - 'simplecontent-1286 50'
+      - 'pricingtable-4606 50'
+  /testimonials/:
+    -
+      - simplecontent-3252
+  /expanded/:
+    -
+      - simplecontent-1829
+  /container-main/:
+    -
+      -
+        'mainbar 75': {  }
+      -
+        'sidebar 25': {  }
+  footer: {  }
+  offcanvas: {  }
+structure:
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  header:
+    attributes:
+      boxed: '2'
+      class: ''
+      variations: ''
+  intro:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+      variations: ''
+  features:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+      variations: ''
+  utility:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+      variations: ''
+  above:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+      variations: ''
+  testimonials:
+    type: section
+    attributes:
+      boxed: ''
+  expanded:
+    type: section
+    attributes:
+      boxed: ''
+  mainbar:
+    type: section
+    subtype: main
+  sidebar:
+    type: section
+    subtype: aside
+  container-main:
+    attributes:
+      boxed: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  offcanvas:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+content:
+  owlcarousel-2455:
+    title: 'Owl Carousel'
+    attributes:
+      dots: disable
+      autoplay: disable
+      imageOverlay: disable
+      items:
+        -
+          class: ''
+          image: 'gantry-media://hospice-support-1.jpg'
+          title: 'No One Needs To Walk Alone'
+          desc: ''
+          link: ''
+          linktext: ''
+          buttonclass: ''
+          disable: '0'
+          name: hospice-support-1
+        -
+          class: ''
+          image: 'gantry-media://hospice-support-2.jpg'
+          title: 'No One Needs To Walk Alone'
+          desc: ''
+          link: ''
+          linktext: ''
+          buttonclass: ''
+          disable: '0'
+          name: hospice-support-2
+  blockcontent-7519:
+    title: 'Main Introduction'
+    attributes:
+      class: ''
+      title: 'Located In Downtown Warrenton, VA'
+      icon: ''
+      image: ''
+      headline: 'Hospice is a concept of compassionate care which places priority on the patient’s dignity, comfort, and quality of life.'
+      description: "<p>Hospice Support of Fauquier County (HSFC) was founded in 1981 as a nonprofit, volunteer organization providing non-medical supportive care and services to people facing the last phases of life, and supporting their families during the process.</p>\n<p>Hospice Support works collaboratively with attending physicians, medical hospices, clergy and other support agencies in order to provide a continuum of patient care. Our services are not restricted by age, medical treatment, finances or time which we can be engaged with the patient and the family.</p>\n<h4>We are working with veterans organizations to assist in their support.</h4>"
+      linktext: ''
+      link: ''
+      linkclass: ''
+      linktarget: _self
+      subcontents:
+        -
+          accent: none
+          icon: ''
+          img: 'gantry-media://volunteers.jpg'
+          rokboximage: ''
+          rokboxcaption: ''
+          subtitle: ''
+          description: '<p>Hospice Support volunteers receive many hours of training in order to meet the emotional, spiritual, social, and practical needs of the patient. We provide services which include a medical equipment loan closet, individual and group bereavement counseling, and volunteers who offer their time for caregivers, bring supplies, or run an occasional errand.</p> <p>HSFC does not charge a fee for services, and does not receive any reimbursement from insurances, Medicare, or Medicaid. We rely solely on donations from individuals, grants, businesses, and other religious and civic organizations. Hospice Support of Fauquier County’s IRS form 990, governing documents, and financial statements are available for public inspection during regular business hours at our offices.</p>'
+          class: ''
+          button: ''
+          buttonlink: ''
+          buttonclass: ''
+          buttontarget: _self
+          name: 'Qualified, Caring Volunteers'
+        -
+          accent: none
+          icon: ''
+          img: 'gantry-media://lighten-the-load.jpg'
+          rokboximage: ''
+          rokboxcaption: ''
+          subtitle: ''
+          description: "<p>Hospice Support of Fauquier County is a nonprofit organization dedicated to providing non-medical supportive care to people with life-threatening or terminal illnesses. Priority is placed on the patient's dignity, comfort, and quality of life. As such, our vision is to be an essential player in the hospice care and advanced disease management support of patients in our region.</p>\n<p>We have trained volunteers to assist the family and meet the needs of each patient. We offer bereavement counseling in a group or individual setting to everyone, regardless of residency. Our grief counselors are professionals with years of experience who volunteer their time. They reach families, young and old, who are confronted with a loved one's illness or passing.</p>"
+          class: ''
+          button: ''
+          buttonlink: ''
+          buttonclass: ''
+          buttontarget: _self
+          name: 'Let Us Lighten The Load'
+    block:
+      id: about
+  simplecontent-4967:
+    title: Services
+    attributes:
+      class: ''
+      title: 'Support Services'
+      items:
+        -
+          layout: standard
+          created_date: ''
+          content_title: ''
+          author: ''
+          leading_content: 'Our operations consist of serving the increasing senior population in our region by providing volunteers for non-medical respite and support, and providing grief counseling to bereaved families and individuals.'
+          main_content: "<ul>\n<li>Friendly companionship and emotional support</li>\n<li>Assistance with daily living tasks such as bathing, meal preparation and other household chores</li>\n<li>A loan closet of equipment such as wheelchairs, hospital beds, walkers and bedside commodes</li>\n<li>Individual and group bereavement counseling by volunteer professionals</li>\n<li>Transportation to appointments or social outings</li>\n<li>Respite and emotional support to the patient’s family</li>"
+          readmore_label: ''
+          readmore_link: ''
+          readmore_class: ''
+          readmore_target: _self
+          title: 'New item'
+    block:
+      id: services
+  logo-1064:
+    title: 'Logo / Image'
+    attributes:
+      image: 'gantry-media://medical-equipment.jpg'
+      link: '0'
+      class: ''
+  simplecontent-3103:
+    title: 'Meeting the Needs'
+    attributes:
+      class: ''
+      title: 'Meeting The Needs Of A More Elderly Population'
+      items:
+        -
+          layout: standard
+          created_date: ''
+          content_title: ''
+          author: ''
+          leading_content: 'Census Bureau statistics show a growing demographic locally as more people and families move into Fauquier County and surrounding areas. While the general population in Fauquier County alone grew approximately 5.4% from 2010 to 2015, the senior population (65 years and older) grew more than 15%, according to Bureau records. Current projections see the senior increase to more than 22% of residents in Fauquier County by 2020. Similar trends are evident in the growth of the senior populations in Rappahannock and Culpeper counties as well as contiguous areas in Western Prince William County. We are working to meet the needs of this growing demographic.'
+          main_content: ''
+          readmore_label: ''
+          readmore_link: ''
+          readmore_class: ''
+          readmore_target: _self
+          title: 'New item'
+  simplecontent-1286:
+    title: 'Durable Medical Equipment'
+    attributes:
+      class: ''
+      title: 'Durable Medical Equipment'
+      items:
+        -
+          layout: standard
+          created_date: ''
+          content_title: ''
+          author: ''
+          leading_content: 'HSFC''s mission, addressing the needs of a growing population, is reflected in the significantly expanded use of our loan closet. Durable medical equipment (DME) is available for free use, as long as it is needed, at no cost to anyone. The range of items includes wheelchairs, hospital beds, walkers and much more. Incontinent products (diapers, pads, etc.) and dietary supplements are given out freely as they are available from our donated stocks.'
+          main_content: 'We intend to continue these services by implementing best practices for the organization so that we can achieve our goals and manage our growth. We are expanding our outreach to the local and regional communities by utilizing social media, forming collaborative partnerships with other health and service organizations, and by increasing our corps of trained patient volunteers.'
+          readmore_label: ''
+          readmore_link: ''
+          readmore_class: ''
+          readmore_target: _self
+          title: 'New item'
+  pricingtable-4606:
+    title: 'Medical Equipment Loan Closet'
+    attributes:
+      class: ''
+      title: 'Medical Equipment Loan Closet'
+      headertext: ''
+      footertext: ''
+      columns: g-pricingtable-1-col
+      tables:
+        -
+          class: ''
+          highlight: disabled
+          ribbon: 'Our Wish List'
+          icon: ''
+          price: ''
+          period: ''
+          desc: 'If you have any of the following items and would like to donate them to Hospice Support, please call our office.'
+          buttontext: ''
+          buttonlink: ''
+          buttontarget: _self
+          buttonclass: ''
+          items:
+            -
+              class: ''
+              text: Wheelchairs
+            -
+              class: ''
+              text: 'Walkers with wheels'
+            -
+              class: ''
+              text: 'Electric hospital beds'
+            -
+              class: ''
+              text: 'Shower benches'
+            -
+              class: ''
+              text: 'Lift chairs'
+            -
+              class: ''
+              text: 'Hoyer Lifts'
+            -
+              text: 'Blue pads'
+            -
+              text: 'Food supplements (Ensure, Boost)'
+          plan: 'New item'
+  simplecontent-3252:
+    title: Donations
+    attributes:
+      class: ''
+      title: ''
+      items:
+        -
+          layout: standard
+          created_date: ''
+          content_title: 'Donations enable Hospice Support to offer services at no cost to the patient or their family:'
+          author: ''
+          leading_content: ''
+          main_content: ''
+          readmore_label: 'Donate Today'
+          readmore_link: 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RJXK6463AT8PS'
+          readmore_class: ''
+          readmore_target: _blank
+          title: 'New item'
+    block:
+      id: donations
+  simplecontent-1829:
+    title: Eligibility
+    attributes:
+      class: ''
+      title: 'Who Can Receive Our Services?'
+      items:
+        -
+          layout: standard
+          created_date: ''
+          content_title: ''
+          author: ''
+          leading_content: 'Emphasis is on enabling the patient to remain at home if at all possible; however, Hospice Support serves wherever the patient may be. Care is provided through teams of trained volunteers and an interdisciplinary professional staff, coordinating home and inpatient care, when necessary. The program is supported by the community by contributions of time, services, materials, and monetary gifts, many of which are memorials to those patients we have served.'
+          main_content: ''
+          readmore_label: ''
+          readmore_link: ''
+          readmore_class: ''
+          readmore_target: _self
+          title: Who
+        -
+          layout: standard
+          created_date: ''
+          content_title: ''
+          author: ''
+          leading_content: "<h5>Admission</h5>\n<ol>\n<li>Patient and family must want Hospice Support and respite care</li>\n<li>Patient is facing the potential of a limited life expectancy</li>\n<li>Medical equipment loan closet items are available</li>\n</ol>"
+          main_content: "<h5>Referrals</h5>\n<p>A physician, minister, family member, friend, nurse, or anyone who sees the need may refer a patient and family.\nPlease do not hesitate to call our office if you have any questions about eligibility or the admissions process.</p>"
+          readmore_label: ''
+          readmore_link: ''
+          readmore_class: ''
+          readmore_target: _self
+          title: How
+    block:
+      id: eligibility

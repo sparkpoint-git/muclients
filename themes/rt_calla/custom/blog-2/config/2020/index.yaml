@@ -1,0 +1,52 @@
+name: '2020'
+timestamp: 1736881481
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1531417158
+positions: {  }
+sections:
+  top: Top
+  slideshow: Slideshow
+  above: Above
+  feature: Feature
+  showcase: Showcase
+  utility: Utility
+  expanded: Expanded
+  extension: Extension
+  bottom: Bottom
+  copyright: Copyright
+  header: Header
+  sidebar: Sidebar
+  aside: Aside
+  mainbar: Main
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  messages:
+    system-messages-9828: 'System Messages'
+  promo:
+    promo-7463: Promo
+    promo-3037: Promo
+  logo:
+    logo-4216: 'Logo / Image'
+  blockcontent:
+    blockcontent-8457: 'Block Content'
+    blockcontent-8921: 'Our Dedicated Staff'
+    blockcontent-2275: 'Floor Plans'
+  imagegrid:
+    imagegrid-4301: 'Welcome to 2022'
+  custom:
+    custom-1442: 'Oaks Review'
+    custom-3932: 'Monica Desktop'
+    custom-2449: 'Delivery Desktop'
+    custom-8382: 'Monica Mobile'
+    custom-1607: 'Delivery Mobile'
+  casestudies:
+    casestudies-3127: 'Amenities and Activities'
+  copyright:
+    copyright-2327: Copyright
+  mobile-menu:
+    mobile-menu-7951: Mobile-menu
+inherit: {  }

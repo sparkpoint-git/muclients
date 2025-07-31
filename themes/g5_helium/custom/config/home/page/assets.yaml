@@ -1,0 +1,7 @@
+css:
+  -
+    location: ''
+    inline: "@media only all and (min-width: 48rem) {\ndiv.welcome-message {display:flex; justify-content:center; align-items:center; min-height:50vw;}\nh1 {font-size:3vw;}\n}"
+    extra: {  }
+    priority: '0'
+    name: home-adjustmet

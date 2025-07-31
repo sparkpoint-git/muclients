@@ -1,0 +1,9 @@
+enabled: '1'
+action: 'https://rockettheme.us18.list-manage.com/subscribe/post?u=b35dd217b76653582e6741a63&amp;id=80179a67c0'
+class: ''
+layout: g-newsletter-aside
+title: ''
+headtext: ''
+inputboxtext: 'What''s your email address?'
+buttontext: Subscribe
+buttonclass: button

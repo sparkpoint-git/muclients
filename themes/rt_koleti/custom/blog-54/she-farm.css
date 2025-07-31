@@ -1,0 +1,9 @@
+#g-header {padding-bottom:0px;}
+#g-header .g-infolist-item-title {display:none;}
+#g-header .g-heading h2 {font-size:4vw;}
+#shepards-thoughts .g-simplecontent {display:flex; justify-content: center;}
+#shepards-thoughts .g-simplecontent-item {max-width:33vw; margin:0 1vw;}
+@media only all and (max-width: 50.99rem) {
+  #shepards-thoughts .g-simplecontent {display:flex; flex-direction: column;}
+  #shepards-thoughts .g-simplecontent-item {max-width:90vw; margin:0 1vw;}
+}

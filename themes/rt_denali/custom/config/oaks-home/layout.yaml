@@ -1,0 +1,118 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: home_-_particles
+  timestamp: 1522840415
+layout:
+  top:
+    -
+      - system-messages-1675
+  navigation: {  }
+  slideshow: {  }
+  header: {  }
+  above: {  }
+  feature: {  }
+  showcase: {  }
+  extension: {  }
+  bottom: {  }
+  /footer/: {  }
+  copyright: {  }
+  offcanvas: {  }
+structure:
+  top:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - children
+        - attributes
+  slideshow:
+    type: section
+    inherit:
+      outline: home
+      include:
+        - attributes
+        - block
+        - children
+  header:
+    inherit:
+      outline: home
+      include:
+        - attributes
+        - block
+        - children
+  above:
+    type: section
+    inherit:
+      outline: home
+      include:
+        - attributes
+        - block
+        - children
+  feature:
+    type: section
+    inherit:
+      outline: home
+      include:
+        - attributes
+        - block
+        - children
+  showcase:
+    type: section
+    inherit:
+      outline: home
+      include:
+        - attributes
+        - block
+        - children
+  extension:
+    type: section
+    inherit:
+      outline: home
+      include:
+        - attributes
+        - block
+        - children
+  bottom:
+    type: section
+    inherit:
+      outline: home
+      include:
+        - attributes
+        - block
+        - children
+  footer:
+    attributes:
+      boxed: '3'
+      class: 'g-default-footer section-horizontal-paddings section-vertical-paddings nopaddingbottom'
+    inherit:
+      outline: default
+      include:
+        - children
+  copyright:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  offcanvas:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+content:
+  system-messages-1675:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+      particle: system-messages-9828

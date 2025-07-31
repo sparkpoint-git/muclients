@@ -1,0 +1,72 @@
+name: home
+timestamp: 1550676706
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: home_-_particles
+  timestamp: 1522840415
+positions: {  }
+sections:
+  top: Top
+  navigation: Navigation
+  slideshow: Slideshow
+  above: Above
+  feature: Feature
+  showcase: Showcase
+  extension: Extension
+  bottom: Bottom
+  copyright: Copyright
+  header: Header
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  messages:
+    system-messages-1675: 'System Messages'
+  slider:
+    slider-7244: Slider
+  simplecontent:
+    simplecontent-1913: 'Who We Are'
+    simplecontent-8186: 'Sparkpoint Communities'
+    simplecontent-3665: 'Sparkpoint Micro'
+    simplecontent-1800: 'Sparkpoint Extended'
+    simplecontent-3527: 'Tiny Living'
+    simplecontent-9699: 'Feature Sparkpoint Message'
+    simplecontent-5850: 'Simple Content'
+  showcase:
+    showcase-8833: 'Showcase Slider'
+  eventlist:
+    eventlist-3132: 'Upcoming Exhibitions'
+  casestudies:
+    casestudies-9807: 'Our Blog'
+  carousel:
+    carousel-5826: 'Carousel - Image Gallery'
+  logo:
+    logo-2049: Logo
+  menu:
+    menu-7219: Menu
+  social:
+    social-3596: Social
+  simplemenu:
+    simplemenu-1070: 'Bottom Menu'
+  copyright:
+    copyright-1368: Copyright
+  branding:
+    branding-7448: Branding
+  mobile-menu:
+    mobile-menu-1600: Mobile-menu
+inherit:
+  default:
+    top: top
+    system-messages-1675: system-messages-9828
+    navigation: navigation
+    footer: footer
+    copyright: copyright
+    offcanvas: offcanvas
+    logo-2049: logo-5992
+    menu-7219: menu-2350
+    social-3596: social-1608
+    simplemenu-1070: simplemenu-6826
+    simplecontent-5850: simplecontent-4123
+    copyright-1368: copyright-2950
+    branding-7448: branding-2782
+    mobile-menu-1600: mobile-menu-7951

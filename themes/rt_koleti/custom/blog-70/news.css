@@ -1,0 +1,5 @@
+
+div.news-list::before {content: 'More News...'; margin: 0 2vw; font-size: 2vw; border-bottom: 1px solid; display: block;}
+
+div.news-list .g-content-array .g-grid:not(:last-child) {border-bottom: none;}
+div.news-list .g-content {padding-bottom: 0;}

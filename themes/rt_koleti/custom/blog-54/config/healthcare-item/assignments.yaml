@@ -1,0 +1,10 @@
+context: {  }
+menu: {  }
+language: {  }
+post:
+  post-terms:
+    category-41: true
+taxonomy: {  }
+archive:
+  category:
+    41: true

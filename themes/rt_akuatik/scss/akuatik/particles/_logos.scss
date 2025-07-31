@@ -1,0 +1,16 @@
+.g-logos {
+    @include display(flex);
+    @include flex-wrap(wrap);
+    @include justify-content(center);
+
+    .g-logo-wrapper {
+        padding: $content-padding;
+        width: 145px;
+
+        a {
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+}

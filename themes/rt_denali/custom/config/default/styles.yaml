@@ -1,0 +1,78 @@
+preset: preset3
+base:
+  background: '#ffffff'
+  text-color: '#999999'
+  text-active-color: '#0057FF'
+accent:
+  color-1: '#0057FF'
+font:
+  family-default: 'sourcesanspro, Helvetica, Tahoma, Geneva, Arial, sans-serif'
+button:
+  text-color: '#ffffff'
+  background-color: '#0057FF'
+menustyle:
+  text-color: '#0f0f0f'
+  text-color-alt: '#0f0f0f'
+  text-color-active: '#0f0f0f'
+  background-active: 'rgba(255,255,255, 0)'
+  sublevel-text-color: 'rgba(255,255,255,0.8)'
+  sublevel-text-color-active: '#0f0f0f'
+  sublevel-background: '#0f0f0f'
+  sublevel-background-active: '#0057FF'
+top:
+  background: '#ffffff'
+  text-color: '#999999'
+navigation:
+  background: '#ffffff'
+  text-color: '#0f0f0f'
+header:
+  background: '#0f0f0f'
+  text-color: '#999999'
+above:
+  background: '#ffffff'
+  text-color: '#999999'
+main:
+  background: '#ffffff'
+  text-color: '#999999'
+showcase:
+  background: '#ffffff'
+  text-color: '#999999'
+slideshow:
+  background: '#0f0f0f'
+  text-color: '#999999'
+utility:
+  background: '#ffffff'
+  text-color: '#999999'
+feature:
+  background: 'rgba(0,87,255,0.07)'
+  text-color: '#999999'
+expanded:
+  background: '#ffffff'
+  text-color: '#999999'
+extension:
+  background: '#ffffff'
+  text-color: '#999999'
+bottom:
+  background: '#0f0f0f'
+  background-image: 'gantry-media://backgrounds/bottom/img-03.jpg'
+  text-color: '#ffffff'
+footer:
+  background: '#0f0f0f'
+  text-color: '#999999'
+copyright:
+  background: '#0f0f0f'
+  text-color: 'rgba(153, 153, 153, 0.4)'
+offcanvas:
+  background: '#0057FF'
+  text-color: '#ffffff'
+  toggle-color: '#0057FF'
+  width: 10rem
+  toggle-visibility: '1'
+breakpoints:
+  large-desktop-container: 88rem
+  desktop-container: 76rem
+  tablet-container: 51rem
+  large-mobile-container: 30rem
+  mobile-menu-breakpoint: 51rem
+menu:
+  animation: g-fade

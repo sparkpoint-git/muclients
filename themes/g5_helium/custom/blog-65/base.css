@@ -1,0 +1,31 @@
+.sticky {position: fixed; top: 0; width: 100%;}
+.g-flushed > .g-container {padding: 2vw!important;}
+#g-navigation .g-container {width: 100%;}
+#g-header .g-container {padding: 0!important;}
+
+#g-navigation a.g-logo {font-family:"Cormorant Garamond"; display: flex; flex-flow: row; flex-wrap: wrap; padding: 0 3vw;}
+#g-navigation a.g-logo span.blue {flex-basis: 100%; text-align: center; font-size:2vw; color:#0e72b2;}
+#g-navigation a.g-logo span.grey {flex-basis: 100%; text-align: center;font-size:1vw; color:#646464; margin-top: -15px;}
+#g-navigation div.top-contact {text-align: center; font-weight: bold;}
+
+.g-home-particles.g-helium-style #g-navigation .g-social a {color: #0e72b2;}
+
+div#topMenu {background-color: #0e72b2; display: flex; justify-content: center;}
+div#topMenu .g-content {margin: 0px; padding: 0px;}
+.g-menu-item-title {color:#ffffff;}
+
+#g-testimonials {text-align: center;}
+#g-testimonials div.g-simplecontent-item-content-title {padding: 2vw; font-size: 2vw;}
+#g-testimonials a {background-color: #0e72b2; color: #ffffff; padding: 1vw 3vw; margin: 2vw; font-weight: bold; font-size: 2vh; border-radius: 20px;}
+
+
+@media only all and (max-width: 48rem) {
+.g-home-particles.g-helium-style #g-navigation {background: transparent;}
+#g-navigation a.g-logo span.blue {font-size:4vh;}
+#g-navigation a.g-logo span.grey {font-size:3vh;}
+}
+
+div.mobile-contact {text-align:center;}
+div.mobile-contact .g-content {padding:0px; margin:0px; line-height:1.3rem;}
+
+div.mobile-social .g-content {padding:0px; margin:0px; line-height:1.3rem;}

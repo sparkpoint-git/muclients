@@ -1,0 +1,12 @@
+home:
+  title: Home
+  preset: home_-_particles
+_offline:
+  title: Offline
+  preset: _offline
+_error:
+  title: Error
+  preset: _error
+_body_only:
+  title: Body Only
+  preset: _body_only

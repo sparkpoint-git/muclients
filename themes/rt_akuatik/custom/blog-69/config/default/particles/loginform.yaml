@@ -1,0 +1,6 @@
+enabled: '1'
+class: ''
+title: '<h3 class="g-title">Login</h3>'
+greeting: 'Hi, %s'
+pretext: ''
+posttext: ''

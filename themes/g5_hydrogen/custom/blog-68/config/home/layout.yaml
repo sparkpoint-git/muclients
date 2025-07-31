@@ -1,0 +1,198 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: home
+  timestamp: 1581187528
+layout:
+  /header/: {  }
+  /navigation/:
+    -
+      - 'logo-5112 20'
+      - 'custom-3298 47'
+      - 'social-1703 33'
+    -
+      - menu-9261
+  /showcase/:
+    -
+      - 'logo-2938 20'
+      - 'sample-1 80'
+  /feature/:
+    -
+      - sample-3
+  /main/:
+    -
+      - sample-2
+  /subfeature/: {  }
+  /footer/:
+    -
+      - 'copyright-4521 70'
+      - 'branding-3863 30'
+  offcanvas:
+    -
+      - mobile-menu-3425
+structure:
+  header:
+    attributes:
+      boxed: ''
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+  showcase:
+    type: section
+    attributes:
+      boxed: '3'
+      class: ''
+      variations: ''
+  feature:
+    type: section
+    attributes:
+      boxed: ''
+  main:
+    attributes:
+      boxed: '3'
+      class: ''
+      variations: ''
+  subfeature:
+    type: section
+    attributes:
+      class: flush
+      boxed: ''
+  footer:
+    attributes:
+      boxed: ''
+content:
+  logo-5112:
+    title: 'Logo / Image'
+    attributes:
+      image: ''
+      text: 'Auto Advantage of Virginia'
+  custom-3298:
+    title: 'Custom HTML'
+    attributes:
+      html: "<div class=\"g-social social\">\n<a href=\"https://g.page/AutoAdvantageOfVaInc\" title=\"9A Davis Ave, SW, Leesburg, VA 20175\" aria-label=\"9A Davis Ave, SW, Leesburg, VA 20175\">\n<span class=\"fa fa-map-marker\"></span><span class=\"g-social-text\">9A Davis Ave, SW, Leesburg, VA 20175</span></a><span class=\"fa fa-clock-o\"></span><span class=\"g-social-text\">Mon - Fri 8:00 - 5:00 PM</span></a><a href=\"tel:703-771-2344\" title=\"703-771-2344\" aria-label=\"703-771-2344\"><span class=\"fa fa-phone\"></span><span class=\"g-social-text\">703-771-2344</span></a><a href=\"#\" title=\"Request Service\" aria-label=\"Request Service\"><span class=\"\"></span><span class=\"g-social-text\">Request Service</span></a>\n</div>"
+    block:
+      class: social
+  social-1703:
+    attributes:
+      enabled: 0
+      items:
+        -
+          icon: 'fa fa-map-marker'
+          text: '9A Davis Ave, SW, Leesburg, VA 20175'
+          title: '9A Davis Ave, SW, Leesburg, VA 20175'
+          link: 'https://g.page/AutoAdvantageOfVaInc'
+          name: Address
+        -
+          icon: 'fa fa-clock-o'
+          text: 'Mon - Fri 8:00 - 5:00 PM'
+          title: ''
+          link: ''
+          name: Hours
+        -
+          icon: 'fa fa-phone'
+          text: 703-771-2344
+          title: ''
+          link: ''
+          name: Phone
+        -
+          icon: ''
+          text: 'Request Service'
+          title: ''
+          link: '#'
+          name: 'Make an Appointment'
+  menu-9261:
+    attributes:
+      menu: mainmenu
+  logo-2938:
+    title: 'Logo / Image'
+    attributes:
+      link: '0'
+      class: ''
+    block:
+      id: auto-logo
+  sample-1:
+    title: 'Welcome to Auto Advantage'
+    attributes:
+      image: ''
+      headline: 'Welcome to Auto Advantage'
+      description: '<p>We began Auto Advantage of Virginia, Inc. in 1998 because of our love for cars. We are a family owned and operated business that depends on customer satisfaction for our success. Our goal is to provide you with a full range of detailing and customizing services as well as automotive maintenance making us a "One Stop Shop for Car Care". Our trained professionals will treat your car as if it were their own. So every time you visit Auto Advantage you will be satisfied.</p>'
+      link: ''
+      linktext: ''
+      samples: {  }
+    block:
+      id: welcome
+  sample-3:
+    title: Services
+    attributes:
+      image: /assets/autova/ase-logo.png
+      headline: Services
+      description: '<p>At Auto Advantage, we are committed to protecting and extending the life of your vehicle. Routine car maintenance keeps your car in tip top shape which is critical to avoid costly repairs in the future and critical when it''s time to sell or trade in</p>'
+      link: ''
+      linktext: ''
+      samples:
+        -
+          icon: 'fas fa-oil-can'
+          subtitle: ''
+          description: "<ul class=\"serviceList\">\n<li>Batteries</li>\n<li>Belts &amp; Hoses</li>\n<li>Filters</li>\n<li>Fluid Exchanges</li>\n<li>Oil Change &amp; Lube</li>\n<li>Shocks &amp; Struts</li>\n<li>Tire Rotations</li>\n<li>Wheel Alignments</li>\n</ul>"
+          id: ''
+          class: ''
+          variations: ''
+          title: 'Auto Maintenance Services'
+        -
+          icon: 'fas fa-life-ring'
+          subtitle: ''
+          description: "<ul class=\"serviceList\">\n<li>Custom Wheels</li>\n<li>Tire Installation &amp; Service</li>\n<li>Tire Brands</li>\n<li>Tires</li>\n</ul>"
+          id: ''
+          class: tire
+          variations: ''
+          title: 'Tire Services'
+        -
+          icon: 'fas fa-wrench'
+          subtitle: ''
+          description: "<ul class=\"serviceList\">\n<li>Air Conditioning</li>\n<li>Brake Repair</li>\n<li>Electrical Systems</li>\n<li>Engine Diagnostics</li>\n<li>Exhaust Systems</li>\n<li>Heating &amp; Cooling</li>\n<li>Steering &amp; Suspension</li>\n<li>Tune-ups</li>\n</ul>"
+          id: ''
+          class: ''
+          variations: ''
+          title: 'Auto Repair Services'
+  sample-2:
+    title: Detailing
+    attributes:
+      image: ''
+      headline: 'Full Detailing'
+      description: "<p>The average price of a new car is about $30,000. It is one of the largest investments that many of us will ever make... so let the professionals at Auto Advantage help you protect it. Your car is exposed to natural elements everyday, causing its finish to become oxidized and dull. Sun and salt destroy your paint's glossy finish. Professional detailing removes the oxidation and rejuvenates the paint. Then, top quality wax can be applied to protect your car's showroom shine. Increase Your Vehicle's Value!</p>\n<p>Let the professionals at Auto Advantage help you protect your investment and put more MONEY in your pocket at trade in time. If you are going to sell your used vehicle, let us maximize its' value with our professional detailing services. Car dealers have their cars detailed to increase their profits and so should you.</p>\n<h4>WAX IT NOW OR PAINT IT LATER!</h4>"
+      link: ''
+      linktext: ''
+      samples:
+        -
+          icon: ''
+          subtitle: '$150 and Up'
+          description: "<h5>Exterior</h5>\n<ul>\n<li>hand wash & dry</li>\n<li>clean wheels & wheel wells</li>\n<li>hand wax</li>\n<li>buff & shine</li>\n<li>exterior trim & tires dressed</li>\n<li>polish chrome</li>\n</ul>\n<h5>Interior</h5>\n<ul>\n<li>power vacuum interior (trunk not included)</li>\n<li>clean all windows, ashtrays & mirrors</li>\n<li>clean & dress all interior surfaces, dash, console, door panels, etc.</li>\n</ul>"
+          id: ''
+          class: ''
+          variations: ''
+          title: 'Advantage I'
+        -
+          icon: ''
+          subtitle: '$175 and Up'
+          description: "<h5>Exterior</h5>\n<ul>\n<li>hand wash & dry</li>\n<li>clean wheels & wheel wells</li>\n<li>hand wax</li>\n<li>buff & shine</li>\n<li>exterior trim & tires dressed</li>\n<li>polish chrome</li>\n</ul>\n<h5>Interior</h5>\n<ul>\n<li>power vacuum interior (trunk not included)</li>\n<li>clean all windows, ashtrays & mirrors</li>\n<li>clean & dress all interior surfaces, dash, console, door panels, etc.</li>\n<li>steam clean & shampoo all carpets & seats</li>\n</ul>"
+          id: ''
+          class: ''
+          variations: ''
+          title: 'Advantage II'
+        -
+          icon: ''
+          subtitle: '$200 and Up'
+          description: "<h5>Exterior</h5>\n<ul>\n<li>hand wash & dry</li>\n<li>clean, degrease & dress engine</li>\n<li>clean wheels & wheel wells</li>\n<li>hand wax</li>\n<li>buff & shine</li>\n<li>exterior trim & tires dressed</li>\n<li>polish chrome</li>\n</ul>\n<h5>Interior</h5>\n<ul>\n<li>power vacuum interior (trunk not included)</li>\n<li>clean all windows, ashtrays & mirrors</li>\n<li>clean & dress all interior surfaces, dash, console, door panels, etc.</li>\n</ul>"
+          id: ''
+          class: ''
+          variations: ''
+          title: 'Advantage III'
+    block:
+      id: detailing
+      variations: center
+  branding-3863:
+    block:
+      variations: align-right
+  mobile-menu-3425:
+    title: 'Mobile Menu'

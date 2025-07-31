@@ -1,0 +1,11 @@
+enabled: '1'
+date:
+  start: ''
+  end: now
+owner: 'Compass Kitchen'
+link: ''
+target: _blank
+additional:
+  text: 'A wonderful SparkPoint Media publication'
+css:
+  class: ''

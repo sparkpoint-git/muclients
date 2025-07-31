@@ -1,0 +1,61 @@
+name: news-item
+timestamp: 1603223577
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1581187522
+positions: {  }
+sections:
+  top: Top
+  navigation: Navigation
+  slideshow: Slideshow
+  above: Above
+  feature: Feature
+  showcase: Showcase
+  utility: Utility
+  expanded: Expanded
+  extension: Extension
+  bottom: Bottom
+  copyright: Copyright
+  header: Header
+  sidebar: Sidebar
+  aside: Aside
+  mainbar: Main
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  messages:
+    system-messages-9828: 'System Messages'
+  content:
+    system-content-9361: 'Page Content'
+  mobile-menu:
+    mobile-menu-2576: 'Mobile Menu'
+  logo:
+    logo-7376: 'Logo / Image'
+  menu:
+    menu-2970: Menu
+  widget:
+    position-widget-6045: Search
+  social:
+    social-1946: Social
+  copyright:
+    copyright-1258: Copyright
+  heading:
+    heading-8213: Heading
+  contentarray:
+    contentarray-5454: 'WordPress Posts'
+inherit:
+  default:
+    navigation: navigation
+    copyright: copyright
+    logo-7376: logo-9680
+    menu-2970: menu-5875
+    position-widget-6045: position-widget-6279
+    social-1946: social-3695
+    copyright-1258: copyright-6444
+  news:
+    header: header
+    sidebar: sidebar
+    heading-8213: heading-6603
+    contentarray-5454: contentarray-4767

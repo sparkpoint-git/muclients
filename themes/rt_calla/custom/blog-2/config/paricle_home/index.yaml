@@ -1,0 +1,47 @@
+name: paricle_home
+timestamp: 1581187525
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1531417158
+positions: {  }
+sections:
+  top: Top
+  slideshow: Slideshow
+  above: Above
+  feature: Feature
+  showcase: Showcase
+  utility: Utility
+  expanded: Expanded
+  extension: Extension
+  bottom: Bottom
+  copyright: Copyright
+  header: Header
+  sidebar: Sidebar
+  aside: Aside
+  mainbar: Main
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  messages:
+    system-messages-9828: 'System Messages'
+  promo:
+    promo-7463: Promo
+    promo-3037: Promo
+  logo:
+    logo-4216: 'Logo / Image'
+  blockcontent:
+    blockcontent-8457: 'Block Content'
+    blockcontent-2275: 'Floor Plans'
+  slideshow:
+    slideshow-9932: Slideshow
+  casestudies:
+    casestudies-3127: 'Amenities and Activities'
+  content:
+    system-content-1120: 'Page Content'
+  copyright:
+    copyright-2327: Copyright
+  mobile-menu:
+    mobile-menu-7951: Mobile-menu
+inherit: {  }

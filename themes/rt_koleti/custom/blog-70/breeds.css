@@ -1,0 +1,18 @@
+html body {background-image: url('/assets/lvspa/home-bk.jpg'); background-position: center; background-attachment: fixed; background-repeat: no-repeat; background-size: cover;}
+#g-header {background: #00000070;}
+#g-header .g-content {background: #ffffff;}
+#g-copyright {background: #000000bf;}
+
+section.entry-header {display: none;}
+
+
+div.breed-list {display:flex; flex-direction:row; flex-wrap:wrap;}
+
+article#breed {margin:1vw;}
+article#breed div.FarmersHaveSheep::before {content: 'Farms with Breed'; margin-top:17px; display: block; border-bottom: 1px solid;}
+article#breed ul {list-style: none; margin-top: 0;}
+
+@media (min-width: 770px)
+{
+    article#breed {width:45%;}
+}

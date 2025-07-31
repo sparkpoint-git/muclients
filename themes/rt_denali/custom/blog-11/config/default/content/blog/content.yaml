@@ -1,0 +1,4 @@
+enabled: '1'
+type: excerpt
+gexcerpt-length: '50'
+columns: size-50

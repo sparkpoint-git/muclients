@@ -1,0 +1,80 @@
+preset: preset3
+base:
+  background: '#121212'
+  text-color: '#ffffff'
+  text-active-color: '#e0fffb'
+accent:
+  color-1: '#4e3294'
+  color-2: '#d1f9d2'
+font:
+  family-default: 'IBMPlexSans, Helvetica, Tahoma, Geneva, Arial, sans-serif'
+button:
+  text-color: '#e6e6e6'
+  background-color: '#4e4e4e'
+menustyle:
+  background: '#ffffff'
+  text-color: '#888888'
+  text-color-alt: '#888888'
+  text-color-active: '#6dc9be'
+  background-active: 'rgba(255,255,255, 0)'
+  sublevel-text-color: '#121212'
+  sublevel-text-color-active: '#121212'
+  sublevel-background: '#ffffff'
+  sublevel-background-active: '#ffe4d3'
+top:
+  background: '#ffffff'
+  text-color: '#4e4e4e'
+navigation:
+  background: '#121212'
+  text-color: '#888888'
+header:
+  background: '#ffffff'
+  text-color: '#4e4e4e'
+above:
+  background: '#ffffff'
+  text-color: '#4e4e4e'
+main:
+  background: '#ffffff'
+  text-color: '#4e4e4e'
+showcase:
+  background: '#ffffff'
+  text-color: '#4e4e4e'
+slideshow:
+  background: '#6dc9be'
+  background-image: 'gantry-media://backgrounds/slideshow/img-01.jpg'
+  text-color: '#121212'
+utility:
+  background: '#ffffff'
+  text-color: '#4e4e4e'
+feature:
+  background: '#ffffff'
+  text-color: '#4e4e4e'
+expanded:
+  background: '#ffffff'
+  text-color: '#4e4e4e'
+extension:
+  background: '#ffffff'
+  text-color: '#4e4e4e'
+bottom:
+  background: '#ffffff'
+  text-color: '#4e4e4e'
+footer:
+  background: '#121212'
+  text-color: '#ffffff'
+copyright:
+  background: '#0f0f0f'
+  text-color: 'rgba(153, 153, 153, 0.4)'
+offcanvas:
+  background: '#121212'
+  text-color: '#ffffff'
+  toggle-color: '#121212'
+  width: 10rem
+  toggle-visibility: '1'
+breakpoints:
+  large-desktop-container: 88rem
+  desktop-container: 76rem
+  tablet-container: 51rem
+  large-mobile-container: 30rem
+  mobile-menu-breakpoint: 51rem
+menu:
+  animation: g-fade

@@ -1,0 +1,49 @@
+// REQUIRED DEPENDENCIES - DO NOT CHANGE
+@import "dependencies";
+
+// Load Third Party Libraries
+@import "vendor/bourbon/bourbon";
+
+// Load Nucleus Configuration
+@import "configuration/nucleus/base";
+
+// Load Nucleus Mixins and Functions
+@import "nucleus/functions/base";
+@import "nucleus/mixins/base";
+
+// Load Optional Nucleus Assets
+@import "nucleus/theme/alerts";
+
+// Load Theme Variable Driven Nucleus Elements
+@import "wordpress/theme/base";
+
+// Load Theme Configuration
+@import "configuration/base";
+
+//-------------------------------------------
+
+// Platform Specific Configuration
+@import "configuration-wordpress/base";
+
+// WORDPRESS THEME SPECIFIC
+@import "calla-wordpress/core";
+@import "calla-wordpress/typography";
+@import "calla-wordpress/forms";
+@import "calla-wordpress/pagination";
+@import "calla-wordpress/meta";
+@import "calla-wordpress/comments";
+@import "calla-wordpress/particles";
+@import "calla-wordpress/widgets";
+
+// THEME COMPONENTS
+@import "calla-wordpress/contactform";
+
+// SECTIONS
+@import "calla-wordpress/sections/main";
+
+//-------------------------------------------
+
+// ROCKETTHEME PLUGINS
+@import "calla-wordpress/rokajaxsearch";
+
+//-------------------------------------------

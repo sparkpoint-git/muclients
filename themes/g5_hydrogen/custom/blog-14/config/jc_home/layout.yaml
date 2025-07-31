@@ -1,0 +1,266 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: home
+  timestamp: 1537195582
+layout:
+  /header/: {  }
+  /navigation/:
+    -
+      - menu-1138
+  /showcase/:
+    -
+      - sample-1
+  /feature/:
+    -
+      - infolist-4367
+  /main/:
+    -
+      - 'sample-2 50'
+      - 'logo-3242 50'
+    -
+      - sample-3
+  /subfeature/:
+    -
+      - sample-9129
+  /footer/:
+    -
+      - 'copyright-5680 33.3'
+      - 'social-5738 33.3'
+      - 'branding-3739 33.3'
+  offcanvas:
+    -
+      - mobile-menu-4869
+structure:
+  header:
+    attributes:
+      boxed: ''
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+  showcase:
+    type: section
+    attributes:
+      boxed: ''
+  feature:
+    type: section
+    attributes:
+      boxed: ''
+  main:
+    attributes:
+      boxed: ''
+  subfeature:
+    type: section
+    attributes:
+      class: flush
+      boxed: ''
+  footer:
+    attributes:
+      boxed: ''
+content:
+  menu-1138:
+    attributes:
+      enabled: 0
+  sample-1:
+    title: 'From Our Farm to your Family'
+    attributes:
+      image: 'gantry-media://jcgrassfedlogo.png'
+      headline: 'From Our Farm to your Family'
+      description: "<h2>All Natural, Hormone Free, Pasture Raised and Grass Fed Beef for\nsale from our family's farm to your family's table.</h2>"
+      link: ''
+      linktext: ''
+      samples: {  }
+    block:
+      class: farmtofam
+      variations: box4
+  infolist-4367:
+    title: 'Info List'
+    attributes:
+      class: ''
+      title: ''
+      intro: ''
+      cols: g-2cols
+      infolists:
+        -
+          icon: ''
+          iconloc: left
+          image: 'gantry-media://jc1.jpg'
+          imageloc: center
+          textstyle: compact
+          imagestyle: large
+          desc: ''
+          tag: ''
+          subtag: ''
+          label: ''
+          link: ''
+          buttonicon: ''
+          readmoreclass: ''
+          readmoretarget: _self
+          title: ''
+        -
+          icon: ''
+          iconloc: left
+          image: 'gantry-media://jc2.jpg'
+          imageloc: center
+          textstyle: compact
+          imagestyle: large
+          desc: ''
+          tag: ''
+          subtag: ''
+          label: ''
+          link: ''
+          buttonicon: ''
+          readmoreclass: ''
+          readmoretarget: _self
+          title: ''
+        -
+          icon: ''
+          iconloc: left
+          image: 'gantry-media://jc3.jpg'
+          imageloc: center
+          textstyle: compact
+          imagestyle: large
+          desc: ''
+          tag: ''
+          subtag: ''
+          label: ''
+          link: ''
+          buttonicon: ''
+          readmoreclass: ''
+          readmoretarget: _self
+          title: ''
+        -
+          icon: ''
+          iconloc: left
+          image: 'gantry-media://jc4.jpg'
+          imageloc: center
+          textstyle: compact
+          imagestyle: large
+          desc: ''
+          tag: ''
+          subtag: ''
+          label: ''
+          link: ''
+          buttonicon: ''
+          readmoreclass: ''
+          readmoretarget: _self
+          title: ''
+  sample-2:
+    title: 'Who we are'
+    attributes:
+      image: ''
+      headline: ''
+      description: "<h1 class=\"center\">Who We Are</h1>\n<p>Our farm is family owned and run. We care\ndeeply about our cattle and we produce the highest quality beef, which is USDA inspected, dry aged, double wrapped or vacuum packed (your choice) at the butcher and labeled. Our beef is $3.75lb on the hanging weight and you pay the\nbutchers fee. You and the butcher can decide the steak thickness, cuts, etc</p>\n\n<p>Unlike some grass fed beef operations who’s cattle stand in a muddy feed lot eating a bale of hay, our cattle graze naturally in our pastures. Additionally, we provide free choice to grain in our pastures prior to culling to the butcher which results in added marbling, tenderness and flavor. Our beef is dry aged for two weeks, which enhances the tenderness and brings out the natural flavors.</p>"
+      link: ''
+      linktext: ''
+      samples: {  }
+  logo-3242:
+    title: 'Logo / Image'
+    attributes:
+      image: 'gantry-media://bull-ck.jpg'
+      link: '0'
+      text: ''
+      class: ''
+    block:
+      class: bullphoto
+  sample-3:
+    title: 'How We Farm'
+    attributes:
+      image: ''
+      headline: 'How We Farm'
+      description: '<p>Contey, LLC is a local, privately owned company who’s mission is to provide a harmonic relationship between nature and man.</p>'
+      link: ''
+      linktext: ''
+      samples:
+        -
+          icon: 'fa fa-bullseye'
+          subtitle: ''
+          description: '<p>We specialize in farm / estate management, specifically of pastures and cattle, from the hobby herdsman to the larger farm / ranch.</p>'
+          id: ''
+          class: ''
+          variations: ''
+          title: 'Our Specialty'
+        -
+          icon: 'fa fa-key'
+          subtitle: ''
+          description: '<p>Owners, John and Conrad Reid manage their own highly respected grass fed Hereford cattle. We breed to Black Angus and Hereford Bulls. </p>'
+          id: ''
+          class: ''
+          variations: ''
+          title: 'Our Experience'
+        -
+          icon: 'fa fa-star'
+          subtitle: ''
+          description: '<p>Rotational grazing to maximize forage is a critical component in today’s pasture management and one we implement on our own pastures. </p>'
+          id: ''
+          class: ''
+          variations: ''
+          title: 'Our Process'
+    block:
+      class: howwefarm
+      variations: 'center box3'
+  sample-9129:
+    title: Contact
+    attributes:
+      image: ''
+      headline: ''
+      description: ''
+      link: ''
+      linktext: ''
+      samples:
+        -
+          icon: 'fa fa-phone fa-1x'
+          subtitle: ''
+          description: "<p>For more information give us a call at 540-222-1128\nFarm located in Elkwood, VA</p>"
+          id: ''
+          class: ''
+          variations: ''
+          title: 'Contact Us'
+        -
+          icon: 'fa fa-group fa-1x'
+          subtitle: ''
+          description: '<p>We are always looking to expand our pastures so if you need assistance with your cattle or you are considering leasing your pastures call John to discuss your ideas, thoughts and concerns and we will assist you in maximizing your farms potential.'
+          id: ''
+          class: ''
+          variations: ''
+          title: 'Growing Together'
+    block:
+      variations: center
+  social-5738:
+    attributes:
+      enabled: 0
+      css:
+        class: social-items
+      items:
+        -
+          icon: 'fa fa-twitter'
+          text: Twitter
+          link: 'http://twitter.com/rockettheme'
+          name: Twitter
+        -
+          icon: 'fa fa-facebook'
+          text: Facebook
+          link: 'http://facebook.com/rockettheme'
+          name: Facebook
+        -
+          icon: 'fa fa-google'
+          text: Google
+          link: 'http://plus.google.com/+rockettheme'
+          name: Google
+        -
+          icon: 'fa fa-rss'
+          text: RSS
+          link: 'http://www.rockettheme.com/product-updates?rss'
+          name: RSS
+    block:
+      variations: center
+  branding-3739:
+    attributes:
+      enabled: 0
+    block:
+      variations: align-right
+  mobile-menu-4869:
+    title: 'Mobile Menu'
+    attributes:
+      enabled: 0

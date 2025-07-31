@@ -1,0 +1,25 @@
+css:
+  -
+    location: ''
+    inline: "div.staff {background-color: #017150fc; color: #ffffff;}\ndiv.staff div.g-blockcontent-header h2 {padding-bottom:0px;}\ndiv.staff div.g-blockcontent-header i {font-size:2rem; float:left; margin-top:0.3rem; margin-right:1rem;}\ndiv.staff .g-blockcontent-subcontent-block-content i {font-size:2rem; float:left; margin-top:0.3rem; margin-right:1rem;}"
+    extra: {  }
+    priority: '0'
+    name: staff
+  -
+    location: ''
+    inline: 'div.oaks-review p {font-size:1.5rem; line-height: 2rem; padding:4rem 2rem 2rem;}'
+    extra: {  }
+    priority: '0'
+    name: oaks-review
+  -
+    location: ''
+    inline: "div.delivery {}\ndiv.delivery ul {list-style:none;}\n\ndiv.monica {background:#7ba4a8; color:#ffffff; padding: 6vh 1vh;}\n\ndiv.monica a {color: #027151; display:block; padding-top:3px;}\n\nspan.bloglink {display:inline-block; background: #ffffff; border-radius: 5px; padding:0 1vh;}"
+    extra: {  }
+    priority: '0'
+    name: highlights
+  -
+    location: ''
+    inline: ".g-imagegrid .g-imagegrid-link:before {background:none;}\n.g-imagegrid .g-imagegrid-item .indicator {display:none;}"
+    extra: {  }
+    priority: '0'
+    name: imagegrid

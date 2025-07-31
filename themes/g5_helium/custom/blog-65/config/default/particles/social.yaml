@@ -1,0 +1,13 @@
+enabled: '1'
+css:
+  class: ''
+title: ''
+target: _blank
+display: both
+items:
+  -
+    icon: 'fa fa-facebook fa-fw'
+    text: 'Follow Us'
+    title: ''
+    link: 'https://www.facebook.com/HospiceSupportOfFauquierCounty/'
+    name: Facebook

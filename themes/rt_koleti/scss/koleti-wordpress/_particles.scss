@@ -1,0 +1,34 @@
+// Login Form particle
+.g-loginform {
+    .login-pretext {
+        margin-bottom: 1rem;
+    }
+
+    p {
+        input {
+            border-radius: $border-radius;
+        }
+    }
+
+    .button {
+        @extend %g-button;
+    }
+
+    fieldset.login-data {
+        #login-username {
+            margin-top: 0;
+        }
+    }
+
+    .login-extra {
+        list-style-type: none;
+        margin-left: 0;
+    }
+}
+
+// Info List particle
+.g-infolist {
+    small {
+        font-size: 85%;
+    }
+}

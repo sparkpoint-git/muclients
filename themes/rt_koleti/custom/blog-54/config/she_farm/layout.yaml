@@ -1,0 +1,229 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1581187522
+layout:
+  top: {  }
+  navigation: {  }
+  /slideshow/: {  }
+  /header/:
+    -
+      - 'infolist-2061 30'
+      - 'heading-4091 70'
+  /above/:
+    -
+      - 'simplecontent-1800 50'
+      - 'logo-1285 50'
+  /feature/:
+    -
+      - 'spacer-1640 33'
+      - 'position-widget-5778 52'
+      - 'spacer-5494 15'
+  showcase: {  }
+  utility: {  }
+  /container-main/:
+    -
+      -
+        'sidebar 20': {  }
+      -
+        'mainbar 60': {  }
+      -
+        'aside 20': {  }
+  expanded: {  }
+  extension: {  }
+  bottom: {  }
+  /footer/: {  }
+  copyright: {  }
+  offcanvas: {  }
+structure:
+  top:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  slideshow:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+      variations: section-horizontal-paddings
+  header:
+    attributes:
+      boxed: ''
+      class: ''
+      variations: 'section-vertical-paddings section-horizontal-paddings'
+  above:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+      variations: section-horizontal-paddings
+  feature:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+      variations: ''
+  showcase:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  utility:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  sidebar:
+    type: section
+    subtype: aside
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  mainbar:
+    type: section
+    subtype: main
+    title: Main
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  aside:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  container-main:
+    attributes:
+      boxed: ''
+      class: ''
+      extra: {  }
+  expanded:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  extension:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  bottom:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  footer:
+    attributes:
+      boxed: ''
+      class: ''
+      variations: 'section-vertical-paddings section-horizontal-paddings'
+  copyright:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  offcanvas:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+content:
+  infolist-2061:
+    title: 'Info List'
+    attributes:
+      class: ''
+      title: ''
+      intro: ''
+      cols: g-1cols
+      infolists:
+        -
+          icon: ''
+          iconloc: left
+          image: 'gantry-media://she.farm-logo-black-2.png'
+          imageloc: center
+          textstyle: compact
+          imagestyle: large
+          desc: "38145 Howlands Lane, Purcellville, VA<br/>\n540-454-2400"
+          tag: ''
+          subtag: ''
+          label: 'https://www.she.farm '
+          link: 'https://www.she.farm '
+          buttonicon: ''
+          readmoreclass: ''
+          readmoretarget: _blank
+          title: 'New item'
+  heading-4091:
+    attributes:
+      class: ''
+      title: 'Shepherds Corner Farm'
+      subtitle: ''
+  simplecontent-1800:
+    title: 'Simple Content'
+    attributes:
+      class: ''
+      title: ''
+      items:
+        -
+          layout: header
+          created_date: ''
+          content_title: 'Farm to Fashion'
+          author: ''
+          leading_content: 'Our products are available for purchase at the Loudoun Made Loudoun Grown Marketplace. As markets re-open this Fall, watch for additional markets where I’ll be selling my products.'
+          main_content: ''
+          readmore_label: 'Visit the Marketplace'
+          readmore_link: 'https://www.localline.ca/shepherds-corner-farm'
+          readmore_class: ''
+          readmore_target: _blank
+          title: 'Raising Sheep'
+    block:
+      id: shepards-thoughts
+  logo-1285:
+    title: 'Logo / Image'
+    attributes:
+      image: 'gantry-media://IMG_2335.jpeg'
+    block:
+      variations: 'nomarginall nopaddingall'
+  position-widget-5778:
+    attributes:
+      widget: '{"type":"widget","widget":"pods_widget_single","title":"Pods - Single Item","options":{"widget":{"title":"","pod_type":"member","slug":"","use_current":"1","template":"","template_custom":"<article id=\"member\">\n[if breeds]\n\t<span>Breeds</span>\n\t<div class=\"breeds\">\n\t[each breeds]\n\t<div id=\"farmBreed\">\n\t<header>\n\t\t<h2><a href=\"{@permalink,esc_url}\" title=\"{@post_title,esc_attr}\">{@post_title}</a></h2>\n\t\t<img src=\"{@image._src,esc_url}\" />\n\t</header>\n\t<div class=\"breed-purpose\">\n\t\t<div class=\"excerpt\">{@post_excerpt}</div>\n\t</div>\n\t</div>\n\t[/each]\n\t[else]\n\t\t\t\t<span></span>\n\t[/if]\n</div>\n</article>"}}}'
+      key: widget

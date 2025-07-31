@@ -1,0 +1,10 @@
+context:
+  -
+    is_author: true
+menu: {  }
+language: {  }
+post:
+  page:
+    366: true
+taxonomy: {  }
+archive: {  }

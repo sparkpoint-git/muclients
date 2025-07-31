@@ -1,0 +1,19 @@
+enabled: '1'
+css:
+  class: ''
+title: ''
+target: _blank
+display: both
+items:
+  -
+    icon: 'fab fa-twitter'
+    text: ''
+    title: ''
+    link: ''
+    name: Twitter
+  -
+    icon: 'fab fa-facebook'
+    text: ''
+    title: ''
+    link: ''
+    name: Facebook

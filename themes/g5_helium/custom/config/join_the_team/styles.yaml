@@ -1,0 +1,6 @@
+preset: preset6
+header:
+  background-image: 'gantry-media://community-building.png'
+intro:
+  background: '#ffffff'
+  text-color: '#474747'

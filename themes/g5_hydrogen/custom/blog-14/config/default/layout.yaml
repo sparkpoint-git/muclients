@@ -1,0 +1,57 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1537195582
+layout:
+  /header/:
+    -
+      - 'logo-8698 30'
+      - 'position-header 70'
+  /navigation/:
+    -
+      - menu-7012
+  /main/:
+    -
+      - position-breadcrumbs
+    -
+      - system-messages-7578
+    -
+      - system-content-5154
+  /footer/:
+    -
+      - position-footer
+    -
+      - 'copyright-8453 40'
+      - 'spacer-8711 30'
+      - 'branding-1243 30'
+  offcanvas:
+    -
+      - mobile-menu-6820
+structure:
+  header:
+    attributes:
+      boxed: ''
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+  main:
+    attributes:
+      boxed: ''
+  footer:
+    attributes:
+      boxed: ''
+content:
+  position-header:
+    attributes:
+      key: header
+  menu-7012:
+    attributes:
+      enabled: 0
+  position-breadcrumbs:
+    attributes:
+      key: breadcrumbs
+  position-footer:
+    attributes:
+      key: footer

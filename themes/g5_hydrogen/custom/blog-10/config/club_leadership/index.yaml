@@ -1,0 +1,43 @@
+name: club_leadership
+timestamp: 1708904171
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: home
+  timestamp: 1537195582
+positions: {  }
+sections:
+  header: Header
+  navigation: Navigation
+  showcase: Showcase
+  feature: Feature
+  subfeature: Subfeature
+  main: Main
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  logo:
+    logo-7136: Logo
+  custom:
+    custom-3159: 'Custom HTML'
+    custom-3470: Committees
+    custom-9737: By-Laws
+    custom-6236: Mission
+    custom-7402: Membership
+  menu:
+    menu-5555: Menu
+  infolist:
+    infolist-8892: 'Info List'
+  copyright:
+    copyright-2256: Copyright
+  social:
+    social-2985: Social
+  branding:
+    branding-1850: Branding
+  mobile-menu:
+    mobile-menu-2938: 'Mobile Menu'
+inherit:
+  default:
+    header: header
+    logo-7136: logo-9636
+    custom-3159: custom-2856

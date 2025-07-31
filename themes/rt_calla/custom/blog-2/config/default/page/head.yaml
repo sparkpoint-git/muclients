@@ -1,0 +1,29 @@
+meta: {  }
+head_bottom: ''
+atoms:
+  -
+    id: analytics-1453
+    type: analytics
+    title: 'Google Analytics'
+    attributes:
+      enabled: '1'
+      ua:
+        code: UA-166260787-2
+        anonym: '0'
+        ssl: '0'
+        debug: '0'
+  -
+    type: frameworks
+    title: 'JavaScript Frameworks'
+    attributes:
+      enabled: '1'
+      jquery:
+        enabled: '1'
+        ui_core: '1'
+        ui_sortable: '0'
+      bootstrap:
+        enabled: '0'
+      mootools:
+        enabled: '0'
+        more: '0'
+    id: frameworks-1582

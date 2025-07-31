@@ -1,0 +1,20 @@
+html body {background-image: url('/assets/lvspa/home-bk.jpg'); background-position: center; background-attachment: fixed; background-repeat: no-repeat; background-size: cover;}
+#g-slideshow {background: none;}
+h5.g-slideshow-carousel-small-title {display: none;}
+
+div.message-from-pres::before {content:"Message from President"; display:block; background:#000000; color:#ffffff; padding:2vw; font-weight:bold; font-size:1.7vw;}
+
+div.news-home::before {content:"News"; display:block; background:#20701d; color:#ffffff; padding:2vw; font-weight:bold; font-size:1.7vw;}
+div.news-home {background:#20701d;}
+div.news-home .g-content-array .g-item-title a {color:#ffffff;}
+
+
+.g-team .g-team-grid .team-members .hex h1 {font-size: 1.24rem;}
+
+div.home-members a {background:#ffffff; padding: 1vw 4vw 1vw 2vw; font-size: 4vw;}
+div.home-members span {background: #000000; padding: 1vw; margin-left: -27px; color: #ffffff; padding-left: 31px; position: absolute;}
+
+@media (max-width: 51rem) {
+	div.home-members a {font-size: 4vh;}
+	div.home-members span {display: block; font-size: 3vh;}
+}

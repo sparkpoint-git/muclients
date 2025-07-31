@@ -1,0 +1,261 @@
+# Copyright (C) 2018 RocketTheme, LLC
+msgid ""
+msgstr ""
+"Project-Id-Version: Denali @version@\n"
+"Report-Msgid-Bugs-To: https://rockettheme.com\n"
+"POT-Creation-Date: 2018-03-01 10:39:12+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: archive.php:31
+msgid "Archive"
+msgstr ""
+
+#: archive.php:33 archive.php:35 archive.php:37
+msgid "Archive:"
+msgstr ""
+
+#: author.php:31
+msgid "Author:"
+msgstr ""
+
+#: functions.php:31
+msgid ""
+"Please upgrade Gantry 5 Framework to v%s (or later) before using %s theme!"
+msgstr ""
+
+#: functions.php:52
+msgid "Error locating %s for inclusion"
+msgstr ""
+
+#: includes/gantry.php:50
+msgid "Timber library plugin not found. "
+msgstr ""
+
+#: includes/gantry.php:52
+msgid ""
+"Theme cannot be used. For more information, please see the notice in "
+"administration."
+msgstr ""
+
+#: includes/helper.php:59
+msgid "<span class=\"author-name\">%s</span>"
+msgstr ""
+
+#: includes/helper.php:63
+msgid "Commented on %1$s"
+msgstr ""
+
+#: includes/helper.php:66
+msgid "(Edit)"
+msgstr ""
+
+#: includes/helper.php:73
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: index.php:22
+msgid ""
+"Timber not activated. Make sure you activate the plugin in <a href=\"/wp-"
+"admin/plugins.php#timber\">/wp-admin/plugins.php</a>"
+msgstr ""
+
+#: search.php:24
+msgid "Search results for:"
+msgstr ""
+
+#. views/404.html.twig
+msgid "404 Page not found"
+msgstr ""
+
+#. views/archive.html.twig
+msgid "Sorry, but there aren\'t any posts matching your query."
+msgstr ""
+
+#. views/offline.html.twig
+msgid "Page Offline"
+msgstr ""
+
+#. views/offline.html.twig
+msgid "Offline Message!"
+msgstr ""
+
+#. views/searchform.html.twig
+msgid "Search for:"
+msgstr ""
+
+#. views/searchform.html.twig
+msgid "Search …"
+msgstr ""
+
+#. views/partials/comments.html.twig
+msgid "comments"
+msgstr ""
+
+#. views/partials/comments.html.twig
+msgid "Older comments"
+msgstr ""
+
+#. views/partials/comments.html.twig
+msgid "Newer comments"
+msgstr ""
+
+#. views/partials/comments.html.twig
+msgid "Post your comment"
+msgstr ""
+
+#. views/partials/comments.html.twig
+msgid "You must be <a href="%s">logged in</a> to post a comment."
+msgstr ""
+
+#. views/partials/comments.html.twig
+msgid "Logged in as <a href="%s/wp-admin/profile.php">%s</a>."
+msgstr ""
+
+#. views/partials/comments.html.twig
+msgid "Log out of this account"
+msgstr ""
+
+#. views/partials/comments.html.twig
+msgid "Log out &raquo;"
+msgstr ""
+
+#. views/partials/comments.html.twig
+msgid "Name"
+msgstr ""
+
+#. views/partials/comments.html.twig
+msgid "(required)"
+msgstr ""
+
+#. views/partials/comments.html.twig
+msgid "Email"
+msgstr ""
+
+#. views/partials/comments.html.twig
+msgid "Website"
+msgstr ""
+
+#. views/partials/comments.html.twig
+msgid "Your comment goes here."
+msgstr ""
+
+#. views/partials/comments.html.twig
+msgid "You can use these tags:"
+msgstr ""
+
+#. views/partials/comments.html.twig
+msgid "Submit Comment"
+msgstr ""
+
+#. views/partials/content-page.html.twig
+msgid "Edit"
+msgstr ""
+
+#. views/partials/meta.html.twig
+msgid "No comments"
+msgstr ""
+
+#. views/partials/meta.html.twig
+msgid "Comment"
+msgstr ""
+
+#. views/partials/meta.html.twig
+msgid "Comments"
+msgstr ""
+
+#. views/partials/pagination.html.twig
+msgid "Prev"
+msgstr ""
+
+#. views/partials/pagination.html.twig
+msgid "Next"
+msgstr ""
+
+#. views/partials/password-form.html.twig
+msgid "Password"
+msgstr ""
+
+#. views/partials/password-form.html.twig
+msgid "Submit"
+msgstr ""
+
+#. particles/contactform.html.twig
+msgid "Please enter your name."
+msgstr ""
+
+#. particles/contactform.html.twig
+msgid "Please enter your email address."
+msgstr ""
+
+#. particles/contactform.html.twig
+msgid "You entered an invalid email address."
+msgstr ""
+
+#. particles/contactform.html.twig
+msgid "Please enter subject of your message."
+msgstr ""
+
+#. particles/contactform.html.twig
+msgid "Please enter a message."
+msgstr ""
+
+#. particles/contactform.html.twig
+msgid "The reCaptcha couldn\'t be validated. Please try again."
+msgstr ""
+
+#. particles/contactform.html.twig
+msgid "Contact Form:"
+msgstr ""
+
+#. particles/contactform.html.twig
+msgid "From:"
+msgstr ""
+
+#. particles/contactform.html.twig
+msgid "Email:"
+msgstr ""
+
+#. particles/contactform.html.twig
+msgid "Reply-To:"
+msgstr ""
+
+#. particles/contactform.html.twig
+msgid "Message:"
+msgstr ""
+
+#. particles/contactform.html.twig
+msgid "Your email was sent successfully. Thank you!"
+msgstr ""
+
+#. particles/contactform.html.twig
+msgid "Sorry, an error occured. Please try again."
+msgstr ""
+
+#. particles/contactform.html.twig
+msgid "Send an Email. All fields with an * are required."
+msgstr ""
+
+#. particles/contactform.html.twig
+msgid "Subject"
+msgstr ""
+
+#. particles/contactform.html.twig
+msgid "Message"
+msgstr ""
+
+#. particles/contactform.html.twig
+msgid "Send Copy to Yourself"
+msgstr ""
+
+#. particles/contactform.html.twig
+msgid "Send Email"
+msgstr ""
+
+#. particles/owlcarousel/showcase-wordpress.html.twig
+msgid "The Showcase layout should be used only with Particle as a source content. Please change the Content Source in the OwlCarousel particle settings."
+msgstr ""

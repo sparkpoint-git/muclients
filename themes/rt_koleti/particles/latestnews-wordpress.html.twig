@@ -1,0 +1,87 @@
+{# Load Content From WordPress #}
+{% set attr_extra = particle.extra|attribute_array %}
+{% set post_settings = particle.post %}
+{% set filter = post_settings.filter %}
+{% set sort = post_settings.sort %}
+{% set limit = post_settings.limit %}
+{% set start = limit.start %}
+{% set display = post_settings.display %}
+
+{# Sticky Posts #}
+{% set sticky_posts = filter.sticky ? false : true %}
+
+{# Query Posts #}
+{% set query_parameters = {
+    'posts_per_page': limit.total|default('-1'),
+    'offset': start,
+    'orderby': sort.orderby,
+    'order': sort.ordering,
+    'ignore_sticky_posts': sticky_posts
+} %}
+
+{% set categories = filter.categories|replace({' ': ',', ', ': ','}) %}
+
+{% if filter.posts %}
+    {% set query_parameters = query_parameters|merge({'post__in': filter.posts|replace({' ': ',', ', ': ','})|split(',')}) %}
+{% else %}
+    {% set query_parameters = query_parameters|merge({'cat': categories}) %}
+{% endif %}
+
+{% set posts = wordpress.query_posts(query_parameters) %}
+{% set total = posts.get_pagination([]).total|abs %}
+{% set total = max(posts|length, (total * max(0, limit.total)) - 1) %}
+
+<div class="g-latestnews-grid {{ particle.cols }}" style="margin-top:{{ particle.margin_top }};">
+    <div class="g-latestnews-grid-sizer"></div>
+    {% for post in posts %}
+        {% if display.image.enabled and post.thumbnail.src %}
+            {% set post_image = post.thumbnail.src %}
+        {% endif %}
+
+        {% set cat = post.terms('category') %}
+        {% set cat_groups = [] %}
+        {% for single_cat in cat %}
+            {% set cat_groups = cat_groups|merge([single_cat.id]) %}
+        {% endfor %}
+
+        <div class="g-latestnews-grid-item g-latestnews-platform-content {% if 'photo-large' in post.tags %}photo-large{% endif %}" data-groups='[{% for c in cat_groups %}"{{ c }}"{{ not loop.last ? "," }}{% endfor %}]'>
+            <div class="g-latestnews-grid-item-wrapper g-latestnews-layout-{% if display.image.enabled %}photo{% else %}quote{% endif %}">
+
+                {% if display.image.enabled %}
+                    <div class="g-latestnews-grid-item-image">
+                        <div class="g-latestnews-grid-item-overlay"></div>
+                        <img src="{{ url(post_image)|e }}" alt="{{ post.title|raw }}"/>
+                    </div>
+                {% endif %}
+
+                <div class="g-latestnews-grid-item-content {% if display.image.enabled %}image{% endif %}">
+
+                    {% if display.category.enabled %}
+                        <div class="g-latestnews-grid-item-case">
+                            {{ post.terms('category') | join(' ') }}
+                        </div>
+                    {% endif %}
+
+                    {% if display.title.enabled and post.title %}
+                        {% if display.read_more.enabled %}<a href="{{ post.link|e }}" target="{{ display.read_more.target|default('_self')|e }}" class="g-latestnews-link">{% endif %}
+                        <div class="g-latestnews-grid-item-title"><span>{{ display.title.limit ? post.title|truncate_text(display.title.limit)|raw : post.title|raw }}</span></div>
+                        {% if display.read_more.enabled %}</a>{% endif %}
+                    {% endif %}
+
+                    {% if display.text.type %}
+                            {% set post_text = display.text.type == 'excerpt' ? post.post_excerpt : post.content %}
+                            <div class="g-latestnews-grid-item-description">
+                                {% if display.text.formatting == 'text' %}
+                                    {{ post_text|truncate_text(display.text.limit)|raw }}
+                                {% else %}
+                                    {{ post_text|truncate_html(display.text.limit)|raw }}
+                                {% endif %}
+                            </div>
+                    {% endif %}
+
+                </div>
+
+            </div>
+        </div>
+    {% endfor %}
+</div>

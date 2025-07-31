@@ -1,0 +1,11 @@
+preset: preset6
+base:
+  background: '#363636'
+header:
+  background: '#3b2244'
+  background-image: 'gantry-media://community-building.png'
+footer:
+  background: '#000000'
+  text-color: '#CDBBB0'
+offcanvas:
+  background: '#474747'

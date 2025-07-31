@@ -1,0 +1,38 @@
+name: home
+timestamp: 1597869758
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: home
+  timestamp: 1581187528
+positions: {  }
+sections:
+  header: Header
+  navigation: Navigation
+  showcase: Showcase
+  feature: Feature
+  subfeature: Subfeature
+  main: Main
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  logo:
+    logo-5112: 'Logo / Image'
+    logo-2938: 'Logo / Image'
+  custom:
+    custom-3298: 'Custom HTML'
+  social:
+    social-1703: Social
+  menu:
+    menu-9261: Menu
+  sample:
+    sample-1: 'Welcome to Auto Advantage'
+    sample-3: Services
+    sample-2: Detailing
+  copyright:
+    copyright-4521: Copyright
+  branding:
+    branding-3863: Branding
+  mobile-menu:
+    mobile-menu-3425: 'Mobile Menu'
+inherit: {  }

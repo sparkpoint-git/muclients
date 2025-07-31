@@ -1,0 +1,13 @@
+enabled: '1'
+css:
+  class: ''
+title: ''
+target: _blank
+display: both
+items:
+  -
+    icon: 'fa fa-facebook-square fa-fw'
+    text: ''
+    title: ''
+    link: 'https://www.facebook.com/loudounvalleysheep/'
+    name: Facebook

@@ -1,0 +1,28 @@
+atoms:
+  -
+    id: analytics-3642
+    type: analytics
+    title: 'Google Analytics'
+    inherit:
+      outline: default
+      atom: analytics-3642
+      include:
+        - attributes
+  -
+    type: frameworks
+    title: 'JavaScript Frameworks'
+    id: frameworks-1582
+    inherit:
+      outline: default
+      atom: frameworks-1582
+      include:
+        - attributes
+  -
+    id: assets-8216
+    type: assets
+    title: 'Custom CSS / JS'
+    attributes:
+      enabled: '1'
+      css:
+        - { location: '', inline: "@media (max-width: 100rem)\n{\n.g-infolist-particle .g-infolist .g-infolist-item-title {font-size:2rem;}\n.g-infolist-particle .g-infolist .g-infolist-item-desc {font-size:1.3rem;}\n}", extra: {  }, priority: '0', name: 'Staff Name' }
+      javascript: {  }

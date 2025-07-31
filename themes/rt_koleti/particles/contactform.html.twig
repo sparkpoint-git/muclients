@@ -1,0 +1,208 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+
+    {% set recaptcha = particle.recaptcha.enabled and particle.recaptcha.sitekey is not empty and particle.recaptcha.secretkey is not empty %}
+
+    {% if recaptcha %}
+        {% scripts %}
+            <script type="text/javascript" src="https://www.google.com/recaptcha/api.js"></script>
+        {% endscripts %}
+    {% endif %}
+
+    {% set post = gantry.request.post %}
+    {% set validated = true %}
+
+    {% if post['submit'] == '1' %}
+        {% if post['contact_name'] is empty %}
+            {% set name_error = __('Please enter your name.', 'g5_koleti') %}
+            {% set has_error = true %}
+            {% set validated = false %}
+        {% endif %}
+
+        {% if post['contact_email'] is empty %}
+            {% set email_error = __('Please enter your email address.', 'g5_koleti') %}
+            {% set has_error = true %}
+            {% set validated = false %}
+        {% elseif preg_match('/^[A-Z0-9._%-]+@[A-Z0-9._%-]+\.[A-Z]{2,4}$/i', post['contact_email'] is empty) %}
+            {% set email_error = __('You entered an invalid email address.', 'g5_koleti') %}
+            {% set has_error = true %}
+            {% set validated = false %}
+        {% endif %}
+
+        {% if post['contact_subject'] is empty %}
+            {% set subject_error = __('Please enter subject of your message.', 'g5_koleti') %}
+            {% set has_error = true %}
+            {% set validated = false %}
+        {% endif %}
+
+        {% if post['contact_message'] is empty %}
+            {% set message_error = __('Please enter a message.', 'g5_koleti') %}
+            {% set has_error = true %}
+            {% set validated = false %}
+        {% endif %}
+
+        {% if recaptcha %}
+            {% set validate_url = 'https://www.google.com/recaptcha/api/siteverify' %}
+            {% set response = function('wp_safe_remote_post', validate_url ~ '?secret=' ~ particle.recaptcha.secretkey ~ '&response=' ~ post['g-recaptcha-response'] ~ '&remoteip=' ~ gantry.request.server['REMOTE_ADDR']) %}
+            {% set response_text = response.body|json_decode %}
+            {% if not response_text.success %}
+                {% set recaptcha_error = __('The reCaptcha couldn\'t be validated. Please try again.', 'g5_koleti') %}
+                {% set has_error = true %}
+                {% set validated = false %}
+            {% endif %}
+        {% endif %}
+
+        {% if has_error is not defined and validated %}
+            {% set email = particle.email %}
+            {% if not email %}
+                {% set email = function('get_option', 'admin_email') %}
+            {% endif %}
+
+            {% set email_from = particle.email_from %}
+            {% if not email_from %}
+                {% set email_from = post['contact_email']|e %}
+            {% endif %}
+
+            {% set subject = site.name ~ ' ' ~ __('Contact Form:', 'g5_koleti') ~ ' ' ~ post['contact_subject'] %}
+            {% set body = __('From:', 'g5_koleti') ~ ' ' ~ post['contact_name']|e ~ "\n" ~ __('Reply-To:', 'g5_koleti') ~ ' ' ~ post['contact_email']|e ~ "\n" ~ __('Message:', 'g5_koleti') ~ ' ' ~ post['contact_message'] %}
+            {% set headers = 'Reply-To:' ~ ' ' ~ post['contact_email']|e ~ "\n" ~ 'From:' ~ ' ' ~ email_from|e %}
+
+            {% if post['contact_email_copy'] == '1' %}
+                {% do function('mail', post['contact_email']|e, subject, body, headers) %}
+            {% endif %}
+
+            {% do function('mail', email, subject, body, headers) %}
+            {% set email_sent = true %}
+        {% endif %}
+    {% endif %}
+
+	{% if particle.header %}<h2 class="contact-form-header">{{ particle.header }}</h2>{% endif %}
+
+	<div class="g-contactform {{ particle.class|e }}">
+
+        {% if email_sent %}
+
+            <p class="alert alert-success">
+                {{ __('Your email was sent successfully. Thank you!', 'g5_koleti') }}
+            </p>
+
+        {% else %}
+
+            {% if has_error is defined or not validated %}
+
+                <p class="alert alert-error">
+                    {{ __('Sorry, an error occured. Please try again.', 'g5_koleti') }}
+                </p>
+
+            {% endif %}
+
+            <form class="form-validate" id="contact-form" action="" method="post" name="contact-form">
+                <fieldset class="nopaddingall nomarginall">
+                    <legend class="form-message">{{ __('Send an Email. All fields with an * are required.', 'g5_koleti') }}</legend>
+
+                    <div class="control-group">
+                        <div class="control-label">
+                            <label class="required">{{ __('Name', 'g5_koleti') }}<span class="star">&nbsp;*</span></label>
+                        </div>
+
+                        <div class="controls">
+                            <input class="required" id="contact_name" name="contact_name" required="required" size="30" type="text" value="" />
+                        </div>
+
+                        {% if name_error is defined %}
+                            <p class="alert alert-error">
+                                {{ name_error }}
+                            </p>
+                        {% endif %}
+                    </div>
+
+                    <div class="control-group">
+                        <div class="control-label">
+                            <label class="required">{{ __('Email', 'g5_koleti') }}<span class="star">&nbsp;*</span></label>
+                        </div>
+
+                        <div class="controls">
+                            <input class="required" id="contact_email" name="contact_email" required="required" size="30" type="email" value="" />
+                        </div>
+
+                        {% if email_error is defined %}
+                            <p class="alert alert-error">
+                                {{ email_error }}
+                            </p>
+                        {% endif %}
+                    </div>
+
+                    <div class="control-group">
+                        <div class="control-label">
+                            <label class="required">{{ __('Subject', 'g5_koleti') }}<span class="star">&nbsp;*</span></label>
+                        </div>
+
+                        <div class="controls">
+                            <input class="required" id="contact_subject" name="contact_subject" required="required" size="60" type="text" value="" />
+                        </div>
+
+                        {% if subject_error is defined %}
+                            <p class="alert alert-error">
+                                {{ subject_error }}
+                            </p>
+                        {% endif %}
+                    </div>
+
+                    <div class="control-group">
+                        <div class="control-label">
+                            <label class="required">{{ __('Message', 'g5_koleti') }}<span class="star">&nbsp;*</span></label>
+                        </div>
+
+                        <div class="controls">
+                            <textarea class="required" cols="50" id="contact_message" name="contact_message" required="required" rows="10"></textarea>
+                        </div>
+
+                        {% if message_error is defined %}
+                            <p class="alert alert-error">
+                                {{ message_error }}
+                            </p>
+                        {% endif %}
+                    </div>
+
+                    <div class="control-group">
+                        <div class="control-label control-label-checkbox">
+                            <label>{{ __('Send Copy to Yourself', 'g5_koleti') }}</label>
+                        </div>
+
+                        <div class="controls">
+                            <input id="contact_email_copy" name="contact_email_copy" type="checkbox" value="1">
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+
+                    {% if particle.gdpr %}
+                    <div class="control-group">
+                        <div class="control-label control-label-checkbox">
+                            <label class="required">{{ particle.gdprlabel }}</label>
+                        </div>
+
+                        <div class="controls">
+                            <input id="gdpr" name="gdpr" type="checkbox" value="1" class="required" required="required">
+                        </div>
+
+                    <div class="clearfix"></div>
+                    </div>
+                    {% endif %}
+
+                    {% if recaptcha %}
+                        <div class="g-recaptcha" data-sitekey="{{ particle.recaptcha.sitekey|e }}"></div>
+                    {% endif %}
+
+                    <div class="form-actions">
+                        <button class="button" type="submit" name="submit" value="1">{{ __('Send Email', 'g5_koleti') }}</button>
+                    </div>
+                </fieldset>
+            </form>
+
+        {% endif %}
+
+	</div>
+
+{% endblock %}

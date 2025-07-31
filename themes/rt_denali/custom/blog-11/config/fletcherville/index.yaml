@@ -1,0 +1,60 @@
+name: fletcherville
+timestamp: 1733112180
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1522840415
+positions:
+  sidebar: Sidebar
+  aside: Aside
+sections:
+  top: Top
+  navigation: Navigation
+  slideshow: Slideshow
+  above: Above
+  showcase: Showcase
+  utility: Utility
+  feature: Feature
+  expanded: Expanded
+  extension: Extension
+  bottom: Bottom
+  copyright: Copyright
+  header: Header
+  sidebar: Sidebar
+  aside: Aside
+  mainbar: Main
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  logo:
+    logo-4157: Fletcherville
+    logo-5494: Logo
+  gridstatistic:
+    gridstatistic-9212: 'Fletcherville Statistic'
+  position:
+    position-position-9414: Sidebar
+    position-position-8807: Aside
+  mobile-menu:
+    mobile-menu-7951: Mobile-menu
+  menu:
+    menu-7212: Menu
+  simplemenu:
+    simplemenu-3527: 'Bottom Menu'
+  simplecontent:
+    simplecontent-1984: 'Contact Us'
+  copyright:
+    copyright-6896: Copyright
+  branding:
+    branding-3923: Branding
+inherit:
+  default:
+    navigation: navigation
+    footer: footer
+    copyright: copyright
+    logo-5494: logo-5992
+    menu-7212: menu-2350
+    simplemenu-3527: simplemenu-6826
+    simplecontent-1984: simplecontent-4123
+    copyright-6896: copyright-7658
+    branding-3923: branding-2782

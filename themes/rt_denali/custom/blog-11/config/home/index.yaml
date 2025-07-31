@@ -1,0 +1,74 @@
+name: home
+timestamp: 1733112180
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: home_-_particles
+  timestamp: 1522840415
+positions: {  }
+sections:
+  top: Top
+  navigation: Navigation
+  slideshow: Slideshow
+  above: Above
+  feature: Feature
+  showcase: Showcase
+  extension: Extension
+  bottom: Bottom
+  copyright: Copyright
+  header: Header
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  messages:
+    system-messages-1675: 'System Messages'
+  slider:
+    slider-7244: Slider
+  infolist:
+    infolist-4995: 'Our Core Initiatives'
+  showcase:
+    showcase-8833: 'Showcase Slider'
+  blockcontent:
+    blockcontent-2920: Initiatives
+  simplecontent:
+    simplecontent-3527: Goals
+    simplecontent-9699: Values
+    simplecontent-5799: 'Contact Us'
+  eventlist:
+    eventlist-3132: 'Upcoming Exhibitions'
+  casestudies:
+    casestudies-9807: 'Our Blog'
+  custom:
+    custom-2030: 'Founder Quote'
+    custom-2243: donation
+    custom-7767: 5013c
+  logo:
+    logo-7468: 'Logo / Image'
+    logo-1500: Logo
+  carousel:
+    carousel-5826: 'Carousel - Image Gallery'
+  menu:
+    menu-8012: Menu
+  simplemenu:
+    simplemenu-5167: 'Bottom Menu'
+  copyright:
+    copyright-6453: Copyright
+  branding:
+    branding-7438: Branding
+  mobile-menu:
+    mobile-menu-4284: Mobile-menu
+inherit:
+  default:
+    top: top
+    system-messages-1675: system-messages-9828
+    navigation: navigation
+    footer: footer
+    copyright: copyright
+    offcanvas: offcanvas
+    logo-1500: logo-5992
+    menu-8012: menu-2350
+    simplemenu-5167: simplemenu-6826
+    simplecontent-5799: simplecontent-4123
+    copyright-6453: copyright-7658
+    branding-7438: branding-2782
+    mobile-menu-4284: mobile-menu-7951

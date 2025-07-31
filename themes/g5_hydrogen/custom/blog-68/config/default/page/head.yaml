@@ -1,0 +1,15 @@
+meta: {  }
+head_bottom: ''
+atoms:
+  -
+    id: assets-7449
+    type: assets
+    title: 'Custom CSS / JS'
+    attributes:
+      enabled: '1'
+      css:
+        - { location: /assets/css/fontawesome.css, inline: '', extra: {  }, priority: '0', name: font-awesome }
+        - { location: /assets/css/brands.css, inline: '', extra: {  }, priority: '0', name: brand }
+        - { location: /assets/css/all.css, inline: '', extra: {  }, priority: '0', name: all }
+        - { location: /assets/css/solid.css, inline: '', extra: {  }, priority: '0', name: solid }
+      javascript: {  }

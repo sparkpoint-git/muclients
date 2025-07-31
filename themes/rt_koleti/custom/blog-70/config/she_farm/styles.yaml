@@ -1,0 +1,5 @@
+preset: preset1
+above:
+  background-image: 'gantry-media://shepards-corner-farm-rolleds-scarves.jpg'
+feature:
+  background-image: ''

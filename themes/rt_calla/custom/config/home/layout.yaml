@@ -1,0 +1,720 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: home_-_particles
+  timestamp: 1550676708
+layout:
+  top: {  }
+  /slideshow/:
+    -
+      - 'verticalmenu-8085 20'
+      - 'carousel-2510 80'
+  /header/:
+    -
+      - heading-2069
+  /above/:
+    -
+      - 'promo-5881 25'
+      - 'blockcontent-8007 25'
+      - 'logo-1795 25'
+      - 'contentarray-2083 25'
+    -
+      - blockcontent-5952
+  /feature/:
+    -
+      - slideshow-2132
+  /showcase/:
+    -
+      - casestudies-7116
+  /utility/: {  }
+  /container-main/:
+    -
+      -
+        'sidebar 20': {  }
+      -
+        'mainbar 60': {  }
+      -
+        'aside 20': {  }
+  /expanded/: {  }
+  /extension/:
+    -
+      - 'springboard-6855 70'
+      - 'logo-1131 30'
+  /bottom/: {  }
+  /footer/:
+    -
+      - 'simplemenu-6826 50'
+      - 'newsletter-1493 50'
+    -
+      - branding-2782
+  /copyright/: {  }
+  offcanvas: {  }
+structure:
+  top:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+  slideshow:
+    type: section
+    attributes:
+      boxed: ''
+      class: fp-slideshow
+  header:
+    attributes:
+      boxed: '3'
+      class: 'section-vertical-paddings fp-header'
+  above:
+    type: section
+    attributes:
+      boxed: ''
+      class: fp-above
+  feature:
+    type: section
+    attributes:
+      boxed: ''
+      class: fp-feature
+  showcase:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'section-vertical-paddings section-horizontal-paddings fp-showcase'
+  utility:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  sidebar:
+    type: section
+    subtype: aside
+    attributes:
+      class: ''
+  mainbar:
+    type: section
+    subtype: main
+    title: Main
+    attributes:
+      class: section-horizontal-paddings
+  aside:
+    attributes:
+      class: ''
+  container-main:
+    attributes:
+      boxed: ''
+      class: ''
+      extra: {  }
+  expanded:
+    type: section
+    attributes:
+      boxed: ''
+      class: section-horizontal-paddings
+  extension:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings fp-extension'
+  bottom:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  footer:
+    attributes:
+      boxed: '3'
+      class: 'section-horizontal-paddings section-vertical-paddings g-default-footer'
+      variations: ''
+  copyright:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  offcanvas:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+content:
+  verticalmenu-8085:
+    title: 'Vertical Menu'
+    attributes:
+      enabled: 0
+      class: ''
+    block:
+      class: 'box-black g-vnavigation-container'
+      variations: 'nomarginall nopaddingall'
+  carousel-2510:
+    attributes:
+      enabled: 0
+      source: particle
+      demo: disabled
+      class: ''
+      height: 40vw
+      tablet_height: 65vw
+      desktop_height: 54vw
+      nav: enabled
+      autoplay: disabled
+      autoplaySpeed: ''
+      pauseOnHover: enabled
+      items:
+        -
+          image: 'gantry-media://home/slideshow/img-01.jpg'
+          title: Calla
+          caption: 'Calla is a bright, colorful design highlighting modern style and a refreshing new look for your website.'
+          link: '#'
+          link_text: 'Read More'
+          name: 'Calla 1'
+        -
+          image: 'gantry-media://home/slideshow/img-01.jpg'
+          title: Calla
+          caption: 'Calla is a fresh take on the classic concept of putting content first with a timeless style and feel for all users.'
+          link: '#'
+          link_text: 'Read More'
+          name: 'Calla 2'
+        -
+          image: 'gantry-media://home/slideshow/img-01.jpg'
+          title: Calla
+          caption: 'Calla is powered by our modern Gantry 5 framework, packed with features, and ready to take your site to new heights!'
+          link: '#'
+          link_text: 'Read More'
+          name: 'Calla 3'
+      post:
+        filter:
+          categories: ''
+          posts: ''
+          sticky: ''
+        limit:
+          total: '5'
+          start: '0'
+        sort:
+          orderby: date
+          ordering: DESC
+        display:
+          image:
+            enabled: show
+          text:
+            type: content
+            limit: ''
+            formatting: text
+          title:
+            enabled: show
+            limit: ''
+          read_more:
+            enabled: show
+            label: ''
+            target: _self
+            css: ''
+    block:
+      variations: 'nomarginall nopaddingall'
+  heading-2069:
+    attributes:
+      class: ''
+      title: 'what we do'
+      subtitle: websites
+  promo-5881:
+    attributes:
+      enabled: 0
+      title: "the <br />\nultimate <br />\ndesign   <br />\nfor your <br />\nnext <br />\nwebsite <br />"
+      bgtitle: guide
+      buttontext: 'Read More'
+      buttonlink: '#'
+    block:
+      class: 'wiggle wiggle-static'
+      variations: 'box1 align-right nomarginall'
+  blockcontent-8007:
+    title: 'Block Content'
+    attributes:
+      class: ''
+      title: ''
+      icon: ''
+      image: ''
+      headline: 'Who is SparkPoint'
+      description: 'I have been building websites for over 20 years. The tools have changed and the layouts more complex. I approach building the sites as a way to make them an extension of your business. I have also helped many business over then years grow and change both online and in the office. I understand first hand how stressful "having" to maintain your website can be.'
+      linktext: ''
+      link: ''
+      linkclass: ''
+      linktarget: _self
+      subcontents:
+        -
+          accent: none
+          icon: ''
+          img: ''
+          rokboximage: ''
+          rokboxcaption: ''
+          subtitle: ''
+          description: 'I put the right tools and processes in place so you can capture that idea, cool image or "Spark" you want to share with your customers'
+          class: ''
+          button: ''
+          buttonlink: ''
+          buttonclass: ''
+          buttontarget: _self
+          name: How...
+        -
+          accent: none
+          icon: ''
+          img: ''
+          rokboximage: ''
+          rokboxcaption: ''
+          subtitle: ''
+          description: 'I also believe it is very important to have an ongoing conversation with your customers and empowering your staff to contribute their unique perspective'
+          class: ''
+          button: ''
+          buttonlink: ''
+          buttonclass: ''
+          buttontarget: _self
+          name: Why...
+  logo-1795:
+    title: 'Logo / Image'
+    attributes:
+      enabled: 0
+      text: 'Sparkpoint Solutions'
+      title: 'Sparkpoint Solutions'
+    block:
+      class: flush
+  contentarray-2083:
+    title: 'Platform Content'
+    attributes:
+      enabled: 0
+      post:
+        filter:
+          categories: ''
+          posts: ''
+          sticky: ''
+        limit:
+          total: '6'
+          columns: '2'
+          start: '0'
+        display:
+          pagination_buttons: ''
+          date:
+            format: 'F d'
+          read_more:
+            enabled: ''
+          author:
+            enabled: ''
+          category:
+            enabled: ''
+          comments:
+            enabled: ''
+          text:
+            type: ''
+        sort:
+          orderby: date
+          ordering: DESC
+    block:
+      class: 'wiggle wiggle-static'
+      variations: 'box2 nomarginall'
+  blockcontent-5952:
+    title: 'Block Content'
+    attributes:
+      class: ''
+      title: 'How SparkPoint Works'
+      icon: ''
+      image: ''
+      headline: 'How SparkPoint Works'
+      description: 'I am a solo operation right now. I build on WordPress, I am hosted on AWS and I only work with a small group of developers.'
+      linktext: ''
+      link: ''
+      linkclass: ''
+      linktarget: _self
+      subcontents:
+        -
+          accent: accent1
+          icon: ''
+          img: ''
+          rokboximage: ''
+          rokboxcaption: ''
+          subtitle: 'The reason you are here'
+          description: 'I have partnered with RocketTheme for almost 10 years, I trust their code is solid and secure.'
+          class: ''
+          button: ''
+          buttonlink: ''
+          buttonclass: ''
+          buttontarget: _self
+          name: 'The Easy Part'
+        -
+          accent: accent2
+          icon: ''
+          img: ''
+          rokboximage: ''
+          rokboxcaption: ''
+          subtitle: 'The hard part is why you are here'
+          description: 'Building a website is a team effort. It is made up of your voice and my guidance.'
+          class: ''
+          button: ''
+          buttonlink: ''
+          buttonclass: ''
+          buttontarget: _self
+          name: 'The Hard Part'
+  slideshow-2132:
+    attributes:
+      enabled: 0
+      source: particle
+      demo: disabled
+      autoplay: disabled
+      autoplayTimeout: '5000'
+      speed: '250'
+      dots: enabled
+      thumbs: enabled
+      items:
+        -
+          image: 'gantry-media://home/feature/img-01.jpg'
+          image_small: 'gantry-media://home/feature/img-01-thumb.jpg'
+          title_small: 'Available at a Great Price. Get up to 30% off!'
+          alt: 'Some Alt Attr'
+          title: 'goodbye bland, hello bold!'
+        -
+          image: 'gantry-media://home/feature/img-01.jpg'
+          image_small: 'gantry-media://home/feature/img-01-thumb.jpg'
+          title_small: 'Built on the powerful Gantry 5 framework.'
+          alt: 'Some Alt Attr'
+          title: 'goodbye drab, hello delightful!'
+        -
+          image: 'gantry-media://home/feature/img-01.jpg'
+          image_small: 'gantry-media://home/feature/img-01-thumb.jpg'
+          title_small: 'Multiple preset color schemes available.'
+          alt: 'Some Alt Attr'
+          title: 'goodbye normal, hello extraordinary!'
+      post:
+        filter:
+          categories: ''
+          posts: ''
+          sticky: ''
+        limit:
+          total: '5'
+          start: '0'
+        sort:
+          orderby: date
+          ordering: DESC
+        display:
+          title:
+            enabled: show
+            limit: ''
+          link:
+            enabled: show
+            target: _self
+    block:
+      variations: 'nomarginall nopaddingall'
+  casestudies-7116:
+    title: 'Case Studies'
+    attributes:
+      enabled: 0
+      source: particle
+      demo: disabled
+      class: ''
+      title: 'from the blog'
+      uppertitle: ''
+      allitems: ''
+      cols: cols-3
+      cases:
+        -
+          items:
+            -
+              layout: default-top
+              accent: accent-color-2
+              image: ''
+              subtitle: '3 days ago'
+              description: ''
+              url: ''
+              title: 'A gorgeous website without the high costs'
+            -
+              layout: alt-bottom
+              accent: accent-color-2
+              image: ''
+              subtitle: '3 days ago'
+              description: "The Case Studies particle makes displaying your website's content easier than ever.\nUsing simple form fields, you can create custom content or instruct the particle to pull images and text directly from your CMS."
+              url: ''
+              title: 'This is an example of a blog post title without any cover photo'
+          title: roundup
+        -
+          items:
+            -
+              layout: alt-top
+              accent: accent-color-1
+              image: 'gantry-media://home/showcase/img-01.jpg'
+              subtitle: '3 days ago'
+              description: ''
+              url: ''
+              title: 'Make a Beautifully Stylish Website'
+            -
+              layout: default-bottom
+              accent: accent-color-1
+              image: ''
+              subtitle: '3 days ago'
+              description: ''
+              url: ''
+              title: 'Perfect for Stylish Brands, Designers, and More!'
+          title: news
+        -
+          items:
+            -
+              layout: alt-bottom
+              accent: accent-color-1
+              image: ''
+              subtitle: '3 days ago'
+              description: 'The powerful Gantry 5 framework includes a stunning Layout Manager. Customize a page''s layout with drag-and-drop simplicity. Add particles and positions in seconds, and apply CSS classes through simple forms.'
+              url: ''
+              title: 'Modify Your Website''s Layout in a Snap with the Layout Manager'
+            -
+              layout: alt-top
+              accent: accent-color-2
+              image: 'gantry-media://home/showcase/img-02.jpg'
+              subtitle: '3 days ago'
+              description: ''
+              url: ''
+              title: 'A Bold New Design for 2018 and Beyond'
+            -
+              layout: alt-bottom
+              accent: accent-color-1
+              image: ''
+              subtitle: '3 days ago'
+              description: 'The powerful Menu Editor included with Gantry 5-powered themes like Calla makes it easier than ever to rearrange, redesign, and inject new elements into your website''s menus.'
+              url: ''
+              title: 'Create More Complete Menus with the Menu Editor'
+          title: guide
+      post:
+        filter:
+          categories: ''
+          posts: ''
+          sticky: ''
+        limit:
+          total: '5'
+          start: '0'
+        sort:
+          orderby: date
+          ordering: DESC
+        display:
+          image:
+            enabled: show
+          text:
+            type: content
+            limit: ''
+            formatting: text
+          title:
+            enabled: show
+            limit: ''
+          date:
+            enabled: published
+            format: 'l, F d, Y'
+          read_more:
+            enabled: show
+            label: ''
+            target: _self
+            css: ''
+  springboard-6855:
+    attributes:
+      enabled: 0
+      title: 'our particles'
+      description: 'Calla includes over a dozen professionally-designed particles to make your website''s content shine.'
+      items:
+        -
+          image: 'gantry-media://home/extension/avatar-01.png'
+          tooltipstyle: dori
+          tooltip: 'Jakub Baran'
+          name: Avatar
+        -
+          image: 'gantry-media://home/extension/avatar-01.png'
+          tooltipstyle: dori
+          tooltip: 'Karol Orzeł'
+          name: Avatar
+        -
+          image: 'gantry-media://home/extension/avatar-01.png'
+          tooltipstyle: dori
+          tooltip: 'John Davis'
+          name: Avatar
+        -
+          image: 'gantry-media://home/extension/avatar-01.png'
+          tooltipstyle: dori
+          tooltip: 'Kirk Douglas'
+          name: Avatar
+        -
+          image: 'gantry-media://home/extension/avatar-01.png'
+          tooltipstyle: dori
+          tooltip: 'Ryan Pierson'
+          name: Avatar
+        -
+          image: 'gantry-media://home/extension/avatar-01.png'
+          tooltipstyle: dori
+          tooltip: 'Katrin Lange'
+          name: Avatar
+        -
+          image: 'gantry-media://home/extension/avatar-01.png'
+          tooltipstyle: dori
+          tooltip: 'Andy Miller'
+          name: Avatar
+        -
+          image: 'gantry-media://home/extension/avatar-01.png'
+          tooltipstyle: dori
+          tooltip: 'Djamil Legato'
+          name: Avatar
+        -
+          image: 'gantry-media://home/extension/avatar-01.png'
+          tooltipstyle: dori
+          tooltip: 'Reggie Simmons'
+          name: Avatar
+        -
+          image: 'gantry-media://springboard/blank.svg'
+          tooltipstyle: dori
+          tooltip: ''
+          name: Avatar
+        -
+          image: 'gantry-media://springboard/blank.svg'
+          tooltipstyle: dori
+          tooltip: ''
+          name: Avatar
+        -
+          image: 'gantry-media://home/extension/avatar-01.png'
+          tooltipstyle: dori
+          tooltip: 'Matias Griese'
+          name: Avatar
+        -
+          image: 'gantry-media://springboard/blank.svg'
+          tooltipstyle: dori
+          tooltip: ''
+          name: Avatar
+        -
+          image: 'gantry-media://springboard/blank.svg'
+          tooltipstyle: dori
+          tooltip: ''
+          name: Avatar
+        -
+          image: 'gantry-media://home/extension/avatar-01.png'
+          tooltipstyle: dori
+          tooltip: 'Mark Taylor'
+          name: Avatar
+        -
+          image: 'gantry-media://home/extension/avatar-01.png'
+          tooltipstyle: dori
+          tooltip: 'Damir Pecnik'
+          name: Avatar
+        -
+          image: 'gantry-media://home/extension/avatar-01.png'
+          tooltipstyle: dori
+          tooltip: 'John Newman'
+          name: Avatar
+        -
+          image: 'gantry-media://home/extension/avatar-01.png'
+          tooltipstyle: dori
+          tooltip: 'Patrick Swayze'
+          name: Avatar
+    block:
+      class: flush
+  logo-1131:
+    title: 'Logo / Image'
+    attributes:
+      enabled: 0
+      image: 'gantry-media://home/extension/girl.jpg'
+      text: ''
+    block:
+      class: flush
+  simplemenu-6826:
+    title: 'Bottom Menu'
+    attributes:
+      enabled: 0
+      title: ''
+      menus:
+        -
+          items:
+            -
+              icon: ''
+              link: '#'
+              target: _self
+              title: Overview
+            -
+              icon: ''
+              link: '#'
+              target: _self
+              title: Particles
+            -
+              icon: ''
+              link: '#'
+              target: _self
+              title: Typography
+            -
+              icon: ''
+              link: '#'
+              target: _self
+              title: 'Block Variations'
+            -
+              icon: ''
+              link: '#'
+              target: _self
+              title: Documentation
+          title: Features
+        -
+          items:
+            -
+              icon: ''
+              link: '#'
+              target: _self
+              title: 'About Us'
+            -
+              icon: ''
+              link: '#'
+              target: _self
+              title: Pricing
+            -
+              icon: ''
+              link: '#'
+              target: _self
+              title: Blog
+            -
+              icon: ''
+              link: '#'
+              target: _self
+              title: Portfolio
+            -
+              icon: ''
+              link: '#'
+              target: _self
+              title: Contact
+          title: Pages
+        -
+          items:
+            -
+              icon: ''
+              link: '#'
+              target: _self
+              title: Fullwidth
+            -
+              icon: ''
+              link: '#'
+              target: _self
+              title: 'Left Sidebar'
+            -
+              icon: ''
+              link: '#'
+              target: _self
+              title: 'Right Sidebar'
+            -
+              icon: ''
+              link: '#'
+              target: _self
+              title: 'Two Sidebars'
+            -
+              icon: ''
+              link: '#'
+              target: _self
+              title: 'Rows & Columns'
+          title: Layouts
+    block:
+      class: g-bottom-simplemenu
+  newsletter-1493:
+    attributes:
+      enabled: 0
+      action: 'https://rockettheme.us18.list-manage.com/subscribe/post?u=b35dd217b76653582e6741a63&amp;id=80179a67c0'
+      layout: g-newsletter-stack-fullwidth
+      style: g-newsletter-square
+      title: Newsletter
+      headtext: 'Stay up to date. Sign up today.'
+      inputboxtext: 'Your email...'
+      buttontext: ''
+    block:
+      class: 'wiggle wiggle-static'
+      variations: box6
+  branding-2782:
+    attributes:
+      content: '&copy; 2019 by Sparkpoint. All rights reserved.'
+    block:
+      variations: center

@@ -1,0 +1,34 @@
+atoms:
+  -
+    type: frameworks
+    title: 'JavaScript Frameworks'
+    id: frameworks-1582
+    inherit:
+      outline: default
+      atom: frameworks-1582
+      include:
+        - attributes
+  -
+    id: fixedheader-8082
+    type: fixedheader
+    title: 'Fixed Header'
+    attributes:
+      enabled: '1'
+      section: '#g-navigation'
+      pinnedbg: section
+      custombg: '#ffffff'
+      autohide: enabled
+      mobile: disabled
+      padding: '150'
+      mobilepadding: '50'
+      offset: '100'
+      tolerance: ''
+  -
+    id: assets-9913
+    type: assets
+    title: 'Custom CSS / JS'
+    inherit:
+      outline: default
+      atom: assets-9913
+      include:
+        - attributes

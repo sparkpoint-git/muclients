@@ -1,0 +1,110 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: home
+  timestamp: 1537195582
+layout:
+  header: {  }
+  /navigation/:
+    -
+      - menu-5555
+  /showcase/:
+    -
+      - system-content-6449
+  /feature/:
+    -
+      - sample-8242
+  /main/: {  }
+  /subfeature/:
+    -
+      - 'custom-6236 50'
+      - 'custom-7402 50'
+  /footer/:
+    -
+      - 'copyright-2256 33.3'
+      - 'social-2985 33.3'
+      - 'branding-1850 33.3'
+  offcanvas:
+    -
+      - mobile-menu-2938
+structure:
+  header:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+  showcase:
+    type: section
+    attributes:
+      boxed: ''
+  feature:
+    type: section
+    attributes:
+      boxed: ''
+  main:
+    attributes:
+      boxed: ''
+  subfeature:
+    type: section
+    attributes:
+      class: flush
+      boxed: ''
+  footer:
+    attributes:
+      boxed: ''
+content:
+  sample-8242:
+    title: History
+    attributes:
+      image: ''
+      headline: History
+      description: '<p>The first Ruritan Club was chartered May 21, 1928, in Holland, Virginia. Since that first club, Ruritan has grown throughout the United States of America, and in doing so, has become "America’s Leading Community Service Organization."</p>'
+      link: ''
+      linktext: ''
+      samples:
+        -
+          icon: ''
+          subtitle: ''
+          description: "<p>Tom Downing of Suffolk, Virginia, and Jack Gwaltney of Holland, Virginia, are known as the co-founders of Ruritan. Gwaltney and Downing recognized the need for an organization where community leaders could meet and discuss ways to make their community a better place in which to live.</p>\n<p>The name \"Ruritan\" was suggested by Daisy Nurney, a reporter for the Norfolk Virginian-Pilot newspaper, and the club’s charter members unanimously adopted \"Ruritan\" as the organization’s name. The word is a combination of the Latin words for open country \"ruri\" and small town \"tan,\" interpreted as pertaining to rural and small town life. </p>"
+          id: ''
+          class: ''
+          variations: align-left
+          title: 'History National'
+        -
+          icon: ''
+          subtitle: ''
+          description: "<p>The Warrenton Ruritan Club received its charter on October 24, 1967. Early fund raising initiatives included turkey shoots and circuses.  Over the past 56 years, many fine hardworking citizens of the area have been active members of the Warrenton Ruritan Club. Current members honor the commitment of those who preceded us by carrying on the work of service and support to the community.</p>\n<p>Members meet for a dinner meeting at the Bethel United Methodist Church on the third Thursday of the month at 7pm.  After dinner, there usually is a short presentation from a guest speaker followed by the club business meeting. The meetings normally adjourn approximately at 8:30pm.</p>"
+          id: ''
+          class: ''
+          variations: align-left
+          title: 'History Warrenton'
+  custom-6236:
+    title: Mission
+    attributes:
+      html: "<h3>The Ruritan Mission</h3>\n<p>\nRuritan is a national organization dedicated to improving communities and building a better America through Fellowship, Goodwill and Community Service.</p>"
+  custom-7402:
+    title: Membership
+    attributes:
+      html: "<h3>Membership</h3>\n<p>The club seeks to attract members from the community who value the benefits to be derived from Fellowship, Goodwill and Community Service and who are willing to devote time and effort each year to support club programs and activities.  Membership dues are nominal with the major portion going to cover the cost of the monthly dinner meetings.</p>\n<p>\nTo all those that may desire to become a member you can reach out to any current Ruritan Members, and they will be glad to assist you, or you can contact the club via the Facebook site or contact the club by Writing and addressing it to P.O. Box 1074 Warrenton, Va. 20188 in care of the Warrenton Ruritan Club.</p>\n<p>\n<a href=\"https://www.facebook.com/groups/1578786372427951/\"style=\"color:white;text-decoration:underline;\">Warrenton Ruritan Facebook Page</a>\n<br>\n<a href=\"http://www.ruritan.org\"style=\"color:white;text-decoration:underline;\">Ruritan National, Inc.</a>\n</p>\n"
+  social-2985:
+    attributes:
+      css:
+        class: social-items
+      items:
+        -
+          icon: 'fa fa-facebook'
+          text: Facebook
+          link: 'https://www.facebook.com/groups/1578786372427951/'
+          name: Facebook
+    block:
+      variations: center
+  branding-1850:
+    block:
+      variations: align-right
+  mobile-menu-2938:
+    title: 'Mobile Menu'

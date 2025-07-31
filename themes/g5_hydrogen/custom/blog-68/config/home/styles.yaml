@@ -1,0 +1,4 @@
+preset: preset1
+main:
+  background: '#252226'
+  text-color: '#ffffff'

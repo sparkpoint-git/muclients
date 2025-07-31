@@ -1,0 +1,55 @@
+{# Load Content From WordPress #}
+{% set attr_extra = particle.extra|attribute_array %}
+{% set post_settings = particle.post %}
+{% set filter = post_settings.filter %}
+{% set sort = post_settings.sort %}
+{% set limit = post_settings.limit %}
+{% set start = limit.start %}
+{% set display = post_settings.display %}
+
+{# Sticky Posts #}
+{% set sticky_posts = filter.sticky ? false : true %}
+
+{# Query Posts #}
+{% set query_parameters = {
+    'posts_per_page': limit.total|default('-1'),
+    'offset': start,
+    'orderby': sort.orderby,
+    'order': sort.ordering,
+    'ignore_sticky_posts': sticky_posts
+} %}
+
+{% set categories = filter.categories|replace({' ': ',', ', ': ','}) %}
+
+{% if filter.posts %}
+    {% set query_parameters = query_parameters|merge({'post__in': filter.posts|replace({' ': ',', ', ': ','})|split(',')}) %}
+{% else %}
+    {% set query_parameters = query_parameters|merge({'cat': categories}) %}
+{% endif %}
+
+{% set posts = wordpress.query_posts(query_parameters) %}
+{% set total = posts.get_pagination([]).total|abs %}
+{% set total = max(posts|length, (total * max(0, limit.total)) - 1) %}
+
+{% for post in posts %}
+    {% if display.image.enabled and post.thumbnail.src %}
+        {% set post_image = post.thumbnail.src %}
+    {% endif %}
+
+    <div>
+        <div class="g-slideshow-carousel-image-container" style="background-image: url({{ url(post_image)|e }}); min-height:{{ particle.height|default('65vh') }};">
+            <div class="g-slideshow-carousel-content-wrapper">
+                <h5 class="g-slideshow-carousel-small-title ">{{ post.terms('category') | join(', ') }}</h5>
+
+                {% if display.title.enabled and post.title %}
+                    <h3 class="g-slideshow-carousel-title">
+                        {{ display.title.limit ? post.title|truncate_text(display.title.limit)|raw : post.title|raw }}
+                    </h3>
+                    {% if display.link.enabled %}
+                        <a href="{{ post.link|e }}" target="{{ display.link.target|default('_self') }}" class="button">{{ display.link.label|default('Explore Now') }}</a>
+                    {% endif %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endfor %}

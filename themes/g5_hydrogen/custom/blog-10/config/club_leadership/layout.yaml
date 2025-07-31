@@ -1,0 +1,134 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: home
+  timestamp: 1537195582
+layout:
+  header: {  }
+  /navigation/:
+    -
+      - menu-5555
+  /showcase/:
+    -
+      - infolist-8892
+  /feature/:
+    -
+      - 'custom-3470 50'
+      - 'custom-9737 50'
+  /main/: {  }
+  /subfeature/:
+    -
+      - 'custom-6236 50'
+      - 'custom-7402 50'
+  /footer/:
+    -
+      - 'copyright-2256 33.3'
+      - 'social-2985 33.3'
+      - 'branding-1850 33.3'
+  offcanvas:
+    -
+      - mobile-menu-2938
+structure:
+  header:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+  showcase:
+    type: section
+    attributes:
+      boxed: ''
+  feature:
+    type: section
+    attributes:
+      boxed: ''
+  main:
+    attributes:
+      boxed: ''
+  subfeature:
+    type: section
+    attributes:
+      class: flush
+      boxed: ''
+  footer:
+    attributes:
+      boxed: ''
+content:
+  infolist-8892:
+    title: 'Info List'
+    attributes:
+      class: ''
+      title: ''
+      intro: ''
+      cols: g-1cols
+      infolists:
+        -
+          icon: ''
+          iconloc: left
+          image: 'gantry-media://2024/02/20240216_161538.jpg'
+          imageloc: center
+          textstyle: header
+          imagestyle: large
+          desc: '2024 officers of the Warrenton Ruritan Club are (left to right)Director Roger Sites, Secretary Jeff Cahall, Vice-President Eric Maybach, President Glenn Hourahan,  Treasurer John Shiflett , not pictured is Director John Schlenker'
+          tag: ''
+          subtag: ''
+          label: ''
+          link: ''
+          buttonicon: ''
+          readmoreclass: ''
+          readmoretarget: _self
+          title: 'Ruritan Officers'
+        -
+          icon: ''
+          iconloc: left
+          image: 'gantry-media://2018/ruritan-officers.jpg'
+          imageloc: left
+          textstyle: compact
+          imagestyle: compact
+          desc: 'Ruritan officers Left to Right  John Shiflett Treasure, Earl Browning Vice President, Randy Ream Secretary'
+          tag: ''
+          subtag: ''
+          label: ''
+          link: ''
+          buttonicon: ''
+          readmoreclass: ''
+          readmoretarget: _self
+          title: '2020 Ruritan Officers'
+  custom-3470:
+    title: Committees
+    attributes:
+      html: "<h3>Committees</h3> \n<ul>\n<li>Finance and Fund Raising</li>\n<li>Public Relations</li>\n<li>Business, Profession & Scholarship</li>\n<li>Social Development</li>\n<li>Citizenship and Patriotism</li>\n<li>Environment</li>\n<li>Public Service</li>\n</ul>"
+  custom-9737:
+    title: By-Laws
+    attributes:
+      html: "<h3>Ruritan Club Constitution and Bylaws</h3>\n<h4>ARTICLE IV. Membership</h4> \n<ul>\n<li><strong>Section A.</strong> It is recommended that club membership be composed of people representing a cross-section of the community.</li>\n<li><strong>Section B.</strong> Any person of good moral character and reputation shall be eligible for club membership.</li>\n<li><strong>Section C.</strong> There are three kinds of membership, namely: active, honorary, and associate members.</li>\n<li><strong>Section D.</strong> Club membership may be acquired only by invitation, transfer or reinstatement.</li>\n<li><strong>Section E.</strong> Any member of this club may present the name of a proposed member to the president. The president shall present the name of the proposed member to the Board of Directors and upon majority approval, the name shall be submitted to the club. Upon approval of a 2/3 vote the person shall become a member of that club providing a quorum is present.</li>\n</ul>"
+  custom-6236:
+    title: Mission
+    attributes:
+      html: "<h3>The Ruritan Mission</h3>\n<p>\nRuritan is a national organization dedicated to improving communities and building a better America through Fellowship, Goodwill and Community Service.</p>"
+  custom-7402:
+    title: Membership
+    attributes:
+      html: "<h3>Membership</h3>\n<p>The club seeks to attract members from the community who value the benefits to be derived from Fellowship, Goodwill and Community Service and who are willing to devote time and effort each year to support club programs and activities.  Membership dues are nominal with the major portion going to cover the cost of the monthly dinner meetings.</p>"
+  social-2985:
+    attributes:
+      css:
+        class: social-items
+      items:
+        -
+          icon: 'fa fa-facebook'
+          text: Facebook
+          link: 'https://www.facebook.com/groups/1578786372427951/'
+          name: Facebook
+    block:
+      variations: center
+  branding-1850:
+    block:
+      variations: align-right
+  mobile-menu-2938:
+    title: 'Mobile Menu'

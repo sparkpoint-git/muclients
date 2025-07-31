@@ -1,0 +1,13 @@
+css:
+  -
+    location: ''
+    inline: '#g-navigation .g-content {padding:0;}'
+    extra: {  }
+    priority: '0'
+    name: navigation-padding
+  -
+    location: 'gantry-assets://breeds.css'
+    inline: ''
+    extra: {  }
+    priority: '0'
+    name: breeds.css

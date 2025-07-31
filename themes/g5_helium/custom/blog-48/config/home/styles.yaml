@@ -1,0 +1,11 @@
+preset: preset1
+accent:
+  color-1: '#4db2b3'
+  color-2: '#8f4dae'
+link:
+  regular: '#4db2b3'
+testimonials:
+  background: '#8f4dae'
+offcanvas:
+  background: '#4db2b3'
+  toggle-color: '#4db2b3'

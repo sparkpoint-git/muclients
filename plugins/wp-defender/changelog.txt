@@ -1,0 +1,78 @@
+Plugin Name: WP Defender
+Author: WPMU DEV
+Tested up to: 6.8.2
+
+Change Log:
+
+= 5.4.0 ( 2025-07-22 ) =
+
+- New: User Agent Blocklist Presets
+- New: Bot Trap to block spam User Agent IPs
+- Enhance: Update Vue.js and Axios versions and related packages
+- Enhance: Remove Tutorials menu and widget
+- Enhance: Remove widget on Dashboard page to discover other free plugins by WPMU DEV
+- Enhance: Remove recommended-plugins-notice submodule for Free version
+- Enhance: Update Malware Signatures to detect suspicious code
+- Enhance: Remove "Add Spam User Agents" button
+- Enhance: Create new wd_404_attempt hook to extend 404 Detection flow
+- Enhance: Add Session key to config structure
+- Enhance: Add Force Strong Password key to config structure
+- Fix: Defender forcibly logs out users for inactivity
+- Fix: Unable to save secure password when Strong Passwords and Password Reset are both enabled
+- Fix: Documentation buttons are missing aria-hidden tag
+- Fix: Error when creating multisite and running Malware Scan
+
+= 5.3.1 ( 2025-06-12 ) =
+
+- Fix: Sync malicious IP count displayed in Defender and the Hub
+
+= 5.3.0 ( 2025-06-11 ) =
+
+- New: AntiBot Mode
+- Enhance: Improve Session Protection when loading an image
+- Enhance: Add session widget on the Dashboard page
+- Enhance: Rename slug for Expert Services
+- Enhance: Update wp.org screenshots
+- Enhance: Update Session Protection Tracking event
+- Enhance: Change "Central IP List" label to "Custom IP List"
+- Enhance: Change OTP page styling to match the default WordPress login
+- Enhance: Generate strong passwords that meet all verification requirements
+- Enhance: Update malware signatures to detect additional infected files
+- Enhance: Log custom IP Block events
+- Enhance: Log Unblocking event from Unlock Me option
+- Fix: MaxMind key field appears empty on the Local Blocklist page if the MaxMind key is removed from the database
+- Fix: No session logs appear when the Interim login screen is shown
+- Fix: Scan can't detect modifications in the Debug Log Manager plugin
+- Fix: Warning in PHP 8.4
+- Fix: File existence and readability checks in Malware_Result and Plugin_Integrity classes
+
+= 5.2.2 ( 2025-04-23 ) =
+
+- Fix: Plugin_Cross_Sell class error
+
+= 5.2.1 ( 2025-04-23 ) =
+
+- Enhance: Add a new menu item to help you discover other free plugins by WPMU DEV and more
+
+= 5.2.0 ( 2025-04-07 ) =
+
+- New: Session Protection
+- Enhance: Compatibility with WordPress 6.8
+- Enhance: Add a toggle to block popular spam/malicious User Agents
+- Enhance: Remove Semrush and Ahrefs from the default User Agent blocklist
+- Enhance: Improve the wpdef_sec_key_gen cron process on multisite
+- Enhance: Update Malware Signatures to detect suspicious code
+- Enhance: Improve the Quarantine flow during upgrade from free to pro plugin version
+- Enhance: Improve the class representing the vulnerability result
+- Enhance: Improve Trusted IP popup flow
+- Fix: Masked Login URL bypassed by using encoded characters
+- Fix: Audit Logging showing wrong time
+
+= 5.1.1 ( 2025-03-03 ) =
+
+- Enhance: Improve cron events for AntiBot Global Firewall on multisite
+- Enhance: Remove manual "All headers" option and migrate to Automatic IP detection for improved compatibility and security
+- Enhance: Update User Agent logic with AntiBot service to better detect potential threats
+
+
+824783-1753676803-au
